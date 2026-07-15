@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+data/browser/session.json
+data/*.db
+data/*.db-shm
+data/*.db-wal
+test-results/
+screenshots/

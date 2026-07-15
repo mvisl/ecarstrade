@@ -1,0 +1,2 @@
+import{describe,expect,it}from'vitest';import{nextSentiment,saveFeedback}from'./logic';
+describe('цикл оценки пилюли',()=>{it('neutral → positive → negative → neutral',()=>{let s; s=nextSentiment(s);expect(s).toBe('positive');s=nextSentiment(s);expect(s).toBe('negative');s=nextSentiment(s);expect(s).toBeUndefined()});it('удаляет сброшенную оценку',()=>{expect(saveFeedback({mileage:'negative'},'mileage',undefined)).toEqual({})});it('не меняет другие оценки',()=>{expect(saveFeedback({price:'positive'},'mileage','negative')).toEqual({price:'positive',mileage:'negative'})})});
