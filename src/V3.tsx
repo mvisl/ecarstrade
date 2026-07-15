@@ -202,6 +202,7 @@ export default function V3() {
   const [leaving, setLeaving] = useState("");
   const [locked, setLocked] = useState(false);
   const [toast, setToast] = useState<"yes" | "no" | null>(null);
+  const [searching, setSearching] = useState(false);
   const touch = useRef(0);
   const car = cars[index];
   const move = (delta: number) =>
@@ -263,9 +264,15 @@ export default function V3() {
       else delete next[key];
       return next;
     });
+  useEffect(() => {
+    if (!cars[index]) localStorage.setItem("ecarstrade:profile-snapshot", JSON.stringify({updatedAt:Date.now(),insights:profileInsights()}));
+  }, [index]);
   if (!car) {
-    const insights = profileInsights(),
-      vetoActive = initialCardIndex() === cars.length;
+    const vetoActive = initialCardIndex() === cars.length;
+    const refresh = () => {
+      setSearching(true);
+      window.setTimeout(() => setSearching(false), 1200);
+    };
     return (
       <main className="v3-shell">
         <header className="v3-nav">
@@ -274,22 +281,9 @@ export default function V3() {
         </header>
         <section className="decision-result">
           <IconCheck />
-          <h1>Серия просмотрена</h1>
-          <p>Решения сохранены и учтены при построении профиля.</p>
-          <div className="profile-insights">
-            <h2>Что я пока понял</h2>
-            <ul>
-              {insights.map((text) => (
-                <li key={text}>{text}</li>
-              ))}
-            </ul>
-          </div>
-          <button
-            disabled={vetoActive}
-            onClick={() => setIndex(initialCardIndex())}
-          >
-            {vetoActive ? "Ищу варианты без Ford / Kuga" : "Следующая серия"}
-          </button>
+          <h1>{searching ? "Перетряхиваю парковку…" : "Серия просмотрена"}</h1>
+          <p>{vetoActive ? "Ford и Kuga сегодня получают выходной. Поищем кого-нибудь ещё." : "Вкус записал. Теперь попробую удивить следующей серией."}</p>
+          <button onClick={refresh}>{searching ? "Ищу свежие варианты…" : "Проверить следующую серию"}</button>
         </section>
       </main>
     );
