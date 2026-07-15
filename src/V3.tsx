@@ -7,6 +7,7 @@ import {
   IconCheck,
   IconChevronDown,
   IconClipboardCheck,
+  IconCurrencyEuro,
   IconEngine,
   IconGasStation,
   IconPalette,
@@ -33,6 +34,7 @@ const specs = [
   ['fuel', 'Дизель', IconGasStation],
   ['engine', '2.0 · 190 л.с.', IconEngine],
   ['color', 'Красный', IconPalette],
+  ['price', '€23 000', IconCurrencyEuro],
 ] as const;
 const report = [
   { kind: 'bad', text: 'Заявлены прошлые повреждения на €10 074,82' },
@@ -47,6 +49,7 @@ export default function V3() {
   const [open, setOpen] = useState(true);
   const [leaving, setLeaving] = useState('');
   const [locked, setLocked] = useState(false);
+  const [decision, setDecision] = useState<'yes' | 'no' | null>(null);
   const touch = useRef(0);
 
   const move = (delta: number) => setPhoto((current) => (current + delta + photos.length) % photos.length);
@@ -54,16 +57,20 @@ export default function V3() {
     if (locked) return;
     setLocked(true);
     setLeaving(value);
-    saveDecision(
-      {
-        carId: '7360586',
-        decision: value === 'yes' ? 'like' : 'dislike',
-        feedback,
-        at: Date.now(),
-      },
-      1,
-    ).catch(console.error);
-    window.setTimeout(() => setLeaving(''), 220);
+    const record = {
+      carId: '7360586',
+      decision: value === 'yes' ? 'like' as const : 'dislike' as const,
+      feedback,
+      at: Date.now(),
+    };
+    localStorage.setItem('ecarstrade:last-decision', JSON.stringify(record));
+    if (location.hostname === '127.0.0.1' || location.hostname === 'localhost') {
+      saveDecision(record, 1).catch(console.error);
+    }
+    window.setTimeout(() => {
+      setDecision(value);
+      setLeaving('');
+    }, 220);
     window.setTimeout(() => setLocked(false), 300);
   };
 
@@ -90,6 +97,14 @@ export default function V3() {
   return (
     <main className="v3-shell">
       <header className="v3-nav"><b>eCarsTrade</b><span>14 новых</span></header>
+      {decision ? (
+        <section className="decision-result" aria-live="polite">
+          {decision === 'yes' ? <IconCheck /> : <IconX />}
+          <h1>{decision === 'yes' ? 'Добавлено в список' : 'Автомобиль отклонён'}</h1>
+          <p>Решение и оценки параметров сохранены в этом браузере.</p>
+          <button onClick={() => setDecision(null)}>Вернуть карточку</button>
+        </section>
+      ) : (
       <article className={`v3-card ${leaving}`}>
         <section
           className="v3-gallery"
@@ -131,6 +146,7 @@ export default function V3() {
           {open && <div className="report">{report.map((item, index) => <div className={item.kind} key={index}>{item.kind === 'ok' ? <IconCheck /> : item.kind === 'bad' ? <IconX /> : <span>!</span>}<span>{item.text}</span></div>)}</div>}
         </section>
       </article>
+      )}
     </main>
   );
 }
