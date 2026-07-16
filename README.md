@@ -30,3 +30,12 @@ npm run test
 ```
 
 Следующие этапы — ручная авторизация и реальный сбор eCarsTrade, ранжирование, LLM и расчёт импорта.
+
+# eCarsTrade
+
+## GitHub Actions authentication
+
+The hourly session workflow expects the repository Actions secrets
+`ECARSTRADE_LOGIN` and `ECARSTRADE_PASSWORD`. The Playwright session is cached
+only after AES-256 encryption. Before every run the fixed-price section is used
+to verify authentication; an expired session is restored automatically.

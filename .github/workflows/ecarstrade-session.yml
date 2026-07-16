@@ -1,0 +1,66 @@
+name: Refresh eCarsTrade session
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ecarstrade-session
+  cancel-in-progress: false
+
+jobs:
+  refresh-session:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: actions/cache/restore@v4
+        with:
+          path: .cache/ecarstrade-session.enc
+          key: ecarstrade-session-${{ github.run_id }}
+          restore-keys: |
+            ecarstrade-session-
+      - name: Restore encrypted browser session
+        env:
+          ECARSTRADE_PASSWORD: ${{ secrets.ECARSTRADE_PASSWORD }}
+        run: |
+          mkdir -p .cache
+          if [ -s .cache/ecarstrade-session.enc ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 \
+              -in .cache/ecarstrade-session.enc \
+              -out .cache/ecarstrade-session.json \
+              -pass env:ECARSTRADE_PASSWORD
+          fi
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Verify or restore eCarsTrade login
+        env:
+          ECARSTRADE_LOGIN: ${{ secrets.ECARSTRADE_LOGIN }}
+          ECARSTRADE_PASSWORD: ${{ secrets.ECARSTRADE_PASSWORD }}
+          ECARSTRADE_STATE_PATH: .cache/ecarstrade-session.json
+        run: node scripts/ecarstrade-session.mjs
+      - name: Encrypt browser session
+        if: success()
+        env:
+          ECARSTRADE_PASSWORD: ${{ secrets.ECARSTRADE_PASSWORD }}
+        run: |
+          openssl enc -aes-256-cbc -pbkdf2 -salt \
+            -in .cache/ecarstrade-session.json \
+            -out .cache/ecarstrade-session.enc \
+            -pass env:ECARSTRADE_PASSWORD
+          rm -f .cache/ecarstrade-session.json
+      - uses: actions/cache/save@v4
+        if: success()
+        with:
+          path: .cache/ecarstrade-session.enc
+          key: ecarstrade-session-${{ github.run_id }}
