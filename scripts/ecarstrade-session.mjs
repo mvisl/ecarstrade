@@ -91,13 +91,32 @@ const collectFixedPriceCars = async () => {
     }
     const raw = await page.evaluate(() => {
       const text = document.body.innerText;
+      let schema = {};
+      for (const node of document.querySelectorAll(
+        'script[type="application/ld+json"]',
+      )) {
+        try {
+          const parsed = JSON.parse(node.textContent || "{}");
+          if (parsed?.["@type"] === "Car") schema = parsed;
+        } catch {
+          // Ignore unrelated malformed structured-data blocks.
+        }
+      }
       const title =
         document.querySelector("h1")?.textContent?.trim() ||
         document.title.split("|")[0].trim();
       const photos = Array.from(document.querySelectorAll("img"))
-        .map((image) => image.currentSrc || image.src)
+        .map(
+          (image) =>
+            image.getAttribute("data-src") || image.currentSrc || image.src,
+        )
         .filter((src) => /carsphotos|car-photo|vehicle/i.test(src));
-      return { text, title, photos: Array.from(new Set(photos)).slice(0, 12) };
+      return {
+        text,
+        title,
+        schema,
+        photos: Array.from(new Set(photos)).slice(0, 12),
+      };
     });
     const priceMatch = raw.text.match(/€\s*([\d][\d\s.,]{2,})/);
     const price = euroFrom(priceMatch?.[1]);
@@ -107,32 +126,40 @@ const collectFixedPriceCars = async () => {
       : "Fixed Price";
 
     const id = href.match(/\/cars\/(\d+)/)?.[1];
-    const year = raw.text.match(/\b(20[12]\d)\b/)?.[1] || "—";
-    const mileageMatch = raw.text.match(/([\d][\d\s.]*)\s*km\b/i);
-    const mileage = numberFrom(mileageMatch?.[1]);
-    const parts = raw.title
+    const schema = raw.schema || {};
+    const normalizedTitle = String(schema.name || raw.title)
+      .replace(/CITROAu2039N/gi, "Citroen")
+      .replace(/MERCEDES-BENZ/gi, "Mercedes-Benz");
+    const registration = String(schema.dateVehicleFirstRegistered || "");
+    const year = registration.match(/(20[12]\d)$/)?.[1] || "—";
+    const mileage = numberFrom(schema.mileageFromOdometer?.value);
+    const parts = normalizedTitle
       .replace(/^#\d+\s*/, "")
       .trim()
       .split(/\s+/);
-    const make = (parts[0] || "Автомобиль")
-      .replace(/^CITRO.*N$/i, "Citroen")
-      .replace(/^MERCEDES-BENZ$/i, "Mercedes");
+    const make = String(schema.brand?.name || parts[0] || "Автомобиль");
     const model = parts[1] || raw.title;
-    const fuel = /diesel/i.test(raw.text)
+    const fuelSource = String(schema.fuelType || raw.text);
+    const fuel = /diesel/i.test(fuelSource)
       ? "Дизель"
-      : /hybrid/i.test(raw.text)
+      : /hybrid/i.test(fuelSource)
         ? "Гибрид"
-        : /electric/i.test(raw.text)
+        : /electric/i.test(fuelSource)
           ? "Электро"
-          : /petrol|gasoline/i.test(raw.text)
+          : /petrol|gasoline/i.test(fuelSource)
             ? "Бензин"
             : "Не указано";
-    const gearbox = /automatic/i.test(raw.text) ? "Автомат" : "Механика";
-    const body = /SUV/i.test(raw.text)
+    const gearbox = /automatic/i.test(
+      String(schema.vehicleTransmission || raw.text),
+    )
+      ? "Автомат"
+      : "Механика";
+    const bodySource = String(schema.bodyType || raw.text);
+    const body = /SUV|off-road/i.test(bodySource)
       ? "SUV"
-      : /hatchback/i.test(raw.text)
+      : /hatchback/i.test(bodySource)
         ? "Хэтчбек"
-        : /estate|station wagon/i.test(raw.text)
+        : /estate|station wagon/i.test(bodySource)
           ? "Универсал"
           : "Легковой";
     if (!id || raw.photos.length === 0) continue;
@@ -140,7 +167,7 @@ const collectFixedPriceCars = async () => {
       id,
       make,
       model,
-      name: raw.title,
+      name: normalizedTitle,
       year,
       mileage: mileage ? `${mileage.toLocaleString("ru-RU")} км` : "Не указан",
       gearbox,
