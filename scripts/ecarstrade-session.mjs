@@ -57,6 +57,9 @@ const collectFixedPriceCars = async () => {
   await page.goto("https://ecarstrade.com/auctions/allfix", {
     waitUntil: "domcontentloaded",
   });
+  await page.waitForTimeout(5000);
+  await page.screenshot({ path: ".cache/fixed-prices.png", fullPage: false });
+  console.log(`Collecting from ${page.url()} (${await page.title()})`);
   const hrefs = await page
     .locator('a[href*="/cars/"]')
     .evaluateAll((links) =>
@@ -68,6 +71,7 @@ const collectFixedPriceCars = async () => {
         ),
       ).slice(0, 30),
     );
+  console.log(`Found ${hrefs.length} car links`);
 
   const cars = [];
   for (const href of hrefs) {
