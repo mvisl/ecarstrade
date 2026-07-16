@@ -46,6 +46,16 @@ describe("ranking", () => {
       batch.filter((x) => x.car.make === "Ford").length,
     ).toBeLessThanOrEqual(2);
   });
+  it("never repeats a model within one batch", () => {
+    const rows = [
+      car("1", "Citroen", "C5"),
+      car("2", "Citroen", "C5"),
+      car("3", "BMW", "X1"),
+      car("4", "Volvo", "V40"),
+    ];
+    const batch = rankAndDiversify(rows, [], 4);
+    expect(batch.filter((x) => x.car.model === "C5")).toHaveLength(1);
+  });
   it("skips a model after session cooldown", () => {
     const rows = [
       car("1", "Ford", "Kuga"),

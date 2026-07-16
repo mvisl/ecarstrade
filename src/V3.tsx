@@ -244,6 +244,21 @@ const isEligibleListing = (car: Car) =>
   !HARD_EXCLUDED_MODELS.has(car.model.trim().toLowerCase()) &&
   /^€\d/.test(car.price.replace(/\s/g, "")) &&
   !car.origin.includes("Архив");
+const rankableFromCar = (item: Car) => ({
+  id: item.id,
+  make: item.make,
+  model: item.model,
+  year: Number(item.year),
+  mileage: Number(item.mileage.replace(/\D/g, "")) || undefined,
+  transmission: item.gearbox,
+  fuel: item.fuel,
+  engine: item.engine,
+  color: item.color,
+  price: Number(item.price.replace(/\D/g, "")) || undefined,
+  bodyType: item.body,
+  vatDeductible: true,
+  damageStatus: item.critical ?? "not-reported",
+});
 export default function V3({ onLock }: { onLock: () => void }) {
   const [cars, setCars] = useState<Car[]>([]);
   const [order, setOrder] = useState<number[]>([]);
@@ -378,17 +393,20 @@ export default function V3({ onLock }: { onLock: () => void }) {
         setModelRejects(counts);
         setSuppressedModels(suppressed);
         const decidedIds = new Set(decisions.map((item) => item.carId));
+        const candidates = freshCars.filter(
+          (candidate) =>
+            !decidedIds.has(candidate.id) && !suppressed.has(candidate.model),
+        );
+        const profile = buildProfiles(decisions).longTermProfile;
+        const ranked = rankAndDiversify(
+          candidates.map(rankableFromCar),
+          profile,
+          5,
+        );
         setOrder(
-          freshCars
-            .map((_, position) => position)
-            .filter((position) => {
-              const candidate = freshCars[position];
-              return (
-                Boolean(candidate) &&
-                !decidedIds.has(candidate.id) &&
-                !suppressed.has(candidate.model)
-              );
-            }),
+          ranked.map((row) =>
+            freshCars.findIndex((item) => item.id === row.car.id),
+          ),
         );
         setIndex(0);
       })
@@ -440,21 +458,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
       setCars(freshCars);
       const profile = buildProfiles(decisions).longTermProfile;
       const ranked = rankAndDiversify(
-        freshCars.map((item) => ({
-          id: item.id,
-          make: item.make,
-          model: item.model,
-          year: Number(item.year),
-          mileage: Number(item.mileage.replace(/\D/g, "")) || undefined,
-          transmission: item.gearbox,
-          fuel: item.fuel,
-          engine: item.engine,
-          color: item.color,
-          price: Number(item.price.replace(/\D/g, "")) || undefined,
-          bodyType: item.body,
-          vatDeductible: true,
-          damageStatus: item.critical ?? "not-reported",
-        })),
+        freshCars.map(rankableFromCar),
         profile,
         5,
       );

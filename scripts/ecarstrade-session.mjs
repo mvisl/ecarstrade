@@ -67,17 +67,22 @@ const collectFixedPriceCars = async () => {
   await page.waitForTimeout(5000);
   await page.screenshot({ path: ".cache/fixed-prices.png", fullPage: false });
   console.log(`Collecting from ${page.url()} (${await page.title()})`);
-  const hrefs = await page
-    .locator('a[href*="/cars/"]')
-    .evaluateAll((links) =>
-      Array.from(
-        new Set(
-          links
-            .map((link) => link.href)
-            .filter((href) => /\/cars\/\d+/.test(href)),
-        ),
-      ).slice(0, 30),
-    );
+  const hrefSet = new Set();
+  for (let pageNumber = 0; pageNumber < 4; pageNumber += 1) {
+    const pageHrefs = await page
+      .locator('a[href*="/cars/"]')
+      .evaluateAll((links) =>
+        links
+          .map((link) => link.href)
+          .filter((href) => /\/cars\/\d+/.test(href)),
+      );
+    pageHrefs.forEach((href) => hrefSet.add(href));
+    const next = page.locator(".pagination-next:not(.disabled) .page-link");
+    if ((await next.count()) !== 1) break;
+    await next.click();
+    await page.waitForTimeout(2500);
+  }
+  const hrefs = Array.from(hrefSet).slice(0, 50);
   console.log(`Found ${hrefs.length} car links`);
 
   const cars = [];

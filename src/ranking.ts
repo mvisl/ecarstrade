@@ -71,12 +71,11 @@ export function rankAndDiversify(
   const maxBrand = Math.max(1, Math.floor(batchSize * 0.4));
   for (const candidate of scored) {
     if (chosen.length >= batchSize) break;
-    const brand = String(candidate.car.make),
-      model = String(candidate.car.model);
+    const brand = String(candidate.car.make).trim().toLowerCase(),
+      model = String(candidate.car.model).trim().toLowerCase();
     if (
       (brandCount.get(brand) || 0) >= maxBrand ||
-      (modelCount.get(model) || 0) >= 3 ||
-      chosen.at(-1)?.car.model === model
+      (modelCount.get(model) || 0) >= 1
     )
       continue;
     chosen.push(candidate);
@@ -85,7 +84,13 @@ export function rankAndDiversify(
   }
   for (const candidate of scored) {
     if (chosen.length >= batchSize) break;
-    if (!chosen.includes(candidate))
+    const model = String(candidate.car.model).trim().toLowerCase();
+    if (
+      !chosen.includes(candidate) &&
+      !chosen.some(
+        (item) => String(item.car.model).trim().toLowerCase() === model,
+      )
+    )
       chosen.push({
         ...candidate,
         score: {
@@ -94,12 +99,6 @@ export function rankAndDiversify(
           total: candidate.score.total - 0.08,
         },
       });
-  }
-  if (chosen.length >= 5) {
-    const exploratory = scored.find(
-      (item) => !chosen.slice(0, 4).includes(item),
-    );
-    if (exploratory) chosen[4] = exploratory;
   }
   return chosen;
 }
