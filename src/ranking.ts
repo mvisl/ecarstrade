@@ -103,3 +103,17 @@ export function rankAndDiversify(
   }
   return chosen;
 }
+export function nextAllowedPosition<T extends { model: string }>(
+  order: number[],
+  cars: T[],
+  current: number,
+  suppressed: Set<string>,
+) {
+  for (let position = current + 1; position < order.length; position++) {
+    const candidate = cars[order[position]];
+    if (!candidate || suppressed.has(candidate.model)) continue;
+    if (cars[order[current]]?.model === candidate.model) continue;
+    return position;
+  }
+  return order.length;
+}

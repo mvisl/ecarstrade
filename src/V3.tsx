@@ -26,7 +26,7 @@ import { getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
 import "./profile.css";
-import { rankAndDiversify } from "./ranking";
+import { nextAllowedPosition, rankAndDiversify } from "./ranking";
 import { scheduleReviewAfterIdle } from "./reviewScheduler";
 
 type Sentiment = "positive" | "negative";
@@ -236,8 +236,11 @@ const cars: Car[] = [
     ],
   },
 ];
+const INITIAL_ORDER = [0, 3, 1, 4, 2, 5];
 export default function V3({ onLock }: { onLock: () => void }) {
-  const [order, setOrder] = useState(() => cars.map((_, position) => position));
+  const [order, setOrder] = useState(() =>
+    INITIAL_ORDER.filter((position) => Boolean(cars[position])),
+  );
   const [index, setIndex] = useState(0);
   const [photo, setPhoto] = useState(0);
   const [feedback, setFeedback] = useState<Record<string, Sentiment>>({});
@@ -247,6 +250,10 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [toast, setToast] = useState<"yes" | "no" | null>(null);
   const [searching, setSearching] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
+  const [modelRejects, setModelRejects] = useState<Record<string, number>>({});
+  const [suppressedModels, setSuppressedModels] = useState<Set<string>>(
+    new Set(),
+  );
   const touch = useRef(0);
   const car = cars[order[index]];
   const move = (delta: number) =>
@@ -313,8 +320,18 @@ export default function V3({ onLock }: { onLock: () => void }) {
         scheduleReviewAfterIdle(decisions);
       })
       .catch(console.error);
+    const nextRejects = { ...modelRejects };
+    const nextSuppressed = new Set(suppressedModels);
+    if (value === "no") {
+      nextRejects[car.model] = (nextRejects[car.model] || 0) + 1;
+      if (nextRejects[car.model] >= 2) nextSuppressed.add(car.model);
+      setModelRejects(nextRejects);
+      setSuppressedModels(nextSuppressed);
+    }
     window.setTimeout(() => {
-      setIndex((current) => current + 1);
+      setIndex((current) =>
+        nextAllowedPosition(order, cars, current, nextSuppressed),
+      );
       setPhoto(0);
       setFeedback({});
       setOpen(true);
@@ -323,6 +340,34 @@ export default function V3({ onLock }: { onLock: () => void }) {
     window.setTimeout(() => setLocked(false), 300);
     window.setTimeout(() => setToast(null), 1600);
   };
+  useEffect(() => {
+    getUserDecisions()
+      .then((decisions) => {
+        const recent = decisions.filter(
+          (item) =>
+            item.decision === "dislike" &&
+            Date.now() - item.createdAt < 60 * 60 * 1000,
+        );
+        const counts: Record<string, number> = {};
+        recent.forEach((item) => {
+          counts[item.carSnapshot.model] =
+            (counts[item.carSnapshot.model] || 0) + 1;
+        });
+        const suppressed = new Set(
+          Object.entries(counts)
+            .filter(([, count]) => count >= 2)
+            .map(([model]) => model),
+        );
+        setModelRejects(counts);
+        setSuppressedModels(suppressed);
+        setIndex((current) =>
+          suppressed.has(cars[order[current]]?.model)
+            ? nextAllowedPosition(order, cars, current - 1, suppressed)
+            : current,
+        );
+      })
+      .catch(console.error);
+  }, []);
   useEffect(() => {
     const key = (event: KeyboardEvent) => {
       if (!car) return;

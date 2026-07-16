@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { rankAndDiversify, scoreCar, type RankableCar } from "./ranking";
+import {
+  nextAllowedPosition,
+  rankAndDiversify,
+  scoreCar,
+  type RankableCar,
+} from "./ranking";
 const car = (id: string, make: string, model: string): RankableCar => ({
   id,
   make,
@@ -40,5 +45,16 @@ describe("ranking", () => {
     expect(
       batch.filter((x) => x.car.make === "Ford").length,
     ).toBeLessThanOrEqual(2);
+  });
+  it("skips a model after session cooldown", () => {
+    const rows = [
+      car("1", "Ford", "Kuga"),
+      car("2", "Skoda", "Octavia"),
+      car("3", "Ford", "Kuga"),
+      car("4", "BMW", "X1"),
+    ];
+    expect(nextAllowedPosition([0, 1, 2, 3], rows, 1, new Set(["Kuga"]))).toBe(
+      3,
+    );
   });
 });
