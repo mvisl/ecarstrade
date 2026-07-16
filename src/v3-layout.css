@@ -1,6 +1,14 @@
+.v3-shell {
+  max-width: 900px;
+}
 .v3-gallery {
   height: clamp(380px, 52vh, 600px);
   aspect-ratio: auto;
+}
+.v3-gallery > img {
+  object-fit: contain;
+  object-position: center;
+  background: #0f1013;
 }
 .v3-nav > div {
   display: flex;
@@ -35,10 +43,10 @@
   bottom: 0;
   z-index: 5;
   display: grid;
-  grid-template-columns: 142px minmax(0, 1fr) 142px;
-  gap: 14px;
+  grid-template-columns: 110px minmax(0, 1fr) 110px;
+  gap: 10px;
   align-items: stretch;
-  padding: 18px 26px 20px;
+  padding: 18px 18px 20px;
   background: var(--bg-card);
   border-bottom: 1px solid var(--border);
 }
