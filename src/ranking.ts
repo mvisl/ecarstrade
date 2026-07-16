@@ -15,7 +15,12 @@ export interface ScoreBreakdown {
 }
 const clamp = (value: number, min: number, max: number) =>
   Math.min(max, Math.max(min, value));
-const caps: Record<string, number> = { make: 0.06, model: 0.06, color: 0.04 };
+const caps: Record<string, number> = {
+  make: 0.06,
+  model: 0.06,
+  color: 0.04,
+  price: 0.35,
+};
 const hash = (text: string) =>
   [...text].reduce((sum, char) => (sum * 31 + char.charCodeAt(0)) >>> 0, 7);
 export function scoreCar(
@@ -30,7 +35,9 @@ export function scoreCar(
     const signal = byId.get(`${feature.key}:${feature.value}`);
     if (!signal) continue;
     const stable = signal.explicitSamples >= 3 || signal.implicitSamples >= 8;
-    const influence = stable ? 1 : 0.15;
+    const explicitPrice =
+      feature.key === "price" && signal.explicitSamples >= 1;
+    const influence = stable || explicitPrice ? 1 : 0.15;
     preferences += clamp(
       signal.score * influence,
       -(caps[feature.key] ?? 0.1),

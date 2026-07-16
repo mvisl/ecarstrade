@@ -49,4 +49,19 @@ describe("mechanical profile", () => {
     expect(signal.confidence).toBeCloseTo(1 / 3);
     expect(Math.abs(signal.score)).toBeLessThan(0.21);
   });
+  it("treats a single marked pill as the reason for the whole decision", () => {
+    const profile = buildPreferenceProfile([
+      decision({
+        decision: "dislike",
+        pillFeedback: [
+          { key: "price", rawValue: 23000, sentiment: "negative" },
+        ],
+      }),
+    ]);
+    expect(profile.find((x) => x.key === "make")).toBeUndefined();
+    expect(profile.find((x) => x.key === "model")).toBeUndefined();
+    expect(profile.find((x) => x.key === "price")?.negativeWeight).toBeCloseTo(
+      2.5,
+    );
+  });
 });

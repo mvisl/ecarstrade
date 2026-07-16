@@ -94,8 +94,9 @@ export function buildPreferenceProfile(
         lastUpdatedAt: 0,
       };
       const pill = explicit.get(feature.key);
+      if (!pill && explicit.size > 0) continue;
       if (pill) {
-        const weight = 1.25 * decay;
+        const weight = (feature.key === "price" ? 2.5 : 1.25) * decay;
         if (pill.sentiment === "positive") current.positiveWeight += weight;
         else current.negativeWeight += weight;
         current.explicitSamples += 1;
