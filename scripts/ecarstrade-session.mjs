@@ -94,35 +94,41 @@ const collectFixedPriceCars = async () => {
       console.warn(`Skipping slow car page ${href}: ${error.message}`);
       continue;
     }
-    const raw = await page.evaluate(() => {
-      const text = document.body.innerText;
-      let schema = {};
-      for (const node of document.querySelectorAll(
-        'script[type="application/ld+json"]',
-      )) {
-        try {
-          const parsed = JSON.parse(node.textContent || "{}");
-          if (parsed?.["@type"] === "Car") schema = parsed;
-        } catch {
-          // Ignore unrelated malformed structured-data blocks.
+    let raw;
+    try {
+      raw = await page.evaluate(() => {
+        const text = document.body?.innerText || "";
+        let schema = {};
+        for (const node of document.querySelectorAll(
+          'script[type="application/ld+json"]',
+        )) {
+          try {
+            const parsed = JSON.parse(node.textContent || "{}");
+            if (parsed?.["@type"] === "Car") schema = parsed;
+          } catch {
+            // Ignore unrelated malformed structured-data blocks.
+          }
         }
-      }
-      const title =
-        document.querySelector("h1")?.textContent?.trim() ||
-        document.title.split("|")[0].trim();
-      const photos = Array.from(document.querySelectorAll("img"))
-        .map(
-          (image) =>
-            image.getAttribute("data-src") || image.currentSrc || image.src,
-        )
-        .filter((src) => /carsphotos|car-photo|vehicle/i.test(src));
-      return {
-        text,
-        title,
-        schema,
-        photos: Array.from(new Set(photos)).slice(0, 12),
-      };
-    });
+        const title =
+          document.querySelector("h1")?.textContent?.trim() ||
+          document.title.split("|")[0].trim();
+        const photos = Array.from(document.querySelectorAll("img"))
+          .map(
+            (image) =>
+              image.getAttribute("data-src") || image.currentSrc || image.src,
+          )
+          .filter((src) => /carsphotos|car-photo|vehicle/i.test(src));
+        return {
+          text,
+          title,
+          schema,
+          photos: Array.from(new Set(photos)).slice(0, 12),
+        };
+      });
+    } catch (error) {
+      console.warn(`Skipping unreadable car page ${href}: ${error.message}`);
+      continue;
+    }
     const priceMatch = raw.text.match(/€\s*([\d][\d\s.,]{2,})/);
     const price = euroFrom(priceMatch?.[1]);
     if (!price || !/VAT\s+DEDUCTIBLE/i.test(raw.text)) continue;
