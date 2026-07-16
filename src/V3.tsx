@@ -239,9 +239,9 @@ const legacyCars: Car[] = [
     ],
   },
 ];
-const HARD_EXCLUDED_MODELS = new Set(["Kuga"]);
+const HARD_EXCLUDED_MODELS = new Set(["kuga"]);
 const isEligibleListing = (car: Car) =>
-  !HARD_EXCLUDED_MODELS.has(car.model) &&
+  !HARD_EXCLUDED_MODELS.has(car.model.trim().toLowerCase()) &&
   /^€\d/.test(car.price.replace(/\s/g, "")) &&
   !car.origin.includes("Архив");
 export default function V3({ onLock }: { onLock: () => void }) {
