@@ -1,33 +1,111 @@
 {
-  "generatedAt": "2026-07-16T16:24:11.727Z",
+  "generatedAt": "2026-07-16T16:49:12.775Z",
   "cars": [
     {
-      "id": "7368997",
-      "make": "Ford",
-      "model": "KUGA",
-      "name": "FORD KUGA 2.5I PHEV 165KW ST-LINE AUTO",
-      "year": "2023",
-      "mileage": "151 043 км",
+      "id": "7369078",
+      "make": "Mercedes",
+      "model": "GLB",
+      "name": "Mercedes-Benz GLB 2.0 GLB 200 D BUSINESS SOLUTION",
+      "year": "2022",
+      "mileage": "150 718 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€19 650",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_000/260x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369078/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369077",
+      "make": "Mercedes",
+      "model": "GLB",
+      "name": "Mercedes-Benz GLB 2.0 GLB 180 D DCT",
+      "year": "2022",
+      "mileage": "119 741 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€18 550",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369077/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369076",
+      "make": "Mercedes",
+      "model": "GLA",
+      "name": "Mercedes-Benz GLA 1.3 GLA 250 E DCT BUSINESS LINE",
+      "year": "2022",
+      "mileage": "185 486 км",
       "gearbox": "Автомат",
       "fuel": "Гибрид",
       "engine": "Не указан",
       "color": "Не указан",
       "body": "SUV",
-      "price": "€14 850",
+      "price": "€16 850",
       "origin": "eCarsTrade · Fixed Price",
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368997/photo_010/60x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369076/photo_010/60x0__r.jpg"
       ],
       "report": [
         {
@@ -41,32 +119,305 @@
       ]
     },
     {
-      "id": "7368996",
-      "make": "Ford",
-      "model": "KUGA",
-      "name": "FORD KUGA 2.5I FHEV 140KW TITANIUM AUTO",
+      "id": "7369074",
+      "make": "Mercedes",
+      "model": "EQC",
+      "name": "Mercedes-Benz EQC 80 kWh EQC 400 4-Matic",
       "year": "2022",
-      "mileage": "60 701 км",
+      "mileage": "138 111 км",
+      "gearbox": "Автомат",
+      "fuel": "Электро",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€25 300",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369074/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369073",
+      "make": "Mercedes",
+      "model": "EQB",
+      "name": "Mercedes-Benz EQB BEV 67KWH EQB 300 LUXURY LINE AUTO 4M",
+      "year": "2025",
+      "mileage": "45 030 км",
+      "gearbox": "Автомат",
+      "fuel": "Электро",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€33 850",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369073/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369071",
+      "make": "Mercedes",
+      "model": "E-CLASS",
+      "name": "Mercedes-Benz E-CLASS BREAK 2.0 E 300 DE AUTO BUSINESS SOL AUTO",
+      "year": "2022",
+      "mileage": "133 894 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Универсал",
+      "price": "€22 800",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369071/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369070",
+      "make": "Mercedes",
+      "model": "E-CLASS",
+      "name": "Mercedes-Benz E-CLASS BREAK 1.6 E 200 D BUSINESS SOLUTION AUTO",
+      "year": "2021",
+      "mileage": "88 396 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Универсал",
+      "price": "€20 600",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369070/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369069",
+      "make": "Mercedes",
+      "model": "CLASS",
+      "name": "Mercedes-Benz CLASS GLB DIESEL (X247) GLB 200 d",
+      "year": "2021",
+      "mileage": "159 307 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€17 050",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369069/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369068",
+      "make": "Mercedes",
+      "model": "CLASS",
+      "name": "Mercedes-Benz CLASS GLB DIESEL (X247) GLB 180 d Business Solution",
+      "year": "2021",
+      "mileage": "124 067 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€16 550",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369068/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369067",
+      "make": "Mercedes",
+      "model": "CLASS",
+      "name": "Mercedes-Benz CLASS C BREAK (S205) - 2018 C 300 e PHEV Business Solution",
+      "year": "2021",
+      "mileage": "127 047 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Универсал",
+      "price": "€15 650",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369067/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369066",
+      "make": "Mercedes",
+      "model": "CLASS",
+      "name": "Mercedes-Benz CLASS A SEDAN (V177) A 180 Business Solution",
+      "year": "2022",
+      "mileage": "71 890 км",
       "gearbox": "Автомат",
       "fuel": "Бензин",
       "engine": "Не указан",
       "color": "Не указан",
-      "body": "SUV",
-      "price": "€15 050",
+      "body": "Легковой",
+      "price": "€15 850",
       "origin": "eCarsTrade · Fixed Price",
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368996/photo_010/60x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369066/photo_010/60x0__r.jpg"
       ],
       "report": [
         {
@@ -80,13 +431,988 @@
       ]
     },
     {
-      "id": "7368995",
-      "make": "Ford",
-      "model": "KUGA",
-      "name": "FORD KUGA 1.5 ECOBLUE 88KW TREND AUTO",
+      "id": "7369065",
+      "make": "Mercedes",
+      "model": "CLASS",
+      "name": "Mercedes-Benz CLASS A SEDAN (V177) A 180 Business Solution",
       "year": "2022",
-      "mileage": "93 945 км",
+      "mileage": "59 972 км",
       "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€16 350",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369065/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369064",
+      "make": "Mercedes",
+      "model": "CLASS",
+      "name": "Mercedes-Benz CLASS A (W177) A 250 e PHEV Business Solution",
+      "year": "2021",
+      "mileage": "99 391 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€15 550",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369064/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369063",
+      "make": "Mercedes",
+      "model": "CLASS",
+      "name": "Mercedes-Benz CLASS A (W177) A 250 e PHEV Business Solution",
+      "year": "2022",
+      "mileage": "95 270 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€16 050",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369063/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369061",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA SHOOTING BRAKE 2.0 CLA 180 D BUSINESS SOLUTION",
+      "year": "2022",
+      "mileage": "70 379 км",
+      "gearbox": "Механика",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€17 950",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369061/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369060",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA SHOOTING BRAKE 2.0 CLA 180 D BUS SOLUTION ESSENTIAL",
+      "year": "2022",
+      "mileage": "138 564 км",
+      "gearbox": "Механика",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€12 050",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369060/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369059",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA SHOOTING BRAKE 1.3 CLA 250 E LUXURY LINE DCT SH BR",
+      "year": "2023",
+      "mileage": "38 578 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€21 800",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369059/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369058",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA SHOOTING BRAKE 1.3 CLA 250 E BUSINESS SOLUTION DCT",
+      "year": "2021",
+      "mileage": "108 285 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€16 550",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369058/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369057",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA SHOOTING BRAKE 1.3 CLA 250 E BUSINESS SOLUTION DCT",
+      "year": "2022",
+      "mileage": "76 425 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€19 050",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369057/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369056",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA SHOOTING BRAKE 1.3 CLA 250 E BUSINESS LINE DCT SH BR",
+      "year": "2022",
+      "mileage": "176 749 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€13 250",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369056/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369055",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA SHOOTING BRAKE 1.3 CLA 180 BUSINESS SOLUTION ESSENTIAL",
+      "year": "2022",
+      "mileage": "129 375 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€12 750",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369055/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369054",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA - Klasse 2.0 CLA 180 D BUSINESS SOLUTION",
+      "year": "2021",
+      "mileage": "75 379 км",
+      "gearbox": "Механика",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€18 550",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369054/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369053",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA - Klasse 1.3 CLA 250 E BUSINESS SOLUTION DCT",
+      "year": "2022",
+      "mileage": "71 079 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€18 150",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369053/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369052",
+      "make": "Mercedes",
+      "model": "CLA",
+      "name": "Mercedes-Benz CLA 2.0 CLA 180 D BUSINESS SOLUTION",
+      "year": "2022",
+      "mileage": "134 006 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€13 050",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369052/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369050",
+      "make": "Mercedes",
+      "model": "B-CLASS",
+      "name": "Mercedes-Benz B-CLASS 1.3 B 250 E BUSINESS SOLUTION DCT",
+      "year": "2023",
+      "mileage": "185 909 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€12 650",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369050/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369049",
+      "make": "Mercedes",
+      "model": "B-CLASS",
+      "name": "Mercedes-Benz B-CLASS 1.3 B 180 BUSINESS SOLUTION",
+      "year": "2022",
+      "mileage": "133 434 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€13 850",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369049/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369048",
+      "make": "Mercedes",
+      "model": "A-Klasse",
+      "name": "Mercedes-Benz A-Klasse 2.0 A 180 D BUSINESS SOLUTION DCT",
+      "year": "2021",
+      "mileage": "91 002 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€14 850",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369048/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369047",
+      "make": "Mercedes",
+      "model": "A-CLASS",
+      "name": "Mercedes-Benz A-CLASS LIMOUSINE 1.3 A 250 E LUXURY LINE DCT",
+      "year": "2022",
+      "mileage": "91 796 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€18 150",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369047/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369046",
+      "make": "Mercedes",
+      "model": "A-CLASS",
+      "name": "Mercedes-Benz A-CLASS LIMOUSINE 1.3 A 180 ESSENTIAL LINE DCT",
+      "year": "2022",
+      "mileage": "63 874 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€15 050",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369046/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369045",
+      "make": "Mercedes",
+      "model": "A-CLASS",
+      "name": "Mercedes-Benz A-CLASS 1.3 A 250 E LUXURY LINE DCT",
+      "year": "2023",
+      "mileage": "36 468 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€21 700",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369045/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369044",
+      "make": "Mercedes",
+      "model": "A-CLASS",
+      "name": "Mercedes-Benz A-CLASS 1.3 A 250 E DCT BUSINESS SOLUTION",
+      "year": "2022",
+      "mileage": "95 463 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€15 750",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369044/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369043",
+      "make": "Mercedes",
+      "model": "A-CLASS",
+      "name": "Mercedes-Benz A-CLASS 1.3 A 250 E DCT BUSINESS SOLUTION",
+      "year": "2022",
+      "mileage": "86 948 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€16 150",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369043/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369042",
+      "make": "Mercedes",
+      "model": "A-CLASS",
+      "name": "Mercedes-Benz A-CLASS 1.3 A 250 E DCT BUSINESS SOLUTION",
+      "year": "2022",
+      "mileage": "60 957 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€17 350",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369042/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369040",
+      "make": "Mercedes",
+      "model": "A-CLASS",
+      "name": "Mercedes-Benz A-CLASS 1.3 A 250 E DCT",
+      "year": "2022",
+      "mileage": "85 498 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€16 650",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369040/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369039",
+      "make": "Mercedes",
+      "model": "A-CLASS",
+      "name": "Mercedes-Benz A-CLASS 1.3 A 180 BUSINESS LINE DCT",
+      "year": "2022",
+      "mileage": "80 539 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Универсал",
+      "price": "€15 050",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_010/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369039/photo_011/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369038",
+      "make": "Mazda",
+      "model": "MAZDA2",
+      "name": "MAZDA MAZDA2 1.5 VVT-I HEV HYBRID PURE CVT",
+      "year": "2023",
+      "mileage": "105 840 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Универсал",
+      "price": "€11 450",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369038/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369037",
+      "make": "Mazda",
+      "model": "CX-5",
+      "name": "MAZDA CX-5 2.2 SKYACTIV-D 150 4WD SKYCRUISE",
+      "year": "2022",
+      "mileage": "163 745 км",
+      "gearbox": "Механика",
       "fuel": "Дизель",
       "engine": "Не указан",
       "color": "Не указан",
@@ -94,18 +1420,18 @@
       "price": "€12 750",
       "origin": "eCarsTrade · Fixed Price",
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368995/photo_010/60x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369037/photo_010/60x0__r.jpg"
       ],
       "report": [
         {
@@ -119,539 +1445,266 @@
       ]
     },
     {
-      "id": "7368994",
-      "make": "Ford",
-      "model": "FOCUS",
-      "name": "FORD FOCUS 1.0I ECOBOOST MHEV 92KW ST-LINE",
-      "year": "2020",
-      "mileage": "136 223 км",
+      "id": "7369036",
+      "make": "Mazda",
+      "model": "CX-3",
+      "name": "MAZDA CX-3 2.0 SKYACTIV-G 121 HAKONE",
+      "year": "2022",
+      "mileage": "75 712 км",
       "gearbox": "Механика",
       "fuel": "Бензин",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€13 650",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369036/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369035",
+      "make": "Lynk&Co",
+      "model": "&amp;",
+      "name": "LYNK &amp; CO 01 1.5 192KW 01 PHEV",
+      "year": "2022",
+      "mileage": "108 827 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€15 650",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369035/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369034",
+      "make": "Lynk&Co",
+      "model": "&amp;",
+      "name": "LYNK &amp; CO 01 1.5 192KW 01 PHEV",
+      "year": "2022",
+      "mileage": "83 270 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€15 650",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369034/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369031",
+      "make": "Renault",
+      "model": "Kangoo",
+      "name": "RENAULT Kangoo RENAULT Kangoo Rapid Blue dCi 95 Extra Kasten, 4-t&#252;rig, 6-Gang",
+      "year": "2020",
+      "mileage": "59 824 км",
+      "gearbox": "Механика",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€6 350",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369031/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369030",
+      "make": "Land Rover",
+      "model": "ROVER",
+      "name": "LAND ROVER RANGE ROVER SPORT 3.0 D250 MHEV AUTO 4WD HSE DYNAMIC",
+      "year": "2022",
+      "mileage": "126 789 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "SUV",
+      "price": "€29 800",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369030/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369029",
+      "make": "Nissan",
+      "model": "Leaf",
+      "name": "NISSAN Leaf NISSAN Leaf 40 kWh Tekna Limousine, 5-t&#252;rig, Direktantrieb, 1-Gang",
+      "year": "2021",
+      "mileage": "37 548 км",
+      "gearbox": "Автомат",
+      "fuel": "Электро",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€11 900",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369029/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369028",
+      "make": "Mercedes",
+      "model": "C-Klasse",
+      "name": "Mercedes-Benz C-Klasse Mercedes-Benz C 200 d T 9G-TRONIC Avantgarde Kombi, 5-t&#252;rig, Automatik, 9-Gang",
+      "year": "2023",
+      "mileage": "81 307 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
       "engine": "Не указан",
       "color": "Не указан",
       "body": "Универсал",
-      "price": "€9 100",
+      "price": "€19 400",
       "origin": "eCarsTrade · Fixed Price",
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_010/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368994/photo_011/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368992",
-      "make": "DS Automobiles",
-      "model": "AUTOMOBILES",
-      "name": "DS AUTOMOBILES DS 7 CROSSBACK 1.6 PHEV 225 RIVOLI AUTO",
-      "year": "2022",
-      "mileage": "109 171 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€14 950",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368992/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368991",
-      "make": "DS Automobiles",
-      "model": "AUTOMOBILES",
-      "name": "DS AUTOMOBILES DS 7 CROSSBACK 1.6 PHEV 225 PERFORMANCE LINE AUTO",
-      "year": "2022",
-      "mileage": "118 325 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€13 950",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368991/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368990",
-      "make": "DS Automobiles",
-      "model": "AUTOMOBILES",
-      "name": "DS AUTOMOBILES DS 7 CROSSBACK 1.5 BLUEHDI 130 PERFORMANCE LINE + AUTO",
-      "year": "2021",
-      "mileage": "169 169 км",
-      "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€12 850",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368990/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368989",
-      "make": "Citroen",
-      "model": "C5",
-      "name": "CITRO&#203;N C5 AIRCROSS 1.6 PHEV 225 E-EAT8 SHINE AUTO",
-      "year": "2021",
-      "mileage": "113 663 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€13 450",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368989/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368878",
-      "make": "Peugeot",
-      "model": "2008",
-      "name": "Peugeot 2008 100 S&S BVM6 Allure",
-      "year": "2025",
-      "mileage": "6 459 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€15 400",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_001/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_010/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368878/photo_011/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368859",
-      "make": "Citroen",
-      "model": "C5",
-      "name": "Citroen C5 AIRCROSS 1.6 PHEV 225 E-EAT8 FEEL AUTO",
-      "year": "2021",
-      "mileage": "75 648 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€14 150",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368859/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368858",
-      "make": "Citroen",
-      "model": "C5",
-      "name": "Citroen C5 AIRCROSS 1.6 HYBRID 225 E-EAT8 SHINE AUTO",
-      "year": "2021",
-      "mileage": "165 771 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€10 650",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368858/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368857",
-      "make": "Citroen",
-      "model": "C5",
-      "name": "Citroen C5 AIRCROSS 1.5 BLUEHDI 130 SHINE AUTO",
-      "year": "2021",
-      "mileage": "103 520 км",
-      "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€11 750",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368857/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368856",
-      "make": "Citroen",
-      "model": "C5",
-      "name": "Citroen C5 AIRCROSS 1.2 PURETECH 130 FEEL",
-      "year": "2023",
-      "mileage": "104 553 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€11 050",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368856/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368854",
-      "make": "BMW",
-      "model": "X5",
-      "name": "BMW X5 3.0 XDRIVE45E 4WD AUTO",
-      "year": "2022",
-      "mileage": "219 653 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€25 200",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368854/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368853",
-      "make": "BMW",
-      "model": "X5",
-      "name": "BMW X5 3.0 XDRIVE45E 155KW 4WD AUTO",
-      "year": "2022",
-      "mileage": "162 041 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€28 200",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368853/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368852",
-      "make": "BMW",
-      "model": "X5",
-      "name": "BMW X5 3.0 XDRIVE45E 155KW 4WD AUTO",
-      "year": "2022",
-      "mileage": "156 038 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€30 850",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368852/photo_010/60x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7368851",
-      "make": "BMW",
-      "model": "X5",
-      "name": "BMW X5 3.0 XDRIVE45E 155KW 4WD AUTO",
-      "year": "2021",
-      "mileage": "85 727 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "Не указан",
-      "color": "Не указан",
-      "body": "SUV",
-      "price": "€33 350",
-      "origin": "eCarsTrade · Fixed Price",
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_000/330x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_000/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_001/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_002/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_003/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_004/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_005/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_006/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_007/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_008/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_009/60x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7368851/photo_010/60x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369028/photo_010/60x0__r.jpg"
       ],
       "report": [
         {
