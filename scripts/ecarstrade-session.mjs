@@ -75,7 +75,13 @@ const collectFixedPriceCars = async () => {
 
   const cars = [];
   for (const href of hrefs) {
-    await page.goto(href, { waitUntil: "domcontentloaded" });
+    try {
+      await page.goto(href, { waitUntil: "commit", timeout: 15_000 });
+      await page.waitForTimeout(1500);
+    } catch (error) {
+      console.warn(`Skipping slow car page ${href}: ${error.message}`);
+      continue;
+    }
     const raw = await page.evaluate(() => {
       const text = document.body.innerText;
       const title =
