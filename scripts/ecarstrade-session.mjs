@@ -40,7 +40,7 @@ const authenticate = async () => {
     .locator('button[type="submit"], input[type="submit"]')
     .first()
     .click();
-  await page.waitForLoadState("networkidle");
+  await page.waitForTimeout(1500);
 
   if (!(await isLoggedIn())) {
     throw new Error(
