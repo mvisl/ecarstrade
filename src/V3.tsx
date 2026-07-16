@@ -11,7 +11,9 @@ import {
   IconCurrencyEuro,
   IconEngine,
   IconGasStation,
+  IconLock,
   IconPalette,
+  IconUser,
   IconRoad,
   IconThumbDown,
   IconThumbUp,
@@ -20,6 +22,12 @@ import {
 import "./v3.css";
 import "./v3-overrides.css";
 import "./v3-layout.css";
+import { getUserDecisions, saveUserDecision } from "./storage";
+import { buildProfiles } from "./learning";
+import ProfilePanel from "./ProfilePanel";
+import "./profile.css";
+import { rankAndDiversify } from "./ranking";
+import { scheduleReviewAfterIdle } from "./reviewScheduler";
 
 type Sentiment = "positive" | "negative";
 type Car = {
@@ -135,83 +143,102 @@ const cars: Car[] = [
     ],
   },
   {
-    id:"6978220",make:"Skoda",model:"Octavia",name:"Skoda Octavia Break Business 2.0 TDI",year:"2022",mileage:"Пробег закрыт",gearbox:"Автомат",fuel:"Дизель",engine:"2.0 · 116 л.с.",color:"Серый",body:"Универсал",price:"Цена закрыта",origin:"Франция · Архив eCarsTrade",photos:photoUrls("6970001-6980000","6978220",["photo_001","photo_002","photo_003","photo_004","photo_005"]),report:[{kind:"warn",text:"Объявление из архива — актуальность цены нужно перепроверить"},{kind:"warn",text:"COC отсутствует"},{kind:"ok",text:"Автомат, дизель и 5 мест"},{kind:"ok",text:"2022 год"}],
+    id: "6978220",
+    make: "Skoda",
+    model: "Octavia",
+    name: "Skoda Octavia Break Business 2.0 TDI",
+    year: "2022",
+    mileage: "Пробег закрыт",
+    gearbox: "Автомат",
+    fuel: "Дизель",
+    engine: "2.0 · 116 л.с.",
+    color: "Серый",
+    body: "Универсал",
+    price: "Цена закрыта",
+    origin: "Франция · Архив eCarsTrade",
+    photos: photoUrls("6970001-6980000", "6978220", [
+      "photo_001",
+      "photo_002",
+      "photo_003",
+      "photo_004",
+      "photo_005",
+    ]),
+    report: [
+      {
+        kind: "warn",
+        text: "Объявление из архива — актуальность цены нужно перепроверить",
+      },
+      { kind: "warn", text: "COC отсутствует" },
+      { kind: "ok", text: "Автомат, дизель и 5 мест" },
+      { kind: "ok", text: "2022 год" },
+    ],
   },
   {
-    id:"6167161",make:"Skoda",model:"Karoq",name:"Skoda Karoq Clever 1.5 TSI DSG7",year:"2023",mileage:"28 444 км",gearbox:"Автомат",fuel:"Бензин",engine:"1.5 · 150 л.с.",color:"Серый",body:"SUV",price:"Цена закрыта",origin:"Бельгия · Архив eCarsTrade",photos:photoUrls("6160001-6170000","6167161",["photo_000","photo_001","photo_002","photo_003","photo_004"]),report:[{kind:"warn",text:"Объявление из архива — актуальность цены нужно перепроверить"},{kind:"warn",text:"Есть царапины, смотреть фотографии"},{kind:"ok",text:"Автомат и 5 мест"},{kind:"ok",text:"2023 год и небольшой пробег"}],
+    id: "6167161",
+    make: "Skoda",
+    model: "Karoq",
+    name: "Skoda Karoq Clever 1.5 TSI DSG7",
+    year: "2023",
+    mileage: "28 444 км",
+    gearbox: "Автомат",
+    fuel: "Бензин",
+    engine: "1.5 · 150 л.с.",
+    color: "Серый",
+    body: "SUV",
+    price: "Цена закрыта",
+    origin: "Бельгия · Архив eCarsTrade",
+    photos: photoUrls("6160001-6170000", "6167161", [
+      "photo_000",
+      "photo_001",
+      "photo_002",
+      "photo_003",
+      "photo_004",
+    ]),
+    report: [
+      {
+        kind: "warn",
+        text: "Объявление из архива — актуальность цены нужно перепроверить",
+      },
+      { kind: "warn", text: "Есть царапины, смотреть фотографии" },
+      { kind: "ok", text: "Автомат и 5 мест" },
+      { kind: "ok", text: "2023 год и небольшой пробег" },
+    ],
   },
   {
-    id:"6112318",make:"Mercedes",model:"A 180",name:"Mercedes-Benz A 180d",year:"2023",mileage:"Пробег закрыт",gearbox:"Автомат",fuel:"Дизель",engine:"1.5 · 116 л.с.",color:"Не указан",body:"Хэтчбек",price:"Цена закрыта",origin:"Испания · Архив eCarsTrade",photos:photoUrls("6110001-6120000","6112318",["photo_000","photo_001","photo_002","photo_003","photo_004"]),report:[{kind:"warn",text:"Объявление из архива — цену и пробег нужно перепроверить"},{kind:"ok",text:"Автомат и дизель"},{kind:"ok",text:"2023 год"},{kind:"ok",text:"Компактный легковой автомобиль"}],
+    id: "6112318",
+    make: "Mercedes",
+    model: "A 180",
+    name: "Mercedes-Benz A 180d",
+    year: "2023",
+    mileage: "Пробег закрыт",
+    gearbox: "Автомат",
+    fuel: "Дизель",
+    engine: "1.5 · 116 л.с.",
+    color: "Не указан",
+    body: "Хэтчбек",
+    price: "Цена закрыта",
+    origin: "Испания · Архив eCarsTrade",
+    photos: photoUrls("6110001-6120000", "6112318", [
+      "photo_000",
+      "photo_001",
+      "photo_002",
+      "photo_003",
+      "photo_004",
+    ]),
+    report: [
+      {
+        kind: "warn",
+        text: "Объявление из архива — цену и пробег нужно перепроверить",
+      },
+      { kind: "ok", text: "Автомат и дизель" },
+      { kind: "ok", text: "2023 год" },
+      { kind: "ok", text: "Компактный легковой автомобиль" },
+    ],
   },
 ];
-const pillNames: Record<string, string> = {
-  make: "марка Ford",
-  model: "модель Kuga",
-  year: "свежий год",
-  mileage: "небольшой пробег",
-  gearbox: "коробка передач",
-  fuel: "тип топлива",
-  engine: "двигатель",
-  color: "цвет",
-  price: "цена",
-};
-function profileInsights() {
-  const records = JSON.parse(
-    localStorage.getItem("ecarstrade:decisions") || "[]",
-  ).slice(-cars.length) as {
-    decision: string;
-    feedback: Record<string, Sentiment>;
-  }[];
-  const positive: Record<string, number> = {},
-    negative: Record<string, number> = {};
-  let budgetTradeoff = false;
-  records.forEach((record) => {
-    Object.entries(record.feedback || {}).forEach(([key, value]) => {
-      const target = value === "positive" ? positive : negative;
-      target[key] = (target[key] || 0) + 1;
-    });
-    if (
-      record.decision === "dislike" &&
-      record.feedback?.price === "negative" &&
-      Object.values(record.feedback).includes("positive")
-    )
-      budgetTradeoff = true;
-  });
-  const best = Object.entries(positive)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 2)
-    .map(([key]) => pillNames[key]);
-  const avoided = Object.entries(negative)
-    .sort((a, b) => b[1] - a[1])
-    .filter(([key]) => key !== "price")
-    .slice(0, 1)
-    .map(([key]) => pillNames[key]);
-  return [
-    budgetTradeoff
-      ? "Похоже, характеристики могут нравиться, но бюджет остаётся ограничивающим фактором."
-      : null,
-    best.length
-      ? `Предварительно нравятся: ${best.join(" и ")}. Это пока гипотеза, не жёсткое правило.`
-      : "Пока недостаточно явных отметок, чтобы уверенно назвать предпочтения.",
-    avoided.length
-      ? `Есть осторожный отрицательный сигнал: ${avoided[0]}. Нужны дополнительные подтверждения.`
-      : "Непомеченные параметры считаю неизвестными и не использую против вас.",
-  ].filter(Boolean) as string[];
-}
-function initialCardIndex() {
-  const records = JSON.parse(
-    localStorage.getItem("ecarstrade:decisions") || "[]",
-  ) as { carId:string;at: number; feedback: Record<string, Sentiment> }[];
-  const latest = records.at(-1);
-  if(!latest||Date.now()-latest.at>=60*60*1000)return 0;
-  const rejected=cars.find(car=>car.id===latest.carId);
-  if(!rejected)return 0;
-  const next=cars.findIndex(car=>(latest.feedback?.make!=="negative"||car.make!==rejected.make)&&(latest.feedback?.model!=="negative"||car.model!==rejected.model));
-  return next<0?cars.length:next;
-}
-
-export default function V3() {
-  const [index, setIndex] = useState(initialCardIndex);
+export default function V3({ onLock }: { onLock: () => void }) {
+  const [order, setOrder] = useState(() => cars.map((_, position) => position));
+  const [index, setIndex] = useState(0);
   const [photo, setPhoto] = useState(0);
   const [feedback, setFeedback] = useState<Record<string, Sentiment>>({});
   const [open, setOpen] = useState(true);
@@ -219,8 +246,9 @@ export default function V3() {
   const [locked, setLocked] = useState(false);
   const [toast, setToast] = useState<"yes" | "no" | null>(null);
   const [searching, setSearching] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
   const touch = useRef(0);
-  const car = cars[index];
+  const car = cars[order[index]];
   const move = (delta: number) =>
     car &&
     setPhoto(
@@ -231,26 +259,62 @@ export default function V3() {
     setLocked(true);
     setLeaving(value);
     setToast(value);
-    const record = {
-      carId: car.id,
-      decision: value === "yes" ? "like" : "dislike",
-      feedback,
-      at: Date.now(),
+    const numeric = (text: string) => {
+      const value = Number(text.replace(/[^\d]/g, ""));
+      return Number.isFinite(value) ? value : undefined;
     };
-    const history = JSON.parse(
-      localStorage.getItem("ecarstrade:decisions") || "[]",
-    );
-    localStorage.setItem(
-      "ecarstrade:decisions",
-      JSON.stringify([...history, record]),
-    );
-    const veto = feedback.make === "negative" || feedback.model === "negative";
+    const raw: Record<string, string | number | boolean> = {
+      make: car.make,
+      model: car.model,
+      year: numeric(car.year) ?? car.year,
+      mileage: numeric(car.mileage) ?? car.mileage,
+      transmission: car.gearbox,
+      fuel: car.fuel,
+      engine: car.engine,
+      color: car.color,
+      price: numeric(car.price) ?? car.price,
+    };
+    const stored = {
+      id: crypto.randomUUID(),
+      carId: car.id,
+      decision: value === "yes" ? ("like" as const) : ("dislike" as const),
+      createdAt: Date.now(),
+      carSnapshot: {
+        make: car.make,
+        model: car.model,
+        year: numeric(car.year),
+        mileage: numeric(car.mileage),
+        transmission: car.gearbox,
+        fuel: car.fuel,
+        engine: car.engine,
+        power: numeric(car.engine.split("·")[1] ?? ""),
+        color: car.color,
+        price: numeric(car.price),
+        bodyType: car.body,
+        vatDeductible: true,
+        country: car.origin.split("·")[0].trim(),
+        damageStatus: car.critical ?? "not-reported",
+      },
+      pillFeedback: Object.entries(feedback)
+        .filter((entry): entry is [string, Sentiment] => Boolean(entry[1]))
+        .map(([key, sentiment]) => ({
+          key,
+          rawValue: raw[key] ?? key,
+          sentiment,
+        })),
+    };
+    saveUserDecision(stored)
+      .then(getUserDecisions)
+      .then((decisions) => {
+        localStorage.setItem(
+          "ecarstrade:mechanical-profile",
+          JSON.stringify(buildProfiles(decisions)),
+        );
+        scheduleReviewAfterIdle(decisions);
+      })
+      .catch(console.error);
     window.setTimeout(() => {
-      setIndex((current) => {
-        if(!veto)return current+1;
-        const next=cars.findIndex((candidate,candidateIndex)=>candidateIndex>current&&(feedback.make!=="negative"||candidate.make!==car.make)&&(feedback.model!=="negative"||candidate.model!==car.model));
-        return next<0?cars.length:next;
-      });
+      setIndex((current) => current + 1);
       setPhoto(0);
       setFeedback({});
       setOpen(true);
@@ -271,8 +335,8 @@ export default function V3() {
     return () => removeEventListener("keydown", key);
   });
   useEffect(() => {
-    if (cars[index + 1])
-      cars[index + 1].photos.slice(0, 3).forEach((src) => {
+    if (cars[order[index + 1]])
+      cars[order[index + 1]].photos.slice(0, 3).forEach((src) => {
         new Image().src = src;
       });
   }, [index]);
@@ -284,26 +348,71 @@ export default function V3() {
       else delete next[key];
       return next;
     });
-  useEffect(() => {
-    if (!cars[index]) localStorage.setItem("ecarstrade:profile-snapshot", JSON.stringify({updatedAt:Date.now(),insights:profileInsights()}));
-  }, [index]);
+  if (showProfile)
+    return (
+      <ProfilePanel onClose={() => setShowProfile(false)} onLock={onLock} />
+    );
   if (!car) {
-    const vetoActive = initialCardIndex() === cars.length;
-    const refresh = () => {
+    const refresh = async () => {
       setSearching(true);
-      window.setTimeout(() => setSearching(false), 1200);
+      const decisions = await getUserDecisions();
+      const profile = buildProfiles(decisions).longTermProfile;
+      const ranked = rankAndDiversify(
+        cars.map((item) => ({
+          id: item.id,
+          make: item.make,
+          model: item.model,
+          year: Number(item.year),
+          mileage: Number(item.mileage.replace(/\D/g, "")) || undefined,
+          transmission: item.gearbox,
+          fuel: item.fuel,
+          engine: item.engine,
+          color: item.color,
+          price: Number(item.price.replace(/\D/g, "")) || undefined,
+          bodyType: item.body,
+          vatDeductible: true,
+          damageStatus: item.critical ?? "not-reported",
+        })),
+        profile,
+        5,
+      );
+      setOrder(
+        ranked.map((row) => cars.findIndex((item) => item.id === row.car.id)),
+      );
+      setIndex(0);
+      setPhoto(0);
+      setFeedback({});
+      setSearching(false);
     };
     return (
       <main className="v3-shell">
         <header className="v3-nav">
           <b>eCarsTrade</b>
-          <span>0 новых</span>
+          <div>
+            <span>0 новых</span>
+            <button
+              className="lock-app"
+              onClick={() => setShowProfile(true)}
+              aria-label="Профиль"
+            >
+              <IconUser />
+            </button>
+            <button
+              className="lock-app"
+              onClick={onLock}
+              aria-label="Заблокировать приложение"
+            >
+              <IconLock />
+            </button>
+          </div>
         </header>
         <section className="decision-result">
           <IconCheck />
           <h1>{searching ? "Перетряхиваю парковку…" : "Серия просмотрена"}</h1>
-          <p>{vetoActive ? "Ford и Kuga сегодня получают выходной. Поищем кого-нибудь ещё." : "Вкус записал. Теперь попробую удивить следующей серией."}</p>
-          <button onClick={refresh}>{searching ? "Ищу свежие варианты…" : "Проверить следующую серию"}</button>
+          <p>Вкус записал. Теперь попробую удивить следующей серией.</p>
+          <button onClick={refresh}>
+            {searching ? "Ищу свежие варианты…" : "Проверить следующую серию"}
+          </button>
         </section>
       </main>
     );
@@ -313,7 +422,7 @@ export default function V3() {
     ["model", car.model, IconCar],
     ["year", car.year, IconCalendar],
     ["mileage", car.mileage, IconRoad],
-    ["gearbox", car.gearbox, IconAutomaticGearbox],
+    ["transmission", car.gearbox, IconAutomaticGearbox],
     ["fuel", car.fuel, IconGasStation],
     ["engine", car.engine, IconEngine],
     ["color", car.color, IconPalette],
@@ -328,7 +437,23 @@ export default function V3() {
     <main className="v3-shell">
       <header className="v3-nav">
         <b>eCarsTrade</b>
-        <span>{cars.length - index} новых</span>
+        <div>
+          <span>{order.length - index} новых</span>
+          <button
+            className="lock-app"
+            onClick={() => setShowProfile(true)}
+            aria-label="Профиль"
+          >
+            <IconUser />
+          </button>
+          <button
+            className="lock-app"
+            onClick={onLock}
+            aria-label="Заблокировать приложение"
+          >
+            <IconLock />
+          </button>
+        </div>
       </header>
       <article className={`v3-card ${leaving}`}>
         <section
@@ -384,14 +509,23 @@ export default function V3() {
           </div>
         </section>
         <div className="decision-zone">
-          <button className="edge-decision no" onClick={() => decide("no")} disabled={locked}>
-            <IconX /><span>Нет</span>
+          <button
+            className="edge-decision no"
+            onClick={() => decide("no")}
+            disabled={locked}
+          >
+            <IconX />
+            <span>Нет</span>
           </button>
           <section className="pills">
             {specs.map(([key, label, Icon]) => {
               const state = feedback[key];
               return (
-                <button key={key} className={state || ""} onClick={() => cycle(key)}>
+                <button
+                  key={key}
+                  className={state || ""}
+                  onClick={() => cycle(key)}
+                >
                   <Icon />
                   {state === "positive" && <IconThumbUp className="sent" />}
                   {state === "negative" && <IconThumbDown className="sent" />}
@@ -400,8 +534,13 @@ export default function V3() {
               );
             })}
           </section>
-          <button className="edge-decision yes" onClick={() => decide("yes")} disabled={locked}>
-            <IconCheck /><span>Да</span>
+          <button
+            className="edge-decision yes"
+            onClick={() => decide("yes")}
+            disabled={locked}
+          >
+            <IconCheck />
+            <span>Да</span>
           </button>
         </div>
         <section className={`condition ${open ? "open" : ""}`}>
