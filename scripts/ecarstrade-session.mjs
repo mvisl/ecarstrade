@@ -28,13 +28,15 @@ const authenticate = async () => {
   await page.goto("https://ecarstrade.com/", { waitUntil: "domcontentloaded" });
   await page.getByText("Log in", { exact: true }).click();
 
-  const email = page.locator(
+  const modal = page.locator("#fancybox-wrap");
+  await modal.waitFor({ state: "visible" });
+  const email = modal.locator(
     'input[type="email"], input[name*="email" i], input[name*="login" i]',
   );
-  const passwordInput = page.locator('input[type="password"]');
+  const passwordInput = modal.locator('input[type="password"]');
   await email.first().fill(login);
   await passwordInput.first().fill(password);
-  await page
+  await modal
     .locator('button[type="submit"], input[type="submit"]')
     .first()
     .click();
