@@ -52,6 +52,13 @@ const authenticate = async () => {
 
 const numberFrom = (value) =>
   Number(String(value || "").replace(/[^\d]/g, "")) || undefined;
+const euroFrom = (value) =>
+  Number(
+    String(value || "")
+      .replace(/\s/g, "")
+      .replace(/[.,]\d{2}$/, "")
+      .replace(/[^\d]/g, ""),
+  ) || undefined;
 
 const collectFixedPriceCars = async () => {
   await page.goto("https://ecarstrade.com/auctions/allfix", {
@@ -93,7 +100,7 @@ const collectFixedPriceCars = async () => {
       return { text, title, photos: Array.from(new Set(photos)).slice(0, 12) };
     });
     const priceMatch = raw.text.match(/€\s*([\d][\d\s.,]{2,})/);
-    const price = numberFrom(priceMatch?.[1]);
+    const price = euroFrom(priceMatch?.[1]);
     if (!price || !/VAT\s+DEDUCTIBLE/i.test(raw.text)) continue;
     const purchaseMode = /buy\s*now/i.test(raw.text)
       ? "Buy Now"
@@ -107,7 +114,9 @@ const collectFixedPriceCars = async () => {
       .replace(/^#\d+\s*/, "")
       .trim()
       .split(/\s+/);
-    const make = parts[0] || "Автомобиль";
+    const make = (parts[0] || "Автомобиль")
+      .replace(/^CITRO.*N$/i, "Citroen")
+      .replace(/^MERCEDES-BENZ$/i, "Mercedes");
     const model = parts[1] || raw.title;
     const fuel = /diesel/i.test(raw.text)
       ? "Дизель"
