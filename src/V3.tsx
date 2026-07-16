@@ -24,6 +24,8 @@ import "./v3-layout.css";
 type Sentiment = "positive" | "negative";
 type Car = {
   id: string;
+  make: string;
+  model: string;
   name: string;
   year: string;
   mileage: string;
@@ -46,6 +48,8 @@ const photoUrls = (range: string, id: string, names: string[]) =>
 const cars: Car[] = [
   {
     id: "7360586",
+    make: "Ford",
+    model: "Kuga",
     name: "Ford Kuga Vignale 2.0 EcoBlue",
     year: "2022",
     mileage: "14 639 км",
@@ -71,6 +75,8 @@ const cars: Car[] = [
   },
   {
     id: "7251730",
+    make: "Ford",
+    model: "Kuga",
     name: "Ford Kuga ST-Line 1.5 EcoBlue",
     year: "2021",
     mileage: "148 674 км",
@@ -99,6 +105,8 @@ const cars: Car[] = [
   },
   {
     id: "7050168",
+    make: "Ford",
+    model: "Kuga",
     name: "Ford Kuga PHEV ST-Line 2.5",
     year: "2021",
     mileage: "47 504 км",
@@ -125,6 +133,15 @@ const cars: Car[] = [
       { kind: "ok", text: "Автомат и пробег 47 504 км" },
       { kind: "ok", text: "5 мест и полноценный задний ряд" },
     ],
+  },
+  {
+    id:"6978220",make:"Skoda",model:"Octavia",name:"Skoda Octavia Break Business 2.0 TDI",year:"2022",mileage:"Пробег закрыт",gearbox:"Автомат",fuel:"Дизель",engine:"2.0 · 116 л.с.",color:"Серый",body:"Универсал",price:"Цена закрыта",origin:"Франция · Архив eCarsTrade",photos:photoUrls("6970001-6980000","6978220",["photo_001","photo_002","photo_003","photo_004","photo_005"]),report:[{kind:"warn",text:"Объявление из архива — актуальность цены нужно перепроверить"},{kind:"warn",text:"COC отсутствует"},{kind:"ok",text:"Автомат, дизель и 5 мест"},{kind:"ok",text:"2022 год"}],
+  },
+  {
+    id:"6167161",make:"Skoda",model:"Karoq",name:"Skoda Karoq Clever 1.5 TSI DSG7",year:"2023",mileage:"28 444 км",gearbox:"Автомат",fuel:"Бензин",engine:"1.5 · 150 л.с.",color:"Серый",body:"SUV",price:"Цена закрыта",origin:"Бельгия · Архив eCarsTrade",photos:photoUrls("6160001-6170000","6167161",["photo_000","photo_001","photo_002","photo_003","photo_004"]),report:[{kind:"warn",text:"Объявление из архива — актуальность цены нужно перепроверить"},{kind:"warn",text:"Есть царапины, смотреть фотографии"},{kind:"ok",text:"Автомат и 5 мест"},{kind:"ok",text:"2023 год и небольшой пробег"}],
+  },
+  {
+    id:"6112318",make:"Mercedes",model:"A 180",name:"Mercedes-Benz A 180d",year:"2023",mileage:"Пробег закрыт",gearbox:"Автомат",fuel:"Дизель",engine:"1.5 · 116 л.с.",color:"Не указан",body:"Хэтчбек",price:"Цена закрыта",origin:"Испания · Архив eCarsTrade",photos:photoUrls("6110001-6120000","6112318",["photo_000","photo_001","photo_002","photo_003","photo_004"]),report:[{kind:"warn",text:"Объявление из архива — цену и пробег нужно перепроверить"},{kind:"ok",text:"Автомат и дизель"},{kind:"ok",text:"2023 год"},{kind:"ok",text:"Компактный легковой автомобиль"}],
   },
 ];
 const pillNames: Record<string, string> = {
@@ -184,14 +201,13 @@ function profileInsights() {
 function initialCardIndex() {
   const records = JSON.parse(
     localStorage.getItem("ecarstrade:decisions") || "[]",
-  ) as { at: number; feedback: Record<string, Sentiment> }[];
+  ) as { carId:string;at: number; feedback: Record<string, Sentiment> }[];
   const latest = records.at(-1);
-  return latest &&
-    Date.now() - latest.at < 60 * 60 * 1000 &&
-    (latest.feedback?.make === "negative" ||
-      latest.feedback?.model === "negative")
-    ? cars.length
-    : 0;
+  if(!latest||Date.now()-latest.at>=60*60*1000)return 0;
+  const rejected=cars.find(car=>car.id===latest.carId);
+  if(!rejected)return 0;
+  const next=cars.findIndex(car=>(latest.feedback?.make!=="negative"||car.make!==rejected.make)&&(latest.feedback?.model!=="negative"||car.model!==rejected.model));
+  return next<0?cars.length:next;
 }
 
 export default function V3() {
@@ -230,7 +246,11 @@ export default function V3() {
     );
     const veto = feedback.make === "negative" || feedback.model === "negative";
     window.setTimeout(() => {
-      setIndex((current) => (veto ? cars.length : current + 1));
+      setIndex((current) => {
+        if(!veto)return current+1;
+        const next=cars.findIndex((candidate,candidateIndex)=>candidateIndex>current&&(feedback.make!=="negative"||candidate.make!==car.make)&&(feedback.model!=="negative"||candidate.model!==car.model));
+        return next<0?cars.length:next;
+      });
       setPhoto(0);
       setFeedback({});
       setOpen(true);
@@ -289,8 +309,8 @@ export default function V3() {
     );
   }
   const specs = [
-    ["make", "Ford", IconCar],
-    ["model", "Kuga", IconCar],
+    ["make", car.make, IconCar],
+    ["model", car.model, IconCar],
     ["year", car.year, IconCalendar],
     ["mileage", car.mileage, IconRoad],
     ["gearbox", car.gearbox, IconAutomaticGearbox],
