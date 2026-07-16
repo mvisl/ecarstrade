@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: ecarstrade-session
@@ -48,7 +48,15 @@ jobs:
           ECARSTRADE_LOGIN: ${{ secrets.ECARSTRADE_LOGIN }}
           ECARSTRADE_PASSWORD: ${{ secrets.ECARSTRADE_PASSWORD }}
           ECARSTRADE_STATE_PATH: .cache/ecarstrade-session.json
+          ECARSTRADE_FEED_PATH: public/feed.json
         run: node scripts/ecarstrade-session.mjs
+      - name: Publish refreshed feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/feed.json
+          git diff --cached --quiet || git commit -m "Update eCarsTrade feed"
+          git push
       - name: Encrypt browser session
         if: success()
         env:

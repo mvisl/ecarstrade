@@ -26,7 +26,7 @@ import { getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
 import "./profile.css";
-import { nextAllowedPosition, rankAndDiversify } from "./ranking";
+import { rankAndDiversify } from "./ranking";
 import { scheduleReviewAfterIdle } from "./reviewScheduler";
 import ImportCostCard from "./ImportCostCard";
 import "./import-cost.css";
@@ -56,7 +56,7 @@ const photoUrls = (range: string, id: string, names: string[]) =>
     (name) =>
       `https://ecarstrade.com/thumbnails/carsphotos/${range}/${id}/${name}/780x0__r.jpg`,
   );
-const cars: Car[] = [
+const legacyCars: Car[] = [
   {
     id: "7360586",
     make: "Ford",
@@ -239,19 +239,14 @@ const cars: Car[] = [
     ],
   },
 ];
-const INITIAL_ORDER = [0, 3, 1, 4, 2, 5];
 const HARD_EXCLUDED_MODELS = new Set(["Kuga"]);
 const isEligibleListing = (car: Car) =>
   !HARD_EXCLUDED_MODELS.has(car.model) &&
   /^€\d/.test(car.price.replace(/\s/g, "")) &&
   !car.origin.includes("Архив");
 export default function V3({ onLock }: { onLock: () => void }) {
-  const [order, setOrder] = useState(() =>
-    INITIAL_ORDER.filter(
-      (position) =>
-        Boolean(cars[position]) && isEligibleListing(cars[position]),
-    ),
-  );
+  const [cars, setCars] = useState<Car[]>([]);
+  const [order, setOrder] = useState<number[]>([]);
   const [index, setIndex] = useState(0);
   const [photo, setPhoto] = useState(0);
   const [feedback, setFeedback] = useState<Record<string, Sentiment>>({});
@@ -353,8 +348,18 @@ export default function V3({ onLock }: { onLock: () => void }) {
     window.setTimeout(() => setToast(null), 1600);
   };
   useEffect(() => {
-    getUserDecisions()
-      .then((decisions) => {
+    Promise.all([
+      fetch(`${import.meta.env.BASE_URL}feed.json?ts=${Date.now()}`, {
+        cache: "no-store",
+      }).then(async (response) => {
+        if (!response.ok) throw new Error("Свежая выдача пока не опубликована");
+        return (await response.json()) as { cars: Car[] };
+      }),
+      getUserDecisions(),
+    ])
+      .then(([feed, decisions]) => {
+        const freshCars = feed.cars.filter(isEligibleListing);
+        setCars(freshCars);
         const recent = decisions.filter(
           (item) =>
             item.decision === "dislike" &&
@@ -374,15 +379,16 @@ export default function V3({ onLock }: { onLock: () => void }) {
         setSuppressedModels(suppressed);
         const decidedIds = new Set(decisions.map((item) => item.carId));
         setOrder(
-          INITIAL_ORDER.filter((position) => {
-            const candidate = cars[position];
-            return (
-              Boolean(candidate) &&
-              isEligibleListing(candidate) &&
-              !decidedIds.has(candidate.id) &&
-              !suppressed.has(candidate.model)
-            );
-          }),
+          freshCars
+            .map((_, position) => position)
+            .filter((position) => {
+              const candidate = freshCars[position];
+              return (
+                Boolean(candidate) &&
+                !decidedIds.has(candidate.id) &&
+                !suppressed.has(candidate.model)
+              );
+            }),
         );
         setIndex(0);
       })
@@ -420,10 +426,21 @@ export default function V3({ onLock }: { onLock: () => void }) {
   if (!car) {
     const refresh = async () => {
       setSearching(true);
-      const decisions = await getUserDecisions();
+      const [response, decisions] = await Promise.all([
+        fetch(`${import.meta.env.BASE_URL}feed.json?ts=${Date.now()}`, {
+          cache: "no-store",
+        }),
+        getUserDecisions(),
+      ]);
+      const feed = (await response.json()) as { cars: Car[] };
+      const decidedIds = new Set(decisions.map((item) => item.carId));
+      const freshCars = feed.cars.filter(
+        (item) => isEligibleListing(item) && !decidedIds.has(item.id),
+      );
+      setCars(freshCars);
       const profile = buildProfiles(decisions).longTermProfile;
       const ranked = rankAndDiversify(
-        cars.filter(isEligibleListing).map((item) => ({
+        freshCars.map((item) => ({
           id: item.id,
           make: item.make,
           model: item.model,
@@ -442,7 +459,9 @@ export default function V3({ onLock }: { onLock: () => void }) {
         5,
       );
       setOrder(
-        ranked.map((row) => cars.findIndex((item) => item.id === row.car.id)),
+        ranked.map((row) =>
+          freshCars.findIndex((item) => item.id === row.car.id),
+        ),
       );
       setIndex(0);
       setPhoto(0);
