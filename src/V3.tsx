@@ -28,6 +28,8 @@ import ProfilePanel from "./ProfilePanel";
 import "./profile.css";
 import { nextAllowedPosition, rankAndDiversify } from "./ranking";
 import { scheduleReviewAfterIdle } from "./reviewScheduler";
+import ImportCostCard from "./ImportCostCard";
+import "./import-cost.css";
 
 type Sentiment = "positive" | "negative";
 type Car = {
@@ -47,6 +49,7 @@ type Car = {
   photos: string[];
   critical?: string;
   report: { kind: "bad" | "warn" | "ok"; text: string }[];
+  localMarketPrice?: number;
 };
 const photoUrls = (range: string, id: string, names: string[]) =>
   names.map(
@@ -237,9 +240,17 @@ const cars: Car[] = [
   },
 ];
 const INITIAL_ORDER = [0, 3, 1, 4, 2, 5];
+const HARD_EXCLUDED_MODELS = new Set(["Kuga"]);
+const isEligibleListing = (car: Car) =>
+  !HARD_EXCLUDED_MODELS.has(car.model) &&
+  /^€\d/.test(car.price.replace(/\s/g, "")) &&
+  !car.origin.includes("Архив");
 export default function V3({ onLock }: { onLock: () => void }) {
   const [order, setOrder] = useState(() =>
-    INITIAL_ORDER.filter((position) => Boolean(cars[position])),
+    INITIAL_ORDER.filter(
+      (position) =>
+        Boolean(cars[position]) && isEligibleListing(cars[position]),
+    ),
   );
   const [index, setIndex] = useState(0);
   const [photo, setPhoto] = useState(0);
@@ -329,9 +340,10 @@ export default function V3({ onLock }: { onLock: () => void }) {
       setSuppressedModels(nextSuppressed);
     }
     window.setTimeout(() => {
-      setIndex((current) =>
-        nextAllowedPosition(order, cars, current, nextSuppressed),
+      setOrder((current) =>
+        current.filter((position) => cars[position]?.id !== car.id),
       );
+      setIndex(0);
       setPhoto(0);
       setFeedback({});
       setOpen(true);
@@ -360,11 +372,19 @@ export default function V3({ onLock }: { onLock: () => void }) {
         );
         setModelRejects(counts);
         setSuppressedModels(suppressed);
-        setIndex((current) =>
-          suppressed.has(cars[order[current]]?.model)
-            ? nextAllowedPosition(order, cars, current - 1, suppressed)
-            : current,
+        const decidedIds = new Set(decisions.map((item) => item.carId));
+        setOrder(
+          INITIAL_ORDER.filter((position) => {
+            const candidate = cars[position];
+            return (
+              Boolean(candidate) &&
+              isEligibleListing(candidate) &&
+              !decidedIds.has(candidate.id) &&
+              !suppressed.has(candidate.model)
+            );
+          }),
         );
+        setIndex(0);
       })
       .catch(console.error);
   }, []);
@@ -403,7 +423,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
       const decisions = await getUserDecisions();
       const profile = buildProfiles(decisions).longTermProfile;
       const ranked = rankAndDiversify(
-        cars.map((item) => ({
+        cars.filter(isEligibleListing).map((item) => ({
           id: item.id,
           make: item.make,
           model: item.model,
@@ -453,8 +473,18 @@ export default function V3({ onLock }: { onLock: () => void }) {
         </header>
         <section className="decision-result">
           <IconCheck />
-          <h1>{searching ? "Перетряхиваю парковку…" : "Серия просмотрена"}</h1>
-          <p>Вкус записал. Теперь попробую удивить следующей серией.</p>
+          <h1>
+            {searching
+              ? "Проверяю фиксированные цены…"
+              : order.length
+                ? "Серия просмотрена"
+                : "Свежих вариантов пока нет"}
+          </h1>
+          <p>
+            {order.length
+              ? "Вкус записал. Теперь попробую удивить следующей серией."
+              : "Kuga исключена. Архивные объявления и машины без реальной цены скрыты."}
+          </p>
           <button onClick={refresh}>
             {searching ? "Ищу свежие варианты…" : "Проверить следующую серию"}
           </button>
@@ -478,6 +508,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
     warn: car.report.filter((x) => x.kind === "warn").length,
     ok: car.report.filter((x) => x.kind === "ok").length,
   };
+  const numericPrice = Number(car.price.replace(/\D/g, "")) || undefined;
   return (
     <main className="v3-shell">
       <header className="v3-nav">
@@ -588,6 +619,12 @@ export default function V3({ onLock }: { onLock: () => void }) {
             <span>Да</span>
           </button>
         </div>
+        {numericPrice && (
+          <ImportCostCard
+            price={numericPrice}
+            localMarketPrice={car.localMarketPrice}
+          />
+        )}
         <section className={`condition ${open ? "open" : ""}`}>
           <button
             className="condition-head"
