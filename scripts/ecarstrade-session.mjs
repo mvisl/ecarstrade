@@ -67,7 +67,7 @@ const platformFeeFor = (price, country) => {
   const base = belgium ? 350 : 400;
   return base + Math.floor((price - 20001) / 10000) * 50;
 };
-const excludedCommercial = /\b(berlingo|partner|kangoo|caddy|combo|doblo|proace city|transit connect|furg[oó]n|fourgon|panel van|cargo van|commercial van|kastenwagen|bestelwagen|utilitaire|vanette|minibus|minivan|multivan|transporter|traveller|tourneo|vivaro|trafic|expert|ducato|boxer|jumper|master|sprinter|vito)\b/i;
+const excludedCommercial = /\b(panda|berlingo|partner|kangoo|caddy|combo|doblo|proace city|transit connect|furg[oó]n|fourgon|panel van|cargo van|commercial van|kastenwagen|bestelwagen|utilitaire|vanette|minibus|minivan|multivan|transporter|traveller|tourneo|vivaro|trafic|expert|ducato|boxer|jumper|master|sprinter|vito)\b/i;
 
 const collectFixedPriceCars = async () => {
   await page.goto("https://ecarstrade.com/auctions/allfix", {

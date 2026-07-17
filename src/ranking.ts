@@ -39,7 +39,10 @@ export const priceSegment = (car: CarSnapshot) => {
   return "family_car";
 };
 const explicitPrice = (decision: UserDecision, sentiment: "positive" | "negative") =>
-  decision.pillFeedback.some((item) => item.key === "price" && item.sentiment === sentiment);
+  decision.pillFeedback.some((item) => item.key === "price" &&
+    (sentiment === "positive"
+      ? item.sentiment === "positive" || item.sentiment === "strongPositive"
+      : item.sentiment === "negative" || item.sentiment === "strongNegative"));
 export function inferBudgetProfile(decisions: UserDecision[]): BudgetProfile {
   const rejectedDecisions = decisions.filter((decision) => explicitPrice(decision, "negative"));
   const rejected = rejectedDecisions

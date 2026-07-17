@@ -98,8 +98,9 @@ export function buildPreferenceProfile(
       const pill = explicit.get(feature.key);
       if (!pill && explicit.size > 0) continue;
       if (pill) {
-        const weight = (feature.key === "price" ? 2.5 : 1.25) * decay;
-        if (pill.sentiment === "positive") current.positiveWeight += weight;
+        const strength = pill.sentiment.startsWith("strong") ? 2 : 1;
+        const weight = (feature.key === "price" ? 2.5 : 1.25) * strength * decay;
+        if (pill.sentiment === "positive" || pill.sentiment === "strongPositive") current.positiveWeight += weight;
         else current.negativeWeight += weight;
         current.explicitSamples += 1;
         current.effectiveSamples += decay;
@@ -127,8 +128,8 @@ export function buildPreferenceProfile(
         explicitSamples: 0, implicitSamples: 0, effectiveSamples: 0,
         score: 0, confidence: 0, lastUpdatedAt: 0,
       };
-      const weight = 1.25 * decay;
-      if (pill.sentiment === "positive") current.positiveWeight += weight;
+      const weight = 1.25 * (pill.sentiment.startsWith("strong") ? 2 : 1) * decay;
+      if (pill.sentiment === "positive" || pill.sentiment === "strongPositive") current.positiveWeight += weight;
       else current.negativeWeight += weight;
       current.explicitSamples += 1;
       current.effectiveSamples += decay;

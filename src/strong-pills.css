@@ -1,0 +1,33 @@
+.pills .strongPositive {
+  border-color: #426e51;
+  color: #8ac29a;
+  background: #1d2a22;
+}
+
+.pills .strongNegative {
+  border-color: #613137;
+  color: #ef737c;
+  background: #281b1e;
+}
+
+.pills .strongPositive,
+.pills .strongNegative {
+  box-shadow: inset 0 0 0 1px currentColor;
+}
+
+.double-thumb {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  flex: 0 0 25px;
+}
+
+.double-thumb svg {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.double-thumb svg:first-child { left: 0; bottom: 0; }
+.double-thumb svg:last-child { right: 0; top: 0; }

@@ -46,7 +46,7 @@ export const loadHardExclusions = (): HardExclusions => {
   }
 };
 
-const COMMERCIAL_PATTERN = /\b(berlingo|partner|kangoo|caddy|combo|doblo|proace city|transit connect|furg[oó]n|fourgon|panel van|cargo van|commercial van|kastenwagen|bestelwagen|utilitaire|vanette)\b/i;
+const COMMERCIAL_PATTERN = /\b(panda|berlingo|partner|kangoo|caddy|combo|doblo|proace city|transit connect|furg[oó]n|fourgon|panel van|cargo van|commercial van|kastenwagen|bestelwagen|utilitaire|vanette)\b/i;
 const MINIBUS_PATTERN = /\b(minibus|minivan|multivan|transporter|traveller|tourneo|vivaro|trafic|expert|ducato|boxer|jumper|master|sprinter|vito)\b/i;
 
 export const violatesHardExclusions = (car: { name: string; model: string; body: string }) => {

@@ -1,4 +1,4 @@
-export type Sentiment = "positive" | "negative";
+export type Sentiment = "positive" | "negative" | "strongPositive" | "strongNegative";
 export interface CarSnapshot {
   sourceUrl?: string;
   sourceListingId?: string;

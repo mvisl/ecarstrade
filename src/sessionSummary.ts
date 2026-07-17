@@ -18,8 +18,9 @@ export function buildSessionSummary(decisions: UserDecision[]) {
   const negative: Record<string, number> = {};
   rows.forEach((decision) =>
     decision.pillFeedback.forEach((pill) => {
-      const bucket = pill.sentiment === "positive" ? positive : negative;
-      bucket[pill.key] = (bucket[pill.key] || 0) + 1;
+      const isPositive = pill.sentiment === "positive" || pill.sentiment === "strongPositive";
+      const bucket = isPositive ? positive : negative;
+      bucket[pill.key] = (bucket[pill.key] || 0) + (pill.sentiment.startsWith("strong") ? 2 : 1);
     }),
   );
   const strongest = (bucket: Record<string, number>) =>

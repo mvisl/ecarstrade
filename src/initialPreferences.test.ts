@@ -11,4 +11,8 @@ describe("initial preferences", () => {
   it("never admits a Berlingo cargo van into the feed", () => {
     expect(violatesHardExclusions({ name: "Citroen Berlingo furgón", model: "Berlingo", body: "Легковой" })).toBe(true);
   });
+
+  it("treats Fiat Panda as the user's pie-like utility class", () => {
+    expect(violatesHardExclusions({ name: "Fiat Panda Hybrid City Life", model: "Panda", body: "Легковой" })).toBe(true);
+  });
 });

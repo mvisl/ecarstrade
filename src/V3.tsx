@@ -23,6 +23,7 @@ import {
 import "./v3.css";
 import "./v3-overrides.css";
 import "./v3-layout.css";
+import "./strong-pills.css";
 import { getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
@@ -41,7 +42,7 @@ import {
   violatesHardExclusions,
 } from "./initialPreferences";
 
-type Sentiment = "positive" | "negative";
+type Sentiment = "positive" | "negative" | "strongPositive" | "strongNegative";
 type Car = {
   id: string;
   sourceUrl?: string;
@@ -284,6 +285,8 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [index, setIndex] = useState(0);
   const [photo, setPhoto] = useState(0);
   const [feedback, setFeedback] = useState<Record<string, Sentiment>>({});
+  const longPressTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const longPressedKey = useRef<string | null>(null);
   const [open, setOpen] = useState(true);
   const [leaving, setLeaving] = useState("");
   const [locked, setLocked] = useState(false);
@@ -472,10 +475,37 @@ export default function V3({ onLock }: { onLock: () => void }) {
     setFeedback((current) => {
       const next = { ...current };
       if (!next[key]) next[key] = "positive";
-      else if (next[key] === "positive") next[key] = "negative";
+      else if (next[key] === "positive" || next[key] === "strongPositive") next[key] = "negative";
       else delete next[key];
       return next;
     });
+  const startLongPress = (key: string) => {
+    if (longPressTimer.current) clearTimeout(longPressTimer.current);
+    longPressedKey.current = null;
+    longPressTimer.current = setTimeout(() => {
+      setFeedback((current) => ({
+        ...current,
+        [key]: current[key] ? "strongNegative" : "strongPositive",
+      }));
+      longPressedKey.current = key;
+      navigator.vibrate?.(25);
+      window.setTimeout(() => {
+        if (longPressedKey.current === key) longPressedKey.current = null;
+      }, 1000);
+      longPressTimer.current = null;
+    }, 550);
+  };
+  const stopLongPress = () => {
+    if (longPressTimer.current) clearTimeout(longPressTimer.current);
+    longPressTimer.current = null;
+  };
+  const clickPill = (key: string) => {
+    if (longPressedKey.current === key) {
+      longPressedKey.current = null;
+      return;
+    }
+    cycle(key);
+  };
   if (onboarding === "loading") return <main className="v3-shell" />;
   if (onboarding === "needed") return (
     <main className="v3-shell onboarding-shell">
@@ -714,9 +744,17 @@ export default function V3({ onLock }: { onLock: () => void }) {
                 <button
                   key={key}
                   className={state || ""}
-                  onClick={() => cycle(key)}
+                  onPointerDown={() => startLongPress(key)}
+                  onPointerUp={stopLongPress}
+                  onPointerCancel={() => { stopLongPress(); longPressedKey.current = null; }}
+                  onPointerLeave={stopLongPress}
+                  onClick={() => clickPill(key)}
                 >
-                  {state === "positive" ? (
+                  {state === "strongPositive" || state === "strongNegative" ? (
+                    <span className="double-thumb" aria-label={state === "strongPositive" ? "Очень нравится" : "Очень не нравится"}>
+                      {state === "strongPositive" ? <><IconThumbUp /><IconThumbUp /></> : <><IconThumbDown /><IconThumbDown /></>}
+                    </span>
+                  ) : state === "positive" ? (
                     <IconThumbUp className="sent" />
                   ) : state === "negative" ? (
                     <IconThumbDown className="sent" />
