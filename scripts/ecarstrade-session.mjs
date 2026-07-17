@@ -188,7 +188,8 @@ const collectFixedPriceCars = async () => {
     )
       ? "Автомат"
       : "Механика";
-    const bodySource = String(schema.bodyType || profileValue("Category") || raw.text);
+    // The visible Car Profile is the source of truth; JSON-LD is often generic.
+    const bodySource = String(profileValue("Category") || schema.bodyType || raw.text);
     const body = /SUV|off-road/i.test(bodySource)
       ? "SUV"
       : /hatchback/i.test(bodySource)
@@ -200,7 +201,7 @@ const collectFixedPriceCars = async () => {
     const horsepower = numberFrom(profileValue("Power")?.match(/\d+\s*Hp/i)?.[0]);
     const engine = engineCc
       ? `${(engineCc / 1000).toFixed(1)}${horsepower ? ` · ${horsepower} л.с.` : ""}`
-      : "Не указан";
+      : horsepower ? `${horsepower} л.с.` : "Не указан";
     const colorSource = String(profileValue("Color") || "").toLowerCase();
     const colors = { green: "Зелёный", black: "Чёрный", white: "Белый", grey: "Серый", gray: "Серый", blue: "Синий", red: "Красный", silver: "Серебристый", brown: "Коричневый", beige: "Бежевый" };
     const color = colors[colorSource] || profileValue("Color") || "Не указан";
