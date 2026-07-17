@@ -201,7 +201,10 @@ const collectFixedPriceCars = async () => {
       .split(/\s+/);
     const makeAndModel = profileValue("Make & Model");
     const make = String(schema.brand?.name || makeAndModel?.split(/\s+/)[0] || parts[0] || "Автомобиль");
-    const model = makeAndModel?.replace(new RegExp(`^${make}\\s+`, "i"), "").trim() || parts[1] || raw.title;
+    const profileModel = makeAndModel?.replace(new RegExp(`^${make}\\s+`, "i"), "").trim();
+    const model = profileModel && !/^(other|unknown|n\/a|—|-)$/i.test(profileModel)
+      ? profileModel
+      : parts[1] || raw.title;
     const fuelSource = String(schema.fuelType || raw.text);
     const fuel = /diesel/i.test(fuelSource)
       ? "Дизель"
