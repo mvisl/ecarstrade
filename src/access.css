@@ -56,6 +56,13 @@ body {
   color: #c9ccd1;
   font-size: 14px;
 }
+.legacy-access {
+  margin-top: 12px;
+  color: #9aa0a8;
+  font-size: 13px;
+}
+.legacy-access summary { cursor: pointer; }
+.legacy-access input { margin-top: 8px; }
 .access-card input {
   width: 100%;
   height: 54px;

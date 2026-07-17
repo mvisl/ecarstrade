@@ -31,7 +31,13 @@ export interface UserDecision {
   createdAt: number;
   carSnapshot: CarSnapshot;
   pillFeedback: PillFeedback[];
+  profileId?: string;
 }
+
+export const ACTIVE_PROFILE_KEY = "ecars_active_profile";
+export const getActiveProfile = () =>
+  typeof localStorage === "undefined" ? "mvisl" : localStorage.getItem(ACTIVE_PROFILE_KEY) || "mvisl";
+export const setActiveProfile = (profileId: string) => localStorage.setItem(ACTIVE_PROFILE_KEY, profileId);
 
 const DB_NAME = "ecarstrade-personal";
 const DB_VERSION = 1;
@@ -50,6 +56,7 @@ const openDb = () =>
     request.onerror = () => reject(request.error);
   });
 export async function saveUserDecision(decision: UserDecision) {
+  decision.profileId = decision.profileId || getActiveProfile();
   const db = await openDb();
   await new Promise<void>((resolve, reject) => {
     const tx = db.transaction(DECISIONS, "readwrite");
@@ -67,5 +74,8 @@ export async function getUserDecisions() {
     request.onerror = () => reject(request.error);
   });
   db.close();
-  return rows.sort((a, b) => a.createdAt - b.createdAt);
+  const profileId = getActiveProfile();
+  return rows
+    .filter((row) => (row.profileId || "mvisl") === profileId)
+    .sort((a, b) => a.createdAt - b.createdAt);
 }
