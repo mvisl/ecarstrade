@@ -157,8 +157,15 @@ const collectFixedPriceCars = async () => {
 
     const id = href.match(/\/cars\/(\d+)/)?.[1];
     const schema = raw.schema || {};
-    const profileValue = (label) =>
-      raw.text.match(new RegExp(`${label}\\s*\\n\\s*([^\\n]+)`, "i"))?.[1]?.trim();
+    const profileValues = (label) => {
+      const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return [...raw.text.matchAll(
+        new RegExp(`(?:^|\\n)\\s*${escaped}\\s*\\n\\s*([^\\n]+)`, "gim"),
+      )].map((match) => match[1].trim());
+    };
+    // Labels can also occur in search controls before the actual Car Profile.
+    // The profile table is lower on the page, so its last exact-line match wins.
+    const profileValue = (label) => profileValues(label).at(-1);
     const normalizedTitle = String(schema.name || raw.title)
       .replace(/CITROAu2039N/gi, "Citroen")
       .replace(/MERCEDES-BENZ/gi, "Mercedes-Benz");
@@ -202,9 +209,12 @@ const collectFixedPriceCars = async () => {
     const engine = engineCc
       ? `${(engineCc / 1000).toFixed(1)}${horsepower ? ` · ${horsepower} л.с.` : ""}`
       : horsepower ? `${horsepower} л.с.` : "Не указан";
-    const colorSource = String(profileValue("Color") || "").toLowerCase();
+    const colorValue = profileValues("Color")
+      .filter((value) => !/^(VIN|N\/A|—|-|Color)$/i.test(value))
+      .at(-1);
+    const colorSource = String(colorValue || "").toLowerCase();
     const colors = { green: "Зелёный", black: "Чёрный", white: "Белый", grey: "Серый", gray: "Серый", blue: "Синий", red: "Красный", silver: "Серебристый", brown: "Коричневый", beige: "Бежевый" };
-    const color = colors[colorSource] || profileValue("Color") || "Не указан";
+    const color = colors[colorSource] || colorValue || "Не указан";
     if (!id || raw.photos.length === 0) continue;
     cars.push({
       id,
