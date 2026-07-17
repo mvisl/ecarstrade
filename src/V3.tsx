@@ -36,6 +36,8 @@ import type { UserDecision } from "./storage";
 type Sentiment = "positive" | "negative";
 type Car = {
   id: string;
+  sourceUrl?: string;
+  sourceListingId?: string;
   make: string;
   model: string;
   name: string;
@@ -313,6 +315,8 @@ export default function V3({ onLock }: { onLock: () => void }) {
       decision: value === "yes" ? ("like" as const) : ("dislike" as const),
       createdAt: Date.now(),
       carSnapshot: {
+        sourceUrl: car.sourceUrl,
+        sourceListingId: car.sourceListingId ?? car.id,
         make: car.make,
         model: car.model,
         year: numeric(car.year),
@@ -596,7 +600,18 @@ export default function V3({ onLock }: { onLock: () => void }) {
           }}
         >
           <img src={fullSizePhoto(car.photos[photo])} alt={car.name} />
-          <span className="source">{car.origin}</span>
+          {car.sourceUrl ? (
+            <a
+              className="source"
+              href={car.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {car.origin} ↗
+            </a>
+          ) : (
+            <span className="source source-missing">Ссылка на исходное объявление недоступна</span>
+          )}
           <span className="photo-price">{car.price}</span>
           <span className="vat">VAT deductible</span>
           <button
@@ -637,6 +652,15 @@ export default function V3({ onLock }: { onLock: () => void }) {
             ))}
           </div>
         </section>
+        <div className="listing-action">
+          {car.sourceUrl ? (
+            <a href={car.sourceUrl} target="_blank" rel="noopener noreferrer">
+              Открыть на eCarsTrade ↗
+            </a>
+          ) : (
+            <span>Ссылка на исходное объявление недоступна</span>
+          )}
+        </div>
         <div className="decision-zone">
           <button
             className="edge-decision no"
@@ -679,6 +703,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
         {numericPrice && (
           <ImportCostCard
             price={numericPrice}
+            priceMode="unknown"
             localMarketPrice={car.localMarketPrice}
           />
         )}

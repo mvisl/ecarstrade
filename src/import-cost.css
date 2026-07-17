@@ -6,7 +6,7 @@
   border-bottom: 1px solid var(--border);
   background: #181a1e;
 }
-.import-cost > div {
+.import-cost > div:not(.cost-breakdown) {
   display: grid;
   gap: 4px;
   padding: 12px;
@@ -23,23 +23,50 @@
   font-size: 16px;
   font-weight: 500;
 }
-.import-cost .advantage {
-  border-color: #426e51;
-}
-.import-cost .advantage strong {
-  color: #8ac29a;
-}
-.import-cost > p {
+.breakdown-toggle {
   grid-column: 1/-1;
-  margin: 2px 0 0;
-  color: #777e87;
+  justify-self: start;
+  border: 0;
+  padding: 4px 0;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+.cost-breakdown {
+  grid-column: 1/-1;
+  display: grid;
+  gap: 0;
+  padding: 6px 14px;
+  border: 1px solid var(--pill-border);
+  border-radius: 10px;
+  background: var(--bg-elevated);
+}
+.cost-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) auto 90px;
+  gap: 16px;
+  align-items: center;
+  min-height: 38px;
+  border-bottom: 1px solid #30343a;
+}
+.cost-row strong {
+  font-size: 13px;
+}
+.cost-row small {
+  text-align: right;
+}
+.cost-breakdown hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #4a4f57;
+}
+.cost-breakdown p {
+  margin: 8px 0;
+  color: var(--muted);
   font-size: 11px;
 }
 @media (max-width: 700px) {
-  .import-cost {
-    grid-template-columns: 1fr;
-  }
-  .import-cost > p {
-    grid-column: auto;
-  }
+  .import-cost { grid-template-columns: 1fr; }
+  .cost-row { grid-template-columns: 1fr auto; gap: 8px; }
+  .cost-row small { grid-column: 1/-1; text-align: left; }
 }

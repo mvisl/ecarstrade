@@ -1,5 +1,7 @@
 export type Sentiment = "positive" | "negative";
 export interface CarSnapshot {
+  sourceUrl?: string;
+  sourceListingId?: string;
   make: string;
   model: string;
   year?: number;

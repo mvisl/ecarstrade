@@ -185,6 +185,8 @@ const collectFixedPriceCars = async () => {
     if (!id || raw.photos.length === 0) continue;
     cars.push({
       id,
+      sourceUrl: href,
+      sourceListingId: id,
       make,
       model,
       name: normalizedTitle,
