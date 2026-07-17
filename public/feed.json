@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T23:14:52.540Z",
+  "generatedAt": "2026-07-17T00:16:17.378Z",
   "cars": [
     {
       "id": "7023554",
@@ -1861,6 +1861,45 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369202/photo_008/60x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369202/photo_009/60x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369202/photo_010/60x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7369201",
+      "make": "Volkswagen",
+      "model": "PASSAT",
+      "name": "VOLKSWAGEN PASSAT VARIANT 1.4 TSI MSQ VARIANT GTE BUSINESS",
+      "year": "2023",
+      "mileage": "182 635 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "Не указан",
+      "color": "Не указан",
+      "body": "Универсал",
+      "price": "€14 450",
+      "origin": "eCarsTrade · Fixed Price",
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_000/330x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_000/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_001/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_002/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_003/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_004/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_005/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_006/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_007/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_008/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_009/60x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369201/photo_010/60x0__r.jpg"
       ],
       "report": [
         {
