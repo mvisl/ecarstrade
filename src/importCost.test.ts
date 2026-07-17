@@ -1,46 +1,34 @@
 import { describe, expect, it } from "vitest";
 import { estimateMontenegroImport } from "./importCost";
+
 describe("Montenegro import estimate", () => {
-  it("does not remove VAT from an already net price", () => {
+  it("never removes VAT from an eCarsTrade VAT-deductible net price", () => {
     const result = estimateMontenegroImport({
-      price: 10000,
-      priceMode: "net_export",
-      shipping: 900,
-      customsRateWithoutOriginProof: 5,
-      montenegroVatRate: 21,
-      customsBroker: 300,
-      homologation: 200,
-      transferTaxApplicable: "unknown",
+      price: 9850, priceMode: "net_export", platformFee: 250,
+      exportDeclarationFee: 50, shipping: 900, customsDutyRate: 0,
+      montenegroVatRate: 21, customsBroker: 300, homologation: 200,
     });
-    expect(result.sourceNetLow).toBe(10000);
-    expect(result.withOriginProofLow.importVat).toBe(2289);
+    expect(result.purchasePrice).toBe(9850);
+    expect(result.importVat).toBeCloseTo(2257.5);
+    expect(result.landedCost).toBeCloseTo(13807.5);
   });
-  it("removes source VAT when gross price is supplied", () => {
+
+  it("does not produce a magic total when a required quote is missing", () => {
     const result = estimateMontenegroImport({
-      price: 12100,
-      priceMode: "gross_vat_refundable",
-      sourceVatRate: 21,
-      shipping: 0,
-      customsRateWithoutOriginProof: 5,
-      montenegroVatRate: 21,
-      customsBroker: 0,
-      homologation: 0,
-      transferTaxApplicable: "unknown",
+      price: 9850, priceMode: "net_export", platformFee: 250,
+      exportDeclarationFee: 50, montenegroVatRate: 21,
     });
-    expect(result.sourceNetLow).toBeCloseTo(10000);
+    expect(result.landedCost).toBeUndefined();
+    expect(result.missing).toContain("доставка");
+    expect(result.missing).toContain("EUR.1 / ставка пошлины");
   });
-  it("explains the previous Citroen range without transfer tax or reserve", () => {
+
+  it("keeps repair reserve outside landed cost", () => {
     const result = estimateMontenegroImport({
-      price: 9850,
-      priceMode: "net_export",
-      shipping: 900,
-      customsRateWithoutOriginProof: 5,
-      montenegroVatRate: 21,
-      customsBroker: 300,
-      homologation: 200,
-      transferTaxApplicable: "unknown",
+      price: 9850, priceMode: "net_export", platformFee: 250,
+      exportDeclarationFee: 50, shipping: 0, customsDutyRate: 0,
+      montenegroVatRate: 21, customsBroker: 0, homologation: 0,
     });
-    expect(result.withOriginProofHigh.landedCost).toBeCloseTo(13507.5);
-    expect(result.withoutOriginProofHigh.landedCost).toBeCloseTo(14157.88, 1);
+    expect(result.landedCost).toBeCloseTo(12218.5);
   });
 });

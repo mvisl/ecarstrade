@@ -1,87 +1,44 @@
 import { useState } from "react";
-import {
-  estimateMontenegroImport,
-  type PriceMode,
-} from "./importCost";
+import { estimateMontenegroImport, type PriceMode } from "./importCost";
 
-const money = (value: number) =>
-  new Intl.NumberFormat("ru-ME", {
-    style: "currency",
-    currency: "EUR",
-    maximumFractionDigits: 0,
-  }).format(value);
-const range = (low: number, high: number) =>
-  Math.round(low) === Math.round(high) ? money(low) : `${money(low)}–${money(high)}`;
+const money = (value: number) => new Intl.NumberFormat("ru-ME", {
+  style: "currency", currency: "EUR", maximumFractionDigits: 0,
+}).format(value);
 
-export default function ImportCostCard({
-  price,
-  priceMode,
-  localMarketPrice,
-}: {
+export default function ImportCostCard({ price, priceMode, platformFee, exportDeclarationFee = 50, listingCountry }: {
   price: number;
   priceMode: PriceMode;
-  localMarketPrice?: number;
+  platformFee?: number;
+  exportDeclarationFee?: number;
+  listingCountry?: string;
 }) {
   const [open, setOpen] = useState(false);
   const estimate = estimateMontenegroImport({
-    price,
-    priceMode,
-    sourceVatRate: 21,
-    shipping: 900,
-    platformFee: undefined,
-    customsRateWithoutOriginProof: 5,
-    montenegroVatRate: 21,
-    customsBroker: 300,
-    homologation: 200,
-    registration: undefined,
-    transferTaxApplicable: "unknown",
-    localMarketPrice,
+    price, priceMode, platformFee, exportDeclarationFee,
+    // These values deliberately remain empty until a quote/document is available.
+    shipping: undefined, customsDutyRate: undefined, montenegroVatRate: 21,
+    customsBroker: undefined, homologation: undefined,
   });
-  const low = estimate.withOriginProofLow.landedCost;
-  const high = estimate.withoutOriginProofHigh.landedCost;
-  return (
-    <section className="import-cost">
-      <div>
-        <span>Цена eCarsTrade</span>
-        <strong>{money(price)}</strong>
-        <small>VAT-режим: не подтверждён</small>
-      </div>
-      <div>
-        <span>В Черногории, до регистрации</span>
-        <strong>≈ {range(low, high)}</strong>
-        <small>Нужно подтвердить VAT и EUR.1 · уверенность низкая</small>
-      </div>
-      {localMarketPrice && (
-        <div>
-          <span>Местный рынок</span>
-          <strong>{money(localMarketPrice)}</strong>
-          <small>сравнение предварительное</small>
-        </div>
-      )}
-      <button className="breakdown-toggle" onClick={() => setOpen((value) => !value)}>
-        {open ? "Скрыть расчёт" : "Как посчитано"}
-      </button>
-      {open && (
-        <div className="cost-breakdown">
-          <CostRow label="Цена после VAT" value={range(estimate.sourceNetLow, estimate.sourceNetHigh)} status="неизвестно" />
-          <CostRow label="Комиссия площадки" value="не включена" status="неизвестно" />
-          <CostRow label="Доставка" value={money(estimate.shipping)} status="оценка" />
-          <CostRow label="Пошлина при EUR.1" value={money(0)} status="сценарий" />
-          <CostRow label="Пошлина без EUR.1" value={range(estimate.withoutOriginProofLow.customsDuty, estimate.withoutOriginProofHigh.customsDuty)} status="сценарий" />
-          <CostRow label="PDV при EUR.1" value={range(estimate.withOriginProofLow.importVat, estimate.withOriginProofHigh.importVat)} status="оценка" />
-          <CostRow label="PDV без EUR.1" value={range(estimate.withoutOriginProofLow.importVat, estimate.withoutOriginProofHigh.importVat)} status="оценка" />
-          <CostRow label="Špedicija" value={money(estimate.customsBroker)} status="оценка" />
-          <CostRow label="Homologation" value={money(estimate.homologation)} status="оценка" />
-          <CostRow label="Регистрация и страхование" value="не включены" status="неизвестно" />
-          <hr />
-          <CostRow label="При EUR.1" value={range(estimate.withOriginProofLow.landedCost, estimate.withOriginProofHigh.landedCost)} status="до регистрации" />
-          <CostRow label="Без EUR.1" value={range(estimate.withoutOriginProofLow.landedCost, estimate.withoutOriginProofHigh.landedCost)} status="до регистрации" />
-          <p>Transfer tax 5% не включён: применимость к первой регистрации импортированной машины не подтверждена.</p>
-          <p>Рекомендуемый резерв после покупки: €500–900. В обязательную стоимость не включён.</p>
-        </div>
-      )}
-    </section>
-  );
+  const confirmedPurchase = price + (platformFee ?? 0) + exportDeclarationFee;
+  return <section className="import-cost">
+    <div><span>Цена eCarsTrade</span><strong>{money(price)}</strong><small>{priceMode === "net_export" ? "net, VAT уже не включён" : "VAT-режим не подтверждён"}</small></div>
+    <div><span>Подтверждено до импорта</span><strong>{platformFee == null ? `от ${money(confirmedPurchase)}` : money(confirmedPurchase)}</strong><small>цена + комиссия + EX-A</small></div>
+    <div><span>В Черногории</span><strong>Нужны данные</strong><small>{estimate.missing.join(" · ")}</small></div>
+    <button className="breakdown-toggle" onClick={() => setOpen(v => !v)}>{open ? "Скрыть расчёт" : "Полный breakdown"}</button>
+    {open && <div className="cost-breakdown">
+      <CostRow label="Цена eCarsTrade" value={money(price)} status={priceMode === "net_export" ? "официально: net без VAT" : "требует проверки"} />
+      <CostRow label="Комиссия площадки" value={platformFee == null ? "не определена" : money(platformFee)} status={listingCountry ? `тариф: ${listingCountry}` : "нужна страна выдачи"} />
+      <CostRow label="EX-A export declaration" value={money(exportDeclarationFee)} status="официальный тариф eCarsTrade" />
+      <CostRow label="Доставка" value="нужен тариф" status="не включена" />
+      <CostRow label="Пошлина" value="нужен EUR.1 / происхождение" status="не включена" />
+      <CostRow label="PDV" value="21% от подтверждённой таможенной базы" status="не посчитан без доставки и пошлины" />
+      <CostRow label="Špedicija" value="нужен тариф" status="не включена" />
+      <CostRow label="Homologation" value="нужен тариф" status="не включена" />
+      <hr />
+      <p>Стоимость предварительная. Требуется подтверждение доставки, VAT / EUR.1 и местных тарифов.</p>
+      <p>Возвратный VAT-депозит, ремонт, запас бюджета и будущее обслуживание в стоимость автомобиля не включаются.</p>
+    </div>}
+  </section>;
 }
 
 function CostRow({ label, value, status }: { label: string; value: string; status: string }) {

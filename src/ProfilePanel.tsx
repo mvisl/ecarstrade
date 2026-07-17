@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { IconArrowLeft, IconLock } from "@tabler/icons-react";
-import { getUserDecisions } from "./storage";
+import { getUserDecisions, type UserDecision } from "./storage";
 import { buildProfiles, type PreferenceSignal } from "./learning";
 const labels: Record<string, string> = {
   make: "Марка",
@@ -28,8 +28,9 @@ export default function ProfilePanel({
   const [data, setData] = useState<ReturnType<typeof buildProfiles> | null>(
     null,
   );
+  const [history, setHistory] = useState<UserDecision[]>([]);
   useEffect(() => {
-    getUserDecisions().then((rows) => setData(buildProfiles(rows)));
+    getUserDecisions().then((rows) => { setData(buildProfiles(rows)); setHistory(rows); });
   }, []);
   const stable =
     data?.longTermProfile.filter(
@@ -66,6 +67,15 @@ export default function ProfilePanel({
           <SignalGroup title="Пока проверяем" items={checking} />
         </div>
       )}
+      <section className="profile-history">
+        <h2>История и список</h2>
+        {history.slice(-20).reverse().map((row) => (
+          <article key={row.id}>
+            <div><strong>{row.carSnapshot.make} {row.carSnapshot.model}</strong><small>{row.decision === "like" ? "В списке" : "Отклонено"}</small></div>
+            {row.carSnapshot.sourceUrl ? <a href={row.carSnapshot.sourceUrl} target="_blank" rel="noopener noreferrer">Оригинал ↗</a> : <span>Ссылка недоступна</span>}
+          </article>
+        ))}
+      </section>
     </main>
   );
 }

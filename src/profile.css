@@ -53,6 +53,11 @@
   padding: 13px 0;
   border-top: 1px solid #2a2d33;
 }
+.profile-history { max-width: 1100px; margin: 24px auto; }
+.profile-history article { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid #33373e; }
+.profile-history article div { display:flex; flex-direction:column; }
+.profile-history a { color:#e8622c; }
+.profile-history span, .profile-history small { color:#9aa0a8; }
 .profile-group article div {
   display: grid;
   gap: 4px;

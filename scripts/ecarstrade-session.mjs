@@ -59,6 +59,14 @@ const euroFrom = (value) =>
       .replace(/[.,]\d{2}$/, "")
       .replace(/[^\d]/g, ""),
   ) || undefined;
+const platformFeeFor = (price, country) => {
+  const belgium = /belgium|belgië|belgique/i.test(country || "");
+  if (price <= 5000) return belgium ? 200 : 250;
+  if (price <= 10000) return belgium ? 250 : 300;
+  if (price <= 20000) return belgium ? 300 : 350;
+  const base = belgium ? 350 : 400;
+  return base + Math.floor((price - 20001) / 10000) * 50;
+};
 
 const collectFixedPriceCars = async () => {
   await page.goto("https://ecarstrade.com/auctions/allfix", {
@@ -144,6 +152,7 @@ const collectFixedPriceCars = async () => {
     const purchaseMode = /buy\s*now/i.test(raw.text)
       ? "Buy Now"
       : "Fixed Price";
+    const listingCountry = raw.text.match(/Pick-up location\s*\n\s*([^\n]+)/i)?.[1]?.trim();
 
     const id = href.match(/\/cars\/(\d+)/)?.[1];
     const schema = raw.schema || {};
@@ -198,7 +207,11 @@ const collectFixedPriceCars = async () => {
       color: "Не указан",
       body,
       price: `€${price.toLocaleString("ru-RU")}`,
-      origin: `eCarsTrade · ${purchaseMode}`,
+      origin: `${listingCountry || "eCarsTrade"} · ${purchaseMode}`,
+      listingCountry,
+      priceMode: "net_export",
+      platformFee: platformFeeFor(price, listingCountry),
+      exportDeclarationFee: 50,
       photos: raw.photos,
       report: [
         { kind: "ok", text: "Актуальная фиксированная цена" },

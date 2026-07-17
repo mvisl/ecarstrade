@@ -32,6 +32,7 @@ import ImportCostCard from "./ImportCostCard";
 import "./import-cost.css";
 import { buildSessionSummary } from "./sessionSummary";
 import type { UserDecision } from "./storage";
+import type { PriceMode } from "./importCost";
 
 type Sentiment = "positive" | "negative";
 type Car = {
@@ -54,6 +55,10 @@ type Car = {
   critical?: string;
   report: { kind: "bad" | "warn" | "ok"; text: string }[];
   localMarketPrice?: number;
+  priceMode?: PriceMode;
+  listingCountry?: string;
+  platformFee?: number;
+  exportDeclarationFee?: number;
 };
 const photoUrls = (range: string, id: string, names: string[]) =>
   names.map(
@@ -703,8 +708,10 @@ export default function V3({ onLock }: { onLock: () => void }) {
         {numericPrice && (
           <ImportCostCard
             price={numericPrice}
-            priceMode="unknown"
-            localMarketPrice={car.localMarketPrice}
+            priceMode={car.priceMode ?? "unknown"}
+            platformFee={car.platformFee}
+            exportDeclarationFee={car.exportDeclarationFee}
+            listingCountry={car.listingCountry}
           />
         )}
         <section className={`condition ${open ? "open" : ""}`}>
