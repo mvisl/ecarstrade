@@ -33,6 +33,12 @@ import "./import-cost.css";
 import { buildSessionSummary } from "./sessionSummary";
 import type { UserDecision } from "./storage";
 import type { PriceMode } from "./importCost";
+import {
+  CURRENT_USER_INITIAL_PREFERENCES,
+  INITIAL_PREFERENCES_KEY,
+  saveInitialPreferences,
+  violatesHardExclusions,
+} from "./initialPreferences";
 
 type Sentiment = "positive" | "negative";
 type Car = {
@@ -251,6 +257,7 @@ const legacyCars: Car[] = [
 const HARD_EXCLUDED_MODELS = new Set(["kuga"]);
 const isEligibleListing = (car: Car) =>
   !HARD_EXCLUDED_MODELS.has(car.model.trim().toLowerCase()) &&
+  !violatesHardExclusions(car) &&
   /^€\d/.test(car.price.replace(/\s/g, "")) &&
   !car.origin.includes("Архив");
 const fullSizePhoto = (src: string) =>
@@ -283,6 +290,8 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [searching, setSearching] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
   const [history, setHistory] = useState<UserDecision[]>([]);
+  const [onboarding, setOnboarding] = useState<"loading" | "needed" | "done">("loading");
+  const [initialText, setInitialText] = useState("");
   const [modelRejects, setModelRejects] = useState<Record<string, number>>({});
   const [suppressedModels, setSuppressedModels] = useState<Set<string>>(
     new Set(),
@@ -389,6 +398,11 @@ export default function V3({ onLock }: { onLock: () => void }) {
     ])
       .then(([feed, decisions]) => {
         setHistory(decisions);
+        if (localStorage.getItem(INITIAL_PREFERENCES_KEY)) setOnboarding("done");
+        else if (decisions.length > 0) {
+          saveInitialPreferences(CURRENT_USER_INITIAL_PREFERENCES);
+          setOnboarding("done");
+        } else setOnboarding("needed");
         const freshCars = feed.cars
           .map((item) => ({
             ...item,
@@ -459,6 +473,19 @@ export default function V3({ onLock }: { onLock: () => void }) {
       else delete next[key];
       return next;
     });
+  if (onboarding === "loading") return <main className="v3-shell" />;
+  if (onboarding === "needed") return (
+    <main className="v3-shell onboarding-shell">
+      <section className="onboarding-card">
+        <span>Начальный профиль</span>
+        <h1>Какая машина тебе нужна?</h1>
+        <p>Напиши обычными словами: что обязательно, что нравится и что вообще не показывать.</p>
+        <textarea value={initialText} onChange={(event) => setInitialText(event.target.value)} placeholder="Например: никаких фургонов и минивэнов; нужен полноценный задний ряд; дизель и автомат предпочтительны…" />
+        <button disabled={initialText.trim().length < 12} onClick={() => { saveInitialPreferences(initialText); setOnboarding("done"); }}>Начать подбор</button>
+        <small>Это станет начальным профилем. Дальше он будет уточняться по решениям, а не заменять их.</small>
+      </section>
+    </main>
+  );
   if (showProfile)
     return (
       <ProfilePanel onClose={() => setShowProfile(false)} onLock={onLock} />

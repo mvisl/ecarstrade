@@ -67,6 +67,7 @@ const platformFeeFor = (price, country) => {
   const base = belgium ? 350 : 400;
   return base + Math.floor((price - 20001) / 10000) * 50;
 };
+const excludedCommercial = /\b(berlingo|partner|kangoo|caddy|combo|doblo|proace city|transit connect|furg[oó]n|fourgon|panel van|cargo van|commercial van|kastenwagen|bestelwagen|utilitaire|vanette|minibus|minivan|multivan|transporter|traveller|tourneo|vivaro|trafic|expert|ducato|boxer|jumper|master|sprinter|vito)\b/i;
 
 const collectFixedPriceCars = async () => {
   await page.goto("https://ecarstrade.com/auctions/allfix", {
@@ -159,6 +160,7 @@ const collectFixedPriceCars = async () => {
     const normalizedTitle = String(schema.name || raw.title)
       .replace(/CITROAu2039N/gi, "Citroen")
       .replace(/MERCEDES-BENZ/gi, "Mercedes-Benz");
+    if (excludedCommercial.test(`${normalizedTitle} ${schema.bodyType || ""}`)) continue;
     const registration = String(schema.dateVehicleFirstRegistered || "");
     const year = registration.match(/(20[12]\d)$/)?.[1] || "—";
     const mileage = numberFrom(schema.mileageFromOdometer?.value);
