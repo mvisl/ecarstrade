@@ -485,7 +485,9 @@ export default function V3({ onLock }: { onLock: () => void }) {
     longPressTimer.current = setTimeout(() => {
       setFeedback((current) => ({
         ...current,
-        [key]: current[key] ? "strongNegative" : "strongPositive",
+        [key]: current[key] === "negative" || current[key] === "strongNegative"
+          ? "strongNegative"
+          : "strongPositive",
       }));
       longPressedKey.current = key;
       navigator.vibrate?.(25);
