@@ -20,6 +20,12 @@ const decision = (over: Partial<UserDecision> = {}): UserDecision => ({
   ...over,
 });
 describe("mechanical profile", () => {
+  it("keeps explicit qualitative feedback for exception review", () => {
+    const row = decision({ pillFeedback: [{ key: "visualAppeal", rawValue: "Дизайн", sentiment: "positive" }] });
+    const signal = buildPreferenceProfile([row]).find((item) => item.key === "visualAppeal");
+    expect(signal?.value).toBe("дизайн");
+    expect(signal?.explicitSamples).toBe(1);
+  });
   it("treats untouched properties only as weak implicit evidence", () => {
     const signal = buildPreferenceProfile([decision()]).find(
       (x) => x.key === "make",

@@ -79,7 +79,9 @@ export function buildPreferenceProfile(
     const explicit = new Map(
       decision.pillFeedback.map((item) => [item.key, item]),
     );
-    for (const feature of snapshotFeatures(decision.carSnapshot)) {
+    const features = snapshotFeatures(decision.carSnapshot);
+    const featureKeys = new Set(features.map((feature) => feature.key));
+    for (const feature of features) {
       const id = `${feature.key}:${feature.value}`;
       const current = signals.get(id) ?? {
         key: feature.key,
@@ -112,6 +114,25 @@ export function buildPreferenceProfile(
         current.lastUpdatedAt,
         decision.createdAt,
       );
+      signals.set(id, current);
+    }
+    // Keep explicit qualitative feedback (for example "design") even when
+    // it has no objective field in the listing. The periodic reviewer sees
+    // it together with the car and can understand deliberate exceptions.
+    for (const pill of decision.pillFeedback.filter((item) => !featureKeys.has(item.key))) {
+      const value = norm(pill.normalizedValue ?? pill.rawValue);
+      const id = `${pill.key}:${value}`;
+      const current = signals.get(id) ?? {
+        key: pill.key, value, positiveWeight: 0, negativeWeight: 0,
+        explicitSamples: 0, implicitSamples: 0, effectiveSamples: 0,
+        score: 0, confidence: 0, lastUpdatedAt: 0,
+      };
+      const weight = 1.25 * decay;
+      if (pill.sentiment === "positive") current.positiveWeight += weight;
+      else current.negativeWeight += weight;
+      current.explicitSamples += 1;
+      current.effectiveSamples += decay;
+      current.lastUpdatedAt = Math.max(current.lastUpdatedAt, decision.createdAt);
       signals.set(id, current);
     }
   }

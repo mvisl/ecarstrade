@@ -15,6 +15,7 @@ import {
   IconPalette,
   IconUser,
   IconRoad,
+  IconSparkles,
   IconThumbDown,
   IconThumbUp,
   IconX,
@@ -322,6 +323,8 @@ export default function V3({ onLock }: { onLock: () => void }) {
       engine: car.engine,
       color: car.color,
       price: numeric(car.price) ?? car.price,
+      body: car.body,
+      visualAppeal: "Дизайн",
     };
     const stored = {
       id: crypto.randomUUID(),
@@ -591,6 +594,8 @@ export default function V3({ onLock }: { onLock: () => void }) {
     ["engine", car.engine, IconEngine],
     ["color", car.color, IconPalette],
     ["price", car.price, IconCurrencyEuro],
+    ["body", car.body, IconCar],
+    ["visualAppeal", "Дизайн", IconSparkles],
   ] as const;
   const counts = {
     bad: car.report.filter((x) => x.kind === "bad").length,

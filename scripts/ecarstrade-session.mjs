@@ -157,6 +157,8 @@ const collectFixedPriceCars = async () => {
 
     const id = href.match(/\/cars\/(\d+)/)?.[1];
     const schema = raw.schema || {};
+    const profileValue = (label) =>
+      raw.text.match(new RegExp(`${label}\\s*\\n\\s*([^\\n]+)`, "i"))?.[1]?.trim();
     const normalizedTitle = String(schema.name || raw.title)
       .replace(/CITROAu2039N/gi, "Citroen")
       .replace(/MERCEDES-BENZ/gi, "Mercedes-Benz");
@@ -168,8 +170,9 @@ const collectFixedPriceCars = async () => {
       .replace(/^#\d+\s*/, "")
       .trim()
       .split(/\s+/);
-    const make = String(schema.brand?.name || parts[0] || "Автомобиль");
-    const model = parts[1] || raw.title;
+    const makeAndModel = profileValue("Make & Model");
+    const make = String(schema.brand?.name || makeAndModel?.split(/\s+/)[0] || parts[0] || "Автомобиль");
+    const model = makeAndModel?.replace(new RegExp(`^${make}\\s+`, "i"), "").trim() || parts[1] || raw.title;
     const fuelSource = String(schema.fuelType || raw.text);
     const fuel = /diesel/i.test(fuelSource)
       ? "Дизель"
@@ -185,7 +188,7 @@ const collectFixedPriceCars = async () => {
     )
       ? "Автомат"
       : "Механика";
-    const bodySource = String(schema.bodyType || raw.text);
+    const bodySource = String(schema.bodyType || profileValue("Category") || raw.text);
     const body = /SUV|off-road/i.test(bodySource)
       ? "SUV"
       : /hatchback/i.test(bodySource)
@@ -193,6 +196,14 @@ const collectFixedPriceCars = async () => {
         : /estate|station wagon/i.test(bodySource)
           ? "Универсал"
           : "Легковой";
+    const engineCc = numberFrom(profileValue("Engine size"));
+    const horsepower = numberFrom(profileValue("Power")?.match(/\d+\s*Hp/i)?.[0]);
+    const engine = engineCc
+      ? `${(engineCc / 1000).toFixed(1)}${horsepower ? ` · ${horsepower} л.с.` : ""}`
+      : "Не указан";
+    const colorSource = String(profileValue("Color") || "").toLowerCase();
+    const colors = { green: "Зелёный", black: "Чёрный", white: "Белый", grey: "Серый", gray: "Серый", blue: "Синий", red: "Красный", silver: "Серебристый", brown: "Коричневый", beige: "Бежевый" };
+    const color = colors[colorSource] || profileValue("Color") || "Не указан";
     if (!id || raw.photos.length === 0) continue;
     cars.push({
       id,
@@ -205,8 +216,8 @@ const collectFixedPriceCars = async () => {
       mileage: mileage ? `${mileage.toLocaleString("ru-RU")} км` : "Не указан",
       gearbox,
       fuel,
-      engine: "Не указан",
-      color: "Не указан",
+      engine,
+      color,
       body,
       price: `€${price.toLocaleString("ru-RU")}`,
       origin: `${listingCountry || "eCarsTrade"} · ${purchaseMode}`,

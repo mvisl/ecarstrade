@@ -16,6 +16,7 @@ const labels: Record<string, string> = {
   color: "Цвет",
   vat: "VAT",
   damage: "Повреждения",
+  visualAppeal: "Внешность",
 };
 const title = (signal: PreferenceSignal) =>
   `${labels[signal.key] ?? signal.key}: ${signal.value}`;
