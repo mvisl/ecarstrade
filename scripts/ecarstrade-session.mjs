@@ -101,7 +101,13 @@ const collectFixedPriceCars = async () => {
   for (const href of hrefs) {
     try {
       await page.goto(href, { waitUntil: "commit", timeout: 15_000 });
-      await page.waitForTimeout(1500);
+      await page.waitForTimeout(1000);
+      // The heading and price arrive before the lazy-loaded Car Profile.
+      // Reading at that point produced superficially valid but incomplete cars.
+      await page.waitForFunction(
+        () => /Car Profile/i.test(document.body?.innerText || ""),
+        { timeout: 5000 },
+      ).catch(() => {});
     } catch (error) {
       console.warn(`Skipping slow car page ${href}: ${error.message}`);
       continue;
@@ -111,12 +117,28 @@ const collectFixedPriceCars = async () => {
       raw = await page.evaluate(() => {
         const text = document.body?.innerText || "";
         let schema = {};
+        const findCarSchema = (value) => {
+          if (!value || typeof value !== "object") return null;
+          if (value["@type"] === "Car") return value;
+          if (Array.isArray(value)) {
+            for (const item of value) {
+              const found = findCarSchema(item);
+              if (found) return found;
+            }
+          } else {
+            for (const item of Object.values(value)) {
+              const found = findCarSchema(item);
+              if (found) return found;
+            }
+          }
+          return null;
+        };
         for (const node of document.querySelectorAll(
           'script[type="application/ld+json"]',
         )) {
           try {
             const parsed = JSON.parse(node.textContent || "{}");
-            if (parsed?.["@type"] === "Car") schema = parsed;
+            schema = findCarSchema(parsed) || schema;
           } catch {
             // Ignore unrelated malformed structured-data blocks.
           }
@@ -204,14 +226,21 @@ const collectFixedPriceCars = async () => {
         : /estate|station wagon/i.test(bodySource)
           ? "Универсал"
           : "Легковой";
-    const engineCc = numberFrom(profileValue("Engine size"));
-    const horsepower = numberFrom(profileValue("Power")?.match(/\d+\s*Hp/i)?.[0]);
+    const schemaEngine = schema.vehicleEngine || {};
+    const titleDisplacement = normalizedTitle.match(/\b(\d[.,]\d)\s*(?:TSI|TDI|HDI|BlueHDi|EcoBlue|CDI|dCi|CRDi|PHEV)?\b/i)?.[1];
+    const titleKw = numberFrom(normalizedTitle.match(/\b\d{2,3}\s*kW\b/i)?.[0]);
+    const engineCc = numberFrom(profileValue("Engine size")) ||
+      numberFrom(schemaEngine.engineDisplacement?.value ?? schemaEngine.engineDisplacement) ||
+      (titleDisplacement ? Math.round(Number(titleDisplacement.replace(",", ".")) * 1000) : 0);
+    const horsepower = numberFrom(profileValue("Power")?.match(/\d+\s*Hp/i)?.[0]) ||
+      numberFrom(schemaEngine.enginePower?.value ?? schemaEngine.enginePower) ||
+      (titleKw ? Math.round(titleKw * 1.35962) : 0);
     const engine = engineCc
       ? `${(engineCc / 1000).toFixed(1)}${horsepower ? ` · ${horsepower} л.с.` : ""}`
       : horsepower ? `${horsepower} л.с.` : "Не указан";
     const colorValue = profileValues("Color")
       .filter((value) => !/^(VIN|N\/A|—|-|Color)$/i.test(value))
-      .at(-1);
+      .at(-1) || schema.color || schema.vehicleColor;
     const colorSource = String(colorValue || "").toLowerCase();
     const colors = { green: "Зелёный", black: "Чёрный", white: "Белый", grey: "Серый", gray: "Серый", blue: "Синий", red: "Красный", silver: "Серебристый", brown: "Коричневый", beige: "Бежевый" };
     const color = colors[colorSource] || colorValue || "Не указан";
