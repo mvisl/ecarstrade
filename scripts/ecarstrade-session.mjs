@@ -82,7 +82,10 @@ const collectFixedPriceCars = async () => {
     await next.click();
     await page.waitForTimeout(2500);
   }
-  const hrefs = Array.from(hrefSet).slice(0, 50);
+  // Keep a deep enough packet for several user-triggered 12-car sessions.
+  // The browser can then produce the next selection immediately without
+  // pretending that re-reading the same five records is a refresh.
+  const hrefs = Array.from(hrefSet).slice(0, 120);
   console.log(`Found ${hrefs.length} car links`);
 
   const cars = [];

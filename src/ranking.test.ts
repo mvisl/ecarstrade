@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
-  inferPriceCeiling,
+  contextualPriceAdjustment,
+  inferBudgetProfile,
   nextAllowedPosition,
   rankAndDiversify,
   scoreCar,
@@ -16,21 +17,51 @@ const car = (id: string, make: string, model: string): RankableCar => ({
   vatDeductible: true,
 });
 describe("ranking", () => {
-  it("learns a budget ceiling only after three explicit price rejects", () => {
-    const decision = (price: number) => ({
-      id: String(price),
-      carId: String(price),
-      decision: "dislike" as const,
-      createdAt: Date.now(),
-      carSnapshot: { make: "Any", model: "Any", price },
-      pillFeedback: [
-        { key: "price", rawValue: price, sentiment: "negative" as const },
-      ],
-    });
-    expect(inferPriceCeiling([decision(21000), decision(19650)])).toBeUndefined();
+  const decision = (
+    price: number,
+    model = String(price),
+    sentiment: "positive" | "negative" = "negative",
+    overall: "like" | "dislike" = "dislike",
+  ) => ({
+    id: `${model}-${price}`,
+    carId: `${model}-${price}`,
+    decision: overall,
+    createdAt: Date.now(),
+    carSnapshot: { make: "Any", model, price, bodyType: "Хэтчбек" },
+    pillFeedback: [{ key: "price", rawValue: price, sentiment }],
+  });
+  it("does not create a ceiling after three price rejects", () => {
     expect(
-      inferPriceCeiling([decision(21000), decision(19650), decision(14150)]),
-    ).toBe(14150);
+      inferBudgetProfile([
+        decision(21000),
+        decision(19650),
+        decision(14150),
+      ]),
+    ).toEqual({ confidence: 0 });
+  });
+  it("keeps an accepted expensive exception out of a global ceiling", () => {
+    const rows = [
+      decision(18000, "A"),
+      decision(18500, "B"),
+      decision(19000, "C"),
+      decision(19500, "D"),
+      decision(20000, "E"),
+      decision(22000, "SUV", "positive", "like"),
+    ];
+    expect(inferBudgetProfile(rows).softCeiling).toBeUndefined();
+  });
+  it("penalizes repeated expensive cars in the same segment", () => {
+    expect(
+      contextualPriceAdjustment(
+        {
+          make: "Opel",
+          model: "Corsa",
+          bodyType: "Хэтчбек",
+          price: 20000,
+        },
+        [decision(18000, "A"), decision(19000, "B")],
+      ),
+    ).toBeLessThan(-0.3);
   });
   it("caps an unstable single preference", () => {
     const score = scoreCar(car("1", "Ford", "Kuga"), [

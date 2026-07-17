@@ -38,6 +38,26 @@
 .decision-result button:active {
   transform: translateY(1px);
 }
+.session-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+.session-summary span {
+  padding: 7px 10px;
+  border: 1px solid var(--pill-border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.decision-result .summary-secondary {
+  margin-top: 10px;
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+}
 .decision-zone {
   position: sticky;
   bottom: 0;

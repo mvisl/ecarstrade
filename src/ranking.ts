@@ -13,6 +13,11 @@ export interface ScoreBreakdown {
   diversityPenalty: number;
   total: number;
 }
+export interface BudgetProfile {
+  softCeiling?: number;
+  hardCeiling?: number;
+  confidence: number;
+}
 const clamp = (value: number, min: number, max: number) =>
   Math.min(max, Math.max(min, value));
 const caps: Record<string, number> = {
@@ -24,20 +29,56 @@ const caps: Record<string, number> = {
 const hash = (text: string) =>
   [...text].reduce((sum, char) => (sum * 31 + char.charCodeAt(0)) >>> 0, 7);
 
-export function inferPriceCeiling(decisions: UserDecision[]) {
-  const rejectedPrices = decisions
-    .filter((decision) =>
-      decision.pillFeedback.some(
-        (item) => item.key === "price" && item.sentiment === "negative",
-      ),
-    )
+const premiumMakes = new Set(["audi", "bmw", "mercedes", "mercedes-benz", "volvo", "lexus"]);
+export const priceSegment = (car: CarSnapshot) => {
+  const make = car.make.trim().toLowerCase();
+  const body = String(car.bodyType || "").toLowerCase();
+  if (premiumMakes.has(make)) return body.includes("suv") ? "premium_family" : "premium_compact";
+  if (body.includes("suv") || body.includes("crossover")) return "compact_suv";
+  if (body.includes("hatch") || body.includes("легков")) return "simple_hatchback";
+  return "family_car";
+};
+const explicitPrice = (decision: UserDecision, sentiment: "positive" | "negative") =>
+  decision.pillFeedback.some((item) => item.key === "price" && item.sentiment === sentiment);
+export function inferBudgetProfile(decisions: UserDecision[]): BudgetProfile {
+  const rejectedDecisions = decisions.filter((decision) => explicitPrice(decision, "negative"));
+  const rejected = rejectedDecisions
     .map((decision) => decision.carSnapshot.price)
     .filter((price): price is number => price != null && price > 0);
-  return rejectedPrices.length >= 3 ? Math.min(...rejectedPrices) : undefined;
+  const models = new Set(rejectedDecisions.map((decision) => `${decision.carSnapshot.make}:${decision.carSnapshot.model}`));
+  if (rejected.length < 5 || models.size < 3) return { confidence: 0 };
+  const floor = Math.min(...rejected);
+  const acceptedException = decisions.some(
+    (decision) =>
+      decision.carSnapshot.price != null &&
+      decision.carSnapshot.price >= floor &&
+      (explicitPrice(decision, "positive") || decision.decision === "like"),
+  );
+  return acceptedException
+    ? { confidence: 0 }
+    : { softCeiling: floor, confidence: Math.min(0.85, rejected.length / 10) };
+}
+export function contextualPriceAdjustment(car: CarSnapshot, decisions: UserDecision[]) {
+  if (car.price == null) return 0;
+  const listingPrice = car.price;
+  const segment = priceSegment(car);
+  const relevant = decisions.filter(
+    (decision) => decision.carSnapshot.price != null && priceSegment(decision.carSnapshot) === segment,
+  );
+  const negatives = relevant.filter((decision) => explicitPrice(decision, "negative")).map((decision) => decision.carSnapshot.price as number);
+  const positives = relevant.filter((decision) => explicitPrice(decision, "positive")).map((decision) => decision.carSnapshot.price as number);
+  let adjustment = 0;
+  if (negatives.length >= 2 && listingPrice >= Math.min(...negatives)) adjustment -= 0.42;
+  else if (negatives.length && listingPrice >= Math.min(...negatives)) adjustment -= 0.12;
+  if (positives.some((price) => listingPrice <= price * 1.05)) adjustment += 0.12;
+  const budget = inferBudgetProfile(decisions);
+  if (budget.softCeiling && listingPrice > budget.softCeiling) adjustment -= 0.18;
+  return adjustment;
 }
 export function scoreCar(
   car: RankableCar,
   profile: PreferenceSignal[],
+  decisions: UserDecision[] = [],
 ): ScoreBreakdown {
   const byId = new Map(
     profile.map((signal) => [`${signal.key}:${signal.value}`, signal]),
@@ -65,10 +106,11 @@ export function scoreCar(
   const exploration = ((hash(car.id) % 1000) / 1000) * 0.08;
   const risk =
     car.damageStatus && car.damageStatus !== "not-reported" ? -0.22 : 0;
-  const total = objective + preferences + opportunity + exploration + risk;
+  const priceContext = contextualPriceAdjustment(car, decisions);
+  const total = objective + preferences + priceContext + opportunity + exploration + risk;
   return {
     objective,
-    preferences,
+    preferences: preferences + priceContext,
     opportunity,
     exploration,
     risk,
@@ -80,9 +122,10 @@ export function rankAndDiversify(
   cars: RankableCar[],
   profile: PreferenceSignal[],
   batchSize = Math.min(5, cars.length),
+  decisions: UserDecision[] = [],
 ) {
   const scored = cars
-    .map((car) => ({ car, score: scoreCar(car, profile) }))
+    .map((car) => ({ car, score: scoreCar(car, profile, decisions) }))
     .sort((a, b) => b.score.total - a.score.total);
   const chosen: typeof scored = [];
   const brandCount = new Map<string, number>(),

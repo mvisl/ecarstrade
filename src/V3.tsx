@@ -26,10 +26,12 @@ import { getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
 import "./profile.css";
-import { inferPriceCeiling, rankAndDiversify } from "./ranking";
+import { rankAndDiversify } from "./ranking";
 import { scheduleReviewAfterIdle } from "./reviewScheduler";
 import ImportCostCard from "./ImportCostCard";
 import "./import-cost.css";
+import { buildSessionSummary } from "./sessionSummary";
+import type { UserDecision } from "./storage";
 
 type Sentiment = "positive" | "negative";
 type Car = {
@@ -246,9 +248,6 @@ const isEligibleListing = (car: Car) =>
   !car.origin.includes("Архив");
 const fullSizePhoto = (src: string) =>
   src.replace(/\/\d+x0__r(?=\.(?:jpe?g|webp))/i, "/780x0__r");
-const withinBudget = (car: Car, ceiling?: number) =>
-  ceiling == null ||
-  (Number(car.price.replace(/\D/g, "")) || Infinity) < ceiling;
 const rankableFromCar = (item: Car) => ({
   id: item.id,
   make: item.make,
@@ -276,11 +275,11 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [toast, setToast] = useState<"yes" | "no" | null>(null);
   const [searching, setSearching] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
+  const [history, setHistory] = useState<UserDecision[]>([]);
   const [modelRejects, setModelRejects] = useState<Record<string, number>>({});
   const [suppressedModels, setSuppressedModels] = useState<Set<string>>(
     new Set(),
   );
-  const [priceRejects, setPriceRejects] = useState<number[]>([]);
   const touch = useRef(0);
   const car = cars[order[index]];
   const move = (delta: number) =>
@@ -337,17 +336,10 @@ export default function V3({ onLock }: { onLock: () => void }) {
           sentiment,
         })),
     };
-    const rejectedPrice =
-      feedback.price === "negative" ? numeric(car.price) : undefined;
-    const nextPriceRejects = rejectedPrice
-      ? [...priceRejects, rejectedPrice]
-      : priceRejects;
-    const priceCeiling =
-      nextPriceRejects.length >= 3 ? Math.min(...nextPriceRejects) : undefined;
-    if (rejectedPrice) setPriceRejects(nextPriceRejects);
     saveUserDecision(stored)
       .then(getUserDecisions)
       .then((decisions) => {
+        setHistory(decisions);
         localStorage.setItem(
           "ecarstrade:mechanical-profile",
           JSON.stringify(buildProfiles(decisions)),
@@ -365,11 +357,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
     }
     window.setTimeout(() => {
       setOrder((current) =>
-        current.filter(
-          (position) =>
-            cars[position]?.id !== car.id &&
-            withinBudget(cars[position], priceCeiling),
-        ),
+        current.filter((position) => cars[position]?.id !== car.id),
       );
       setIndex(0);
       setPhoto(0);
@@ -391,6 +379,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
       getUserDecisions(),
     ])
       .then(([feed, decisions]) => {
+        setHistory(decisions);
         const freshCars = feed.cars
           .map((item) => ({
             ...item,
@@ -415,30 +404,17 @@ export default function V3({ onLock }: { onLock: () => void }) {
         );
         setModelRejects(counts);
         setSuppressedModels(suppressed);
-        const priceCeiling = inferPriceCeiling(decisions);
-        setPriceRejects(
-          decisions
-            .filter((decision) =>
-              decision.pillFeedback.some(
-                (item) =>
-                  item.key === "price" && item.sentiment === "negative",
-              ),
-            )
-            .map((decision) => decision.carSnapshot.price)
-            .filter((price): price is number => price != null && price > 0),
-        );
         const decidedIds = new Set(decisions.map((item) => item.carId));
         const candidates = freshCars.filter(
           (candidate) =>
-            !decidedIds.has(candidate.id) &&
-            !suppressed.has(candidate.model) &&
-            withinBudget(candidate, priceCeiling),
+            !decidedIds.has(candidate.id) && !suppressed.has(candidate.model),
         );
         const profile = buildProfiles(decisions).longTermProfile;
         const ranked = rankAndDiversify(
           candidates.map(rankableFromCar),
           profile,
-          5,
+          12,
+          decisions,
         );
         setOrder(
           ranked.map((row) =>
@@ -479,6 +455,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
       <ProfilePanel onClose={() => setShowProfile(false)} onLock={onLock} />
     );
   if (!car) {
+    const summary = buildSessionSummary(history);
     const refresh = async () => {
       setSearching(true);
       const [response, decisions] = await Promise.all([
@@ -487,23 +464,22 @@ export default function V3({ onLock }: { onLock: () => void }) {
         }),
         getUserDecisions(),
       ]);
+      setHistory(decisions);
       const feed = (await response.json()) as { cars: Car[] };
       const decidedIds = new Set(decisions.map((item) => item.carId));
-      const priceCeiling = inferPriceCeiling(decisions);
       const freshCars = feed.cars
         .map((item) => ({ ...item, photos: item.photos.map(fullSizePhoto) }))
         .filter(
           (item) =>
-            isEligibleListing(item) &&
-            !decidedIds.has(item.id) &&
-            withinBudget(item, priceCeiling),
+            isEligibleListing(item) && !decidedIds.has(item.id),
         );
       setCars(freshCars);
       const profile = buildProfiles(decisions).longTermProfile;
       const ranked = rankAndDiversify(
         freshCars.map(rankableFromCar),
         profile,
-        5,
+        12,
+        decisions,
       );
       setOrder(
         ranked.map((row) =>
@@ -547,12 +523,23 @@ export default function V3({ onLock }: { onLock: () => void }) {
                 : "Свежих вариантов пока нет"}
           </h1>
           <p>
-            {order.length
-              ? "Вкус записал. Теперь попробую удивить следующей серией."
-              : "Kuga исключена. Архивные объявления и машины без реальной цены скрыты."}
+            {summary.decisionsCount
+              ? summary.phrase
+              : "Архивные объявления и машины без реальной цены скрыты."}
           </p>
+          {summary.decisionsCount > 0 && (
+            <div className="session-summary">
+              <span>{summary.decisionsCount} машин просмотрено</span>
+              <span>{summary.likesCount} понравились</span>
+              {summary.strongestPositive && <span>главный плюс: {summary.strongestPositive}</span>}
+              {summary.strongestNegative && <span>главный стоп-фактор: {summary.strongestNegative}</span>}
+            </div>
+          )}
           <button onClick={refresh}>
-            {searching ? "Ищу свежие варианты…" : "Проверить следующую серию"}
+            {searching ? "Собираю подборку…" : "Следующая подборка"}
+          </button>
+          <button className="summary-secondary" onClick={() => setShowProfile(true)}>
+            Посмотреть профиль
           </button>
         </section>
       </main>
