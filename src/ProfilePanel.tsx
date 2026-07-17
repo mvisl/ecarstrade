@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { IconArrowLeft, IconLock } from "@tabler/icons-react";
 import { getUserDecisions, type UserDecision } from "./storage";
 import { buildProfiles, type PreferenceSignal } from "./learning";
+import { INITIAL_PREFERENCES_KEY } from "./initialPreferences";
 const labels: Record<string, string> = {
   make: "Марка",
   model: "Модель",
@@ -29,8 +30,10 @@ export default function ProfilePanel({
     null,
   );
   const [history, setHistory] = useState<UserDecision[]>([]);
+  const [initialPreferences, setInitialPreferences] = useState("");
   useEffect(() => {
     getUserDecisions().then((rows) => { setData(buildProfiles(rows)); setHistory(rows); });
+    setInitialPreferences(localStorage.getItem(INITIAL_PREFERENCES_KEY) || "");
   }, []);
   const stable =
     data?.longTermProfile.filter(
@@ -66,6 +69,13 @@ export default function ProfilePanel({
           />
           <SignalGroup title="Пока проверяем" items={checking} />
         </div>
+      )}
+      {initialPreferences && (
+        <section className="initial-preferences">
+          <div><span>Исходное сообщение</span><strong>Задано тобой до начала просмотра</strong></div>
+          <p>{initialPreferences}</p>
+          <small>Жёсткие запреты применяются до выдачи. Мягкие предпочтения уточняются решениями.</small>
+        </section>
       )}
       <section className="profile-history">
         <h2>История и список</h2>

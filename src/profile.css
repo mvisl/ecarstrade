@@ -54,6 +54,10 @@
   border-top: 1px solid #2a2d33;
 }
 .profile-history { max-width: 1100px; margin: 24px auto; }
+.initial-preferences { max-width:1100px; margin:24px auto; padding:22px; border:1px solid #33373e; border-radius:14px; background:#1b1d21; }
+.initial-preferences div { display:flex; justify-content:space-between; gap:16px; }
+.initial-preferences span,.initial-preferences small { color:#9aa0a8; }
+.initial-preferences p { margin:16px 0 10px; color:#c9ccd1; line-height:1.55; }
 .profile-history article { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid #33373e; }
 .profile-history article div { display:flex; flex-direction:column; }
 .profile-history a { color:#e8622c; }
