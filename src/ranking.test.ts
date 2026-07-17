@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  inferPriceCeiling,
   nextAllowedPosition,
   rankAndDiversify,
   scoreCar,
@@ -15,6 +16,22 @@ const car = (id: string, make: string, model: string): RankableCar => ({
   vatDeductible: true,
 });
 describe("ranking", () => {
+  it("learns a budget ceiling only after three explicit price rejects", () => {
+    const decision = (price: number) => ({
+      id: String(price),
+      carId: String(price),
+      decision: "dislike" as const,
+      createdAt: Date.now(),
+      carSnapshot: { make: "Any", model: "Any", price },
+      pillFeedback: [
+        { key: "price", rawValue: price, sentiment: "negative" as const },
+      ],
+    });
+    expect(inferPriceCeiling([decision(21000), decision(19650)])).toBeUndefined();
+    expect(
+      inferPriceCeiling([decision(21000), decision(19650), decision(14150)]),
+    ).toBe(14150);
+  });
   it("caps an unstable single preference", () => {
     const score = scoreCar(car("1", "Ford", "Kuga"), [
       {

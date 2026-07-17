@@ -26,7 +26,7 @@ import { getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
 import "./profile.css";
-import { rankAndDiversify } from "./ranking";
+import { inferPriceCeiling, rankAndDiversify } from "./ranking";
 import { scheduleReviewAfterIdle } from "./reviewScheduler";
 import ImportCostCard from "./ImportCostCard";
 import "./import-cost.css";
@@ -244,6 +244,11 @@ const isEligibleListing = (car: Car) =>
   !HARD_EXCLUDED_MODELS.has(car.model.trim().toLowerCase()) &&
   /^€\d/.test(car.price.replace(/\s/g, "")) &&
   !car.origin.includes("Архив");
+const fullSizePhoto = (src: string) =>
+  src.replace(/\/\d+x0__r(?=\.(?:jpe?g|webp))/i, "/780x0__r");
+const withinBudget = (car: Car, ceiling?: number) =>
+  ceiling == null ||
+  (Number(car.price.replace(/\D/g, "")) || Infinity) < ceiling;
 const rankableFromCar = (item: Car) => ({
   id: item.id,
   make: item.make,
@@ -275,6 +280,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [suppressedModels, setSuppressedModels] = useState<Set<string>>(
     new Set(),
   );
+  const [priceRejects, setPriceRejects] = useState<number[]>([]);
   const touch = useRef(0);
   const car = cars[order[index]];
   const move = (delta: number) =>
@@ -331,6 +337,14 @@ export default function V3({ onLock }: { onLock: () => void }) {
           sentiment,
         })),
     };
+    const rejectedPrice =
+      feedback.price === "negative" ? numeric(car.price) : undefined;
+    const nextPriceRejects = rejectedPrice
+      ? [...priceRejects, rejectedPrice]
+      : priceRejects;
+    const priceCeiling =
+      nextPriceRejects.length >= 3 ? Math.min(...nextPriceRejects) : undefined;
+    if (rejectedPrice) setPriceRejects(nextPriceRejects);
     saveUserDecision(stored)
       .then(getUserDecisions)
       .then((decisions) => {
@@ -351,7 +365,11 @@ export default function V3({ onLock }: { onLock: () => void }) {
     }
     window.setTimeout(() => {
       setOrder((current) =>
-        current.filter((position) => cars[position]?.id !== car.id),
+        current.filter(
+          (position) =>
+            cars[position]?.id !== car.id &&
+            withinBudget(cars[position], priceCeiling),
+        ),
       );
       setIndex(0);
       setPhoto(0);
@@ -373,7 +391,12 @@ export default function V3({ onLock }: { onLock: () => void }) {
       getUserDecisions(),
     ])
       .then(([feed, decisions]) => {
-        const freshCars = feed.cars.filter(isEligibleListing);
+        const freshCars = feed.cars
+          .map((item) => ({
+            ...item,
+            photos: item.photos.map(fullSizePhoto),
+          }))
+          .filter(isEligibleListing);
         setCars(freshCars);
         const recent = decisions.filter(
           (item) =>
@@ -392,10 +415,24 @@ export default function V3({ onLock }: { onLock: () => void }) {
         );
         setModelRejects(counts);
         setSuppressedModels(suppressed);
+        const priceCeiling = inferPriceCeiling(decisions);
+        setPriceRejects(
+          decisions
+            .filter((decision) =>
+              decision.pillFeedback.some(
+                (item) =>
+                  item.key === "price" && item.sentiment === "negative",
+              ),
+            )
+            .map((decision) => decision.carSnapshot.price)
+            .filter((price): price is number => price != null && price > 0),
+        );
         const decidedIds = new Set(decisions.map((item) => item.carId));
         const candidates = freshCars.filter(
           (candidate) =>
-            !decidedIds.has(candidate.id) && !suppressed.has(candidate.model),
+            !decidedIds.has(candidate.id) &&
+            !suppressed.has(candidate.model) &&
+            withinBudget(candidate, priceCeiling),
         );
         const profile = buildProfiles(decisions).longTermProfile;
         const ranked = rankAndDiversify(
@@ -452,9 +489,15 @@ export default function V3({ onLock }: { onLock: () => void }) {
       ]);
       const feed = (await response.json()) as { cars: Car[] };
       const decidedIds = new Set(decisions.map((item) => item.carId));
-      const freshCars = feed.cars.filter(
-        (item) => isEligibleListing(item) && !decidedIds.has(item.id),
-      );
+      const priceCeiling = inferPriceCeiling(decisions);
+      const freshCars = feed.cars
+        .map((item) => ({ ...item, photos: item.photos.map(fullSizePhoto) }))
+        .filter(
+          (item) =>
+            isEligibleListing(item) &&
+            !decidedIds.has(item.id) &&
+            withinBudget(item, priceCeiling),
+        );
       setCars(freshCars);
       const profile = buildProfiles(decisions).longTermProfile;
       const ranked = rankAndDiversify(
@@ -565,7 +608,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
             if (Math.abs(d) > 45) move(d > 0 ? -1 : 1);
           }}
         >
-          <img src={car.photos[photo]} alt={car.name} />
+          <img src={fullSizePhoto(car.photos[photo])} alt={car.name} />
           <span className="source">{car.origin}</span>
           <span className="photo-price">{car.price}</span>
           <span className="vat">VAT deductible</span>
@@ -625,9 +668,13 @@ export default function V3({ onLock }: { onLock: () => void }) {
                   className={state || ""}
                   onClick={() => cycle(key)}
                 >
-                  <Icon />
-                  {state === "positive" && <IconThumbUp className="sent" />}
-                  {state === "negative" && <IconThumbDown className="sent" />}
+                  {state === "positive" ? (
+                    <IconThumbUp className="sent" />
+                  ) : state === "negative" ? (
+                    <IconThumbDown className="sent" />
+                  ) : (
+                    <Icon />
+                  )}
                   {label}
                 </button>
               );

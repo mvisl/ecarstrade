@@ -117,7 +117,13 @@ const collectFixedPriceCars = async () => {
             (image) =>
               image.getAttribute("data-src") || image.currentSrc || image.src,
           )
-          .filter((src) => /carsphotos|car-photo|vehicle/i.test(src));
+          .filter((src) => /carsphotos|car-photo|vehicle/i.test(src))
+          .map((src) =>
+            new URL(src, location.origin).href.replace(
+              /\/\d+x0__r(?=\.(?:jpe?g|webp))/i,
+              "/780x0__r",
+            ),
+          );
         return {
           text,
           title,

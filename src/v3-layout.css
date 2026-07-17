@@ -62,6 +62,11 @@
   justify-content: center;
   padding: 0 10px;
 }
+.decision-zone .pills .sent {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
 .edge-decision {
   min-height: 118px;
   border-radius: 12px;

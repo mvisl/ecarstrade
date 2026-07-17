@@ -1,5 +1,5 @@
 import { snapshotFeatures, type PreferenceSignal } from "./learning";
-import type { CarSnapshot } from "./storage";
+import type { CarSnapshot, UserDecision } from "./storage";
 export interface RankableCar extends CarSnapshot {
   id: string;
   damageStatus?: string;
@@ -23,6 +23,18 @@ const caps: Record<string, number> = {
 };
 const hash = (text: string) =>
   [...text].reduce((sum, char) => (sum * 31 + char.charCodeAt(0)) >>> 0, 7);
+
+export function inferPriceCeiling(decisions: UserDecision[]) {
+  const rejectedPrices = decisions
+    .filter((decision) =>
+      decision.pillFeedback.some(
+        (item) => item.key === "price" && item.sentiment === "negative",
+      ),
+    )
+    .map((decision) => decision.carSnapshot.price)
+    .filter((price): price is number => price != null && price > 0);
+  return rejectedPrices.length >= 3 ? Math.min(...rejectedPrices) : undefined;
+}
 export function scoreCar(
   car: RankableCar,
   profile: PreferenceSignal[],
