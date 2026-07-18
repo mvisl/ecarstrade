@@ -24,6 +24,7 @@ import "./v3.css";
 import "./v3-overrides.css";
 import "./v3-layout.css";
 import "./strong-pills.css";
+import "./mobile.css";
 import { getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";

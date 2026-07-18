@@ -1,0 +1,42 @@
+@media (max-width: 700px) {
+  body { overflow-x: hidden; }
+  .v3-shell { width: 100%; padding: 0; }
+  .v3-nav { height: 48px; padding: 0 14px; }
+  .v3-nav b { font-size: 15px; }
+  .v3-nav span { font-size: 11px; }
+  .v3-nav > div { gap: 7px; }
+  .lock-app { width: 32px; height: 32px; }
+  .v3-card { border-radius: 0; border-left: 0; border-right: 0; }
+  .v3-gallery { height: min(52vh, 430px); min-height: 270px; }
+  .v3-gallery > img { object-fit: contain; }
+  .source { left: 14px; top: 14px; max-width: 55%; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .photo-price { right: 14px; top: 12px; padding: 8px 10px; font-size: 16px; }
+  .vat { right: 14px; top: 53px; font-size: 9px; }
+  .arrow { width: 34px; height: 34px; }
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  .car-caption { left: 14px; right: 14px; bottom: 14px; }
+  .car-caption h1 { font-size: clamp(17px, 5vw, 22px); line-height: 1.15; max-height: 2.3em; overflow: hidden; }
+  .car-caption p { font-size: 11px; }
+  .previews { right: 14px; bottom: 12px; gap: 4px; }
+  .previews button { width: 36px; height: 27px; }
+  .listing-action { padding: 10px 14px 8px; font-size: 13px; }
+  .decision-zone { grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 12px 12px; }
+  .decision-zone .pills { gap: 7px; }
+  .decision-zone .pills button { min-height: 48px; padding: 0 7px; font-size: 13px; }
+  .edge-decision { min-height: 56px; font-size: 16px; }
+  .edge-decision svg { width: 24px; height: 24px; }
+  .import-cost { padding: 12px; gap: 8px; }
+  .import-cost > div:not(.cost-breakdown) { padding: 10px; }
+  .import-cost strong { font-size: 15px; }
+  .cost-breakdown { padding: 4px 10px; }
+  .cost-row, .cost-row.fixed { min-height: 44px; font-size: 13px; }
+  .cost-row small { font-size: 10px; }
+  .condition-head { height: 58px; }
+}
+
+@media (max-width: 380px) {
+  .v3-gallery { height: 46vh; }
+  .decision-zone .pills button { font-size: 12px; }
+  .previews button:nth-child(n+4) { display: none; }
+}
