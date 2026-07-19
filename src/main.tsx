@@ -7,6 +7,8 @@ import { setActiveProfile } from "./storage";
 const PERSONAL_ACCESS_CODE = "2501";
 const TEST_LOGIN = "тест 1";
 const TEST_PASSWORD = "тест1";
+const OWNER_LOGIN = "mvisl";
+const OWNER_PASSWORD = "bsrtyp";
 
 function App() {
   const [granted, setGranted] = useState(
@@ -28,6 +30,12 @@ function App() {
     }
     if (normalizedLogin === TEST_LOGIN && password === TEST_PASSWORD) {
       setActiveProfile("test-1");
+      localStorage.setItem("ecars_access_granted", "true");
+      setGranted(true);
+      return;
+    }
+    if (normalizedLogin === OWNER_LOGIN && password === OWNER_PASSWORD) {
+      setActiveProfile("mvisl");
       localStorage.setItem("ecars_access_granted", "true");
       setGranted(true);
       return;

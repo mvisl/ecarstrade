@@ -25,7 +25,7 @@ import "./v3-overrides.css";
 import "./v3-layout.css";
 import "./strong-pills.css";
 import "./mobile.css";
-import { getUserDecisions, saveUserDecision } from "./storage";
+import { getActiveProfile, getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
 import "./profile.css";
@@ -405,7 +405,12 @@ export default function V3({ onLock }: { onLock: () => void }) {
     ])
       .then(([feed, decisions]) => {
         setHistory(decisions);
-        if (localStorage.getItem(INITIAL_PREFERENCES_KEY)) setOnboarding("done");
+        if (getActiveProfile() === "mvisl") {
+          if (!localStorage.getItem(INITIAL_PREFERENCES_KEY)) {
+            saveInitialPreferences(CURRENT_USER_INITIAL_PREFERENCES);
+          }
+          setOnboarding("done");
+        } else if (localStorage.getItem(INITIAL_PREFERENCES_KEY)) setOnboarding("done");
         else if (decisions.length > 0) {
           saveInitialPreferences(CURRENT_USER_INITIAL_PREFERENCES);
           setOnboarding("done");
