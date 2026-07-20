@@ -37,11 +37,17 @@ const median = (values) => {
 };
 const feed = JSON.parse(readFileSync(feedPath, "utf8"));
 for (const car of feed.cars || []) {
-  const same = listings.filter((listing) => normalize(listing.make) === normalize(car.make)
+  const sameModel = listings.filter((listing) => normalize(listing.make) === normalize(car.make)
     && normalize(listing.model) === normalize(car.model)
     && Math.abs(Number(car.year) - listing.year) <= 3);
+  // Local portals often use trim names differently (e.g. "C5 Aircross" vs "C5").
+  // If exact model matching is too sparse, use same-make, nearby-year cars as a
+  // visibly lower-confidence fallback instead of showing no comparison at all.
+  const same = sameModel.length >= 2 ? sameModel : listings.filter((listing) =>
+    normalize(listing.make) === normalize(car.make)
+    && Math.abs(Number(car.year) - listing.year) <= 3);
   // One advert is not a market: require at least two comparable local listings.
-  if (same.length < 2) {
+  if (same.length < 3) {
     delete car.localMarketPrice;
     delete car.localMarketSource;
     delete car.localMarketSampleSize;
@@ -50,6 +56,7 @@ for (const car of feed.cars || []) {
   car.localMarketPrice = median(same.map((x) => x.price));
   car.localMarketSource = sourceUrl;
   car.localMarketSampleSize = same.length;
+  car.localMarketMatch = sameModel.length >= 2 ? "model" : "make-year";
 }
 feed.localMarket = { source: sourceUrl, collectedAt: new Date().toISOString(), listingCount: listings.length };
 writeFileSync(feedPath, `${JSON.stringify(feed, null, 2)}\n`);
