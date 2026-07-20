@@ -12,7 +12,7 @@ const OWNER_LOGIN = "mvisl";
 const OWNER_PASSWORD = "bsrtyp";
 
 function App() {
-  if (window.location.pathname.endsWith("/logic")) return <LogicPage />;
+  if (window.location.pathname.endsWith("/logic") || new URLSearchParams(window.location.search).has("logic")) return <LogicPage />;
   const [granted, setGranted] = useState(
     () => localStorage.getItem("ecars_access_granted") === "true",
   );
