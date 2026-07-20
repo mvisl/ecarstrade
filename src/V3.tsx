@@ -11,6 +11,7 @@ import {
   IconCurrencyEuro,
   IconEngine,
   IconGasStation,
+  IconHeart,
   IconLock,
   IconPalette,
   IconUser,
@@ -29,6 +30,7 @@ import "./feel-slider.css";
 import { getActiveProfile, getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
+import WatchlistPanel from "./WatchlistPanel";
 import "./profile.css";
 import { priceTooHigh, rankAndDiversify } from "./ranking";
 import { scheduleReviewAfterIdle } from "./reviewScheduler";
@@ -295,6 +297,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [toast, setToast] = useState<"yes" | "no" | null>(null);
   const [searching, setSearching] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
+  const [showWatchlist, setShowWatchlist] = useState(false);
   const [history, setHistory] = useState<UserDecision[]>([]);
   const [onboarding, setOnboarding] = useState<"loading" | "needed" | "done">("loading");
   const [initialText, setInitialText] = useState("");
@@ -556,6 +559,8 @@ export default function V3({ onLock }: { onLock: () => void }) {
     return (
       <ProfilePanel onClose={() => setShowProfile(false)} onLock={onLock} />
     );
+  if (showWatchlist)
+    return <WatchlistPanel onClose={() => setShowWatchlist(false)} />;
   if (!car) {
     const summary = buildSessionSummary(history);
     const refresh = async () => {
@@ -672,6 +677,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
         <b>eCarsTrade</b>
         <div>
           <span>{order.length - index} новых</span>
+          <button className="lock-app watchlist-trigger" onClick={() => setShowWatchlist(true)} aria-label="Понравившиеся машины"><IconHeart /></button>
           <button
             className="lock-app"
             onClick={() => setShowProfile(true)}
