@@ -12,6 +12,7 @@ import {
   IconEngine,
   IconGasStation,
   IconHeart,
+  IconMenu2,
   IconLock,
   IconPalette,
   IconUser,
@@ -27,6 +28,7 @@ import "./v3-layout.css";
 import "./strong-pills.css";
 import "./mobile.css";
 import "./feel-slider.css";
+import "./evidence.css";
 import { getActiveProfile, getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
@@ -298,6 +300,10 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [searching, setSearching] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
   const [showWatchlist, setShowWatchlist] = useState(false);
+  const [evidencePanel, setEvidencePanel] = useState<"benefits" | "pitfalls" | null>(null);
+  const [photoModal, setPhotoModal] = useState(false);
+  const [photoReaction, setPhotoReaction] = useState<"positive" | "negative" | "strongPositive" | "strongNegative" | null>(null);
+  const photoLongPress = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [history, setHistory] = useState<UserDecision[]>([]);
   const [onboarding, setOnboarding] = useState<"loading" | "needed" | "done">("loading");
   const [initialText, setInitialText] = useState("");
@@ -384,6 +390,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
           rawValue: sliderValue,
           sentiment: (sliderValue <= 25 ? "strongNegative" : sliderValue < 45 ? "negative" : sliderValue >= 75 ? "strongPositive" : "positive") as Sentiment,
         }] : []),
+        ...(photoReaction ? [{ key: "photoFeel", rawValue: `photo_${photo + 1}`, sentiment: photoReaction as Sentiment }] : []),
       ],
     };
     saveUserDecision(stored)
@@ -413,6 +420,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
       setPhoto(0);
       setFeedback({});
       resetSlider();
+      setPhotoReaction(null);
       setOpen(true);
       setLeaving("");
     }, 220);
@@ -695,6 +703,10 @@ export default function V3({ onLock }: { onLock: () => void }) {
         </div>
       </header>
       <article className={`v3-card ${leaving}`}>
+        <button className="evidence-toggle evidence-toggle-left" onClick={() => setEvidencePanel(evidencePanel === "benefits" ? null : "benefits")} aria-label="Преимущества"><IconMenu2 /></button>
+        <button className="evidence-toggle evidence-toggle-right" onClick={() => setEvidencePanel(evidencePanel === "pitfalls" ? null : "pitfalls")} aria-label="Риски и повреждения"><IconMenu2 /></button>
+        <aside className={`evidence-side evidence-benefits ${evidencePanel === "benefits" ? "mobile-open" : ""}`}><h3>Преимущества</h3>{car.report.filter((item) => item.kind === "ok").map((item) => <p key={item.text}>👍 {item.text}</p>)}</aside>
+        <aside className={`evidence-side evidence-pitfalls ${evidencePanel === "pitfalls" ? "mobile-open" : ""}`}><h3>Повреждения и риски</h3>{car.report.filter((item) => item.kind === "bad" || item.kind === "warn").map((item) => <p key={item.text}>⚠️ {item.text}</p>)}</aside>
         <section
           className="v3-gallery"
           onTouchStart={(e) => {
@@ -749,7 +761,8 @@ export default function V3({ onLock }: { onLock: () => void }) {
             {car.photos.slice(0, 5).map((src, i) => (
               <button
                 className={i === photo ? "active" : ""}
-                onClick={() => setPhoto(i)}
+                onMouseEnter={() => setPhoto(i)}
+                onClick={() => { setPhoto(i); setPhotoModal(true); }}
                 key={src}
                 aria-label={`Фото ${i + 1}`}
               >
@@ -758,6 +771,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
             ))}
           </div>
         </section>
+        {photoModal && <div className="photo-modal" role="dialog" aria-modal="true" onClick={() => setPhotoModal(false)}><div className="photo-modal-inner" onClick={(event) => event.stopPropagation()}><button className="photo-modal-close" onClick={() => setPhotoModal(false)}>×</button><img src={fullSizePhoto(car.photos[photo])} alt={car.name} /><div className="photo-reactions"><button className={photoReaction?.includes("Negative") ? "selected negative" : "negative"} onPointerDown={() => { photoLongPress.current = setTimeout(() => setPhotoReaction("strongNegative"), 500); }} onPointerUp={() => { if (photoLongPress.current) clearTimeout(photoLongPress.current); if (!photoReaction?.includes("strongNegative")) setPhotoReaction("negative"); }}>👎</button><button className={photoReaction?.includes("Positive") ? "selected positive" : "positive"} onPointerDown={() => { photoLongPress.current = setTimeout(() => setPhotoReaction("strongPositive"), 500); }} onPointerUp={() => { if (photoLongPress.current) clearTimeout(photoLongPress.current); if (!photoReaction?.includes("strongPositive")) setPhotoReaction("positive"); }}>👍</button></div></div></div>}
         <div className="listing-action">
           {car.sourceUrl ? (
             <a href={car.sourceUrl} target="_blank" rel="noopener noreferrer">
