@@ -797,7 +797,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
             />
             <span aria-hidden="true">😄</span>
           </div>
-          {sliderArmed && <button className="feel-confirm" aria-label="Подтвердить тонкую оценку" onClick={() => { if (sliderResetTimer.current) clearTimeout(sliderResetTimer.current); sliderResetTimer.current = null; decide(sliderValue >= 50 ? "yes" : "no"); }}>Подтвердить</button>}
+          {sliderArmed && <button className="feel-confirm" style={{ left: `${sliderValue}%` }} aria-label="Подтвердить тонкую оценку" onClick={() => { if (sliderResetTimer.current) clearTimeout(sliderResetTimer.current); sliderResetTimer.current = null; decide(sliderValue >= 50 ? "yes" : "no"); }}>Подтвердить</button>}
         </section>
         <div className="decision-zone">
           <button
