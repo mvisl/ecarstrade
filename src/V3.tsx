@@ -25,6 +25,7 @@ import "./v3-overrides.css";
 import "./v3-layout.css";
 import "./strong-pills.css";
 import "./mobile.css";
+import "./feel-slider.css";
 import { getActiveProfile, getUserDecisions, saveUserDecision } from "./storage";
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
@@ -301,6 +302,9 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [suppressedModels, setSuppressedModels] = useState<Set<string>>(
     new Set(),
   );
+  const [sliderValue, setSliderValue] = useState(50);
+  const [sliderArmed, setSliderArmed] = useState(false);
+  const sliderResetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const touch = useRef(0);
   const car = cars[order[index]];
   const move = (delta: number) =>
@@ -308,6 +312,16 @@ export default function V3({ onLock }: { onLock: () => void }) {
     setPhoto(
       (current) => (current + delta + car.photos.length) % car.photos.length,
     );
+  const resetSlider = () => {
+    if (sliderResetTimer.current) clearTimeout(sliderResetTimer.current);
+    sliderResetTimer.current = null;
+    setSliderValue(50);
+    setSliderArmed(false);
+  };
+  const armSliderReset = () => {
+    if (sliderResetTimer.current) clearTimeout(sliderResetTimer.current);
+    sliderResetTimer.current = setTimeout(resetSlider, 2000);
+  };
   const decide = (value: "yes" | "no") => {
     if (locked || !car) return;
     setLocked(true);
@@ -329,6 +343,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
       price: numeric(car.price) ?? car.price,
       body: car.body,
       visualAppeal: "Дизайн",
+      overallFeel: sliderValue,
     };
     const stored = {
       id: crypto.randomUUID(),
@@ -353,13 +368,20 @@ export default function V3({ onLock }: { onLock: () => void }) {
         country: car.origin.split("·")[0].trim(),
         damageStatus: car.critical ?? "not-reported",
       },
-      pillFeedback: Object.entries(feedback)
+      pillFeedback: [
+        ...Object.entries(feedback)
         .filter((entry): entry is [string, Sentiment] => Boolean(entry[1]))
         .map(([key, sentiment]) => ({
           key,
           rawValue: raw[key] ?? key,
           sentiment,
         })),
+        ...(sliderArmed && sliderValue !== 50 ? [{
+          key: "overallFeel",
+          rawValue: sliderValue,
+          sentiment: (sliderValue <= 25 ? "strongNegative" : sliderValue < 45 ? "negative" : sliderValue >= 75 ? "strongPositive" : "positive") as Sentiment,
+        }] : []),
+      ],
     };
     saveUserDecision(stored)
       .then(getUserDecisions)
@@ -387,6 +409,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
       setIndex(0);
       setPhoto(0);
       setFeedback({});
+      resetSlider();
       setOpen(true);
       setLeaving("");
     }, 220);
@@ -738,6 +761,28 @@ export default function V3({ onLock }: { onLock: () => void }) {
             <span>Ссылка на исходное объявление недоступна</span>
           )}
         </div>
+        <section className={`feel-slider ${sliderArmed ? "armed" : ""}`}>
+          <div className="feel-slider-head">
+            <span>Тонкая оценка</span>
+            <small>{sliderArmed ? "Подтверди или отпусти — через 2 секунды сбросится" : "От сильно не нравится до сильно нравится"}</small>
+          </div>
+          <div className="feel-slider-row">
+            <span>Сильно нет</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value={sliderValue}
+              aria-label="Тонкая оценка автомобиля"
+              onChange={(event) => { setSliderValue(Number(event.target.value)); setSliderArmed(true); }}
+              onPointerUp={armSliderReset}
+              onKeyUp={armSliderReset}
+            />
+            <span>Сильно да</span>
+          </div>
+          {sliderArmed && <button className="feel-confirm" onClick={() => { if (sliderResetTimer.current) clearTimeout(sliderResetTimer.current); sliderResetTimer.current = null; decide(sliderValue >= 50 ? "yes" : "no"); }}>Подтвердить тонкую оценку</button>}
+        </section>
         <div className="decision-zone">
           <button
             className="edge-decision no"
