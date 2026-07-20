@@ -303,6 +303,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const [evidencePanel, setEvidencePanel] = useState<"benefits" | "pitfalls" | null>(null);
   const [photoModal, setPhotoModal] = useState(false);
   const [photoReaction, setPhotoReaction] = useState<"positive" | "negative" | "strongPositive" | "strongNegative" | null>(null);
+  const [pricePopover, setPricePopover] = useState(false);
   const photoLongPress = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [history, setHistory] = useState<UserDecision[]>([]);
   const [onboarding, setOnboarding] = useState<"loading" | "needed" | "done">("loading");
@@ -316,6 +317,18 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const sliderResetTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const touch = useRef(0);
   const car = cars[order[index]];
+  const displayedPrice = Number(car?.price?.replace(/\D/g, "")) || undefined;
+  const importAddons = (car?.platformFee ?? 0) + (car?.exportDeclarationFee ?? 0);
+  const comparisonPrice = car?.localMarketPrice;
+  const priceDelta = displayedPrice && comparisonPrice ? comparisonPrice - (displayedPrice + importAddons) : undefined;
+  const priceQuality = priceDelta == null ? "unknown" : priceDelta >= 0 ? "good" : "bad";
+  const pricePosition = priceDelta == null ? 50 : Math.max(8, Math.min(92, 50 + (priceDelta / Math.max(comparisonPrice ?? 1, 1)) * 150));
+  useEffect(() => {
+    if (!pricePopover) return;
+    const close = () => setPricePopover(false);
+    document.addEventListener("pointerdown", close);
+    return () => document.removeEventListener("pointerdown", close);
+  }, [pricePopover]);
   const move = (delta: number) =>
     car &&
     setPhoto(
@@ -730,7 +743,11 @@ export default function V3({ onLock }: { onLock: () => void }) {
           ) : (
             <span className="source source-missing">Ссылка на исходное объявление недоступна</span>
           )}
-          <span className="photo-price">{car.price}</span>
+          <button className={`photo-price ${priceQuality}`} onClick={(event) => { event.stopPropagation(); setPricePopover(!pricePopover); }}>
+            {car.price}
+            <span className="price-mini-meter" style={{ "--price-position": `${pricePosition}%` } as React.CSSProperties}><i /></span>
+          </button>
+          {pricePopover && <div className="price-popover" onPointerDown={(event) => event.stopPropagation()}><strong>{priceQuality === "good" ? "Хорошая цена" : priceQuality === "bad" ? "Цена выше ориентира" : "Сравнение недоступно"}</strong><span>{priceQuality === "unknown" ? "Локальная цена для сравнения пока не загружена." : `После известных расходов: €${Math.round((displayedPrice ?? 0) + importAddons).toLocaleString("ru-RU")}. Ориентир рынка: €${Math.round(comparisonPrice ?? 0).toLocaleString("ru-RU")}.`}</span></div>}
           <span className="vat">VAT deductible</span>
           <button
             className="arrow prev"
