@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import V3 from "./V3";
 import "./access.css";
 import { setActiveProfile } from "./storage";
+import LogicPage from "./LogicPage";
 
 const PERSONAL_ACCESS_CODE = "2501";
 const TEST_LOGIN = "тест 1";
@@ -11,6 +12,7 @@ const OWNER_LOGIN = "mvisl";
 const OWNER_PASSWORD = "bsrtyp";
 
 function App() {
+  if (window.location.pathname.endsWith("/logic")) return <LogicPage />;
   const [granted, setGranted] = useState(
     () => localStorage.getItem("ecars_access_granted") === "true",
   );

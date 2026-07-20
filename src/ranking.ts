@@ -11,6 +11,8 @@ export interface ScoreBreakdown {
   exploration: number;
   risk: number;
   diversityPenalty: number;
+  priceContext: number;
+  priceReason: string;
   total: number;
 }
 export interface BudgetProfile {
@@ -49,6 +51,13 @@ export function inferBudgetProfile(decisions: UserDecision[]): BudgetProfile {
     .map((decision) => decision.carSnapshot.price)
     .filter((price): price is number => price != null && price > 0);
   const models = new Set(rejectedDecisions.map((decision) => `${decision.carSnapshot.make}:${decision.carSnapshot.model}`));
+  const strongRejected = rejectedDecisions
+    .filter((decision) => decision.pillFeedback.some((item) => item.key === "price" && item.sentiment === "strongNegative"))
+    .map((decision) => decision.carSnapshot.price)
+    .filter((price): price is number => price != null && price > 0);
+  if (strongRejected.length) {
+    return { softCeiling: Math.min(...strongRejected), confidence: Math.min(0.95, strongRejected.length / 2) };
+  }
   if (rejected.length < 5 || models.size < 3) return { confidence: 0 };
   const floor = Math.min(...rejected);
   const acceptedException = decisions.some(
@@ -71,7 +80,11 @@ export function contextualPriceAdjustment(car: CarSnapshot, decisions: UserDecis
   const negatives = relevant.filter((decision) => explicitPrice(decision, "negative")).map((decision) => decision.carSnapshot.price as number);
   const positives = relevant.filter((decision) => explicitPrice(decision, "positive")).map((decision) => decision.carSnapshot.price as number);
   let adjustment = 0;
-  if (negatives.length >= 2 && listingPrice >= Math.min(...negatives)) adjustment -= 0.42;
+  const strongNegatives = relevant
+    .filter((decision) => decision.pillFeedback.some((item) => item.key === "price" && item.sentiment === "strongNegative"))
+    .map((decision) => decision.carSnapshot.price as number);
+  if (strongNegatives.length && listingPrice > Math.min(...strongNegatives) * 1.05) adjustment -= 1.2;
+  else if (negatives.length >= 2 && listingPrice >= Math.min(...negatives)) adjustment -= 0.42;
   else if (negatives.length && listingPrice >= Math.min(...negatives)) adjustment -= 0.12;
   if (positives.some((price) => listingPrice <= price * 1.05)) adjustment += 0.12;
   const budget = inferBudgetProfile(decisions);
@@ -110,6 +123,12 @@ export function scoreCar(
   const risk =
     car.damageStatus && car.damageStatus !== "not-reported" ? -0.22 : 0;
   const priceContext = contextualPriceAdjustment(car, decisions);
+  const budget = inferBudgetProfile(decisions);
+  const priceReason = car.price == null
+    ? "Цена не указана"
+    : budget.softCeiling && car.price > budget.softCeiling * 1.05
+      ? `Выше мягкого потолка €${Math.round(budget.softCeiling).toLocaleString("ru-RU")}`
+      : "В пределах текущего ценового сигнала";
   const total = objective + preferences + priceContext + opportunity + exploration + risk;
   return {
     objective,
@@ -118,8 +137,16 @@ export function scoreCar(
     exploration,
     risk,
     diversityPenalty: 0,
+    priceContext,
+    priceReason,
     total,
   };
+}
+
+export function priceTooHigh(car: CarSnapshot, decisions: UserDecision[]) {
+  if (car.price == null) return false;
+  const budget = inferBudgetProfile(decisions);
+  return Boolean(budget.softCeiling && car.price > budget.softCeiling * 1.12 && budget.confidence >= 0.45);
 }
 export function rankAndDiversify(
   cars: RankableCar[],

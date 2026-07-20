@@ -29,7 +29,7 @@ import { getActiveProfile, getUserDecisions, saveUserDecision } from "./storage"
 import { buildProfiles } from "./learning";
 import ProfilePanel from "./ProfilePanel";
 import "./profile.css";
-import { rankAndDiversify } from "./ranking";
+import { priceTooHigh, rankAndDiversify } from "./ranking";
 import { scheduleReviewAfterIdle } from "./reviewScheduler";
 import ImportCostCard from "./ImportCostCard";
 import "./import-cost.css";
@@ -442,7 +442,9 @@ export default function V3({ onLock }: { onLock: () => void }) {
         const decidedIds = new Set(decisions.map((item) => item.carId));
         const candidates = freshCars.filter(
           (candidate) =>
-            !decidedIds.has(candidate.id) && !suppressed.has(candidate.model),
+            !decidedIds.has(candidate.id) &&
+            !suppressed.has(candidate.model) &&
+            !priceTooHigh(rankableFromCar(candidate), decisions),
         );
         const profile = buildProfiles(decisions).longTermProfile;
         const ranked = rankAndDiversify(
@@ -625,14 +627,14 @@ export default function V3({ onLock }: { onLock: () => void }) {
   const specs = [
     ["make", car.make, IconCar],
     ["model", car.model, IconCar],
+    ["price", car.price, IconCurrencyEuro],
     ["year", car.year, IconCalendar],
     ["mileage", car.mileage, IconRoad],
     ["transmission", car.gearbox, IconAutomaticGearbox],
     ["fuel", car.fuel, IconGasStation],
     ["engine", car.engine, IconEngine],
-    ["color", car.color, IconPalette],
-    ["price", car.price, IconCurrencyEuro],
     ["body", car.body, IconCar],
+    ["color", car.color, IconPalette],
     ["visualAppeal", "Дизайн", IconSparkles],
   ] as const;
   const counts = {
