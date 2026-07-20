@@ -762,12 +762,8 @@ export default function V3({ onLock }: { onLock: () => void }) {
           )}
         </div>
         <section className={`feel-slider ${sliderArmed ? "armed" : ""}`}>
-          <div className="feel-slider-head">
-            <span>Тонкая оценка</span>
-            <small>{sliderArmed ? "Подтверди или отпусти — через 2 секунды сбросится" : "От сильно не нравится до сильно нравится"}</small>
-          </div>
           <div className="feel-slider-row">
-            <span>Сильно нет</span>
+            <span aria-hidden="true">😞</span>
             <input
               type="range"
               min="0"
@@ -779,9 +775,9 @@ export default function V3({ onLock }: { onLock: () => void }) {
               onPointerUp={armSliderReset}
               onKeyUp={armSliderReset}
             />
-            <span>Сильно да</span>
+            <span aria-hidden="true">😄</span>
           </div>
-          {sliderArmed && <button className="feel-confirm" onClick={() => { if (sliderResetTimer.current) clearTimeout(sliderResetTimer.current); sliderResetTimer.current = null; decide(sliderValue >= 50 ? "yes" : "no"); }}>Подтвердить тонкую оценку</button>}
+          {sliderArmed && <button className="feel-confirm" aria-label="Подтвердить тонкую оценку" onClick={() => { if (sliderResetTimer.current) clearTimeout(sliderResetTimer.current); sliderResetTimer.current = null; decide(sliderValue >= 50 ? "yes" : "no"); }}>Подтвердить</button>}
         </section>
         <div className="decision-zone">
           <button
