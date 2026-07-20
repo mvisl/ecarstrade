@@ -69,6 +69,8 @@ type Car = {
   critical?: string;
   report: { kind: "bad" | "warn" | "ok"; text: string }[];
   localMarketPrice?: number;
+  localMarketSource?: string;
+  localMarketSampleSize?: number;
   priceMode?: PriceMode;
   listingCountry?: string;
   platformFee?: number;
@@ -747,7 +749,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
             {car.price}
             <span className={`price-mini-meter ${priceQuality}`} style={{ "--price-position": `${pricePosition}%` } as React.CSSProperties}><i /></span>
           </button>
-          {pricePopover && <div className="price-popover" onPointerDown={(event) => event.stopPropagation()}><strong>{priceQuality === "good" ? "Хорошая цена" : priceQuality === "bad" ? "Цена выше ориентира" : "Сравнение недоступно"}</strong><span>{priceQuality === "unknown" ? "Локальная цена для сравнения пока не загружена." : `После известных расходов: €${Math.round((displayedPrice ?? 0) + importAddons).toLocaleString("ru-RU")}. Ориентир рынка: €${Math.round(comparisonPrice ?? 0).toLocaleString("ru-RU")}.`}</span></div>}
+          {pricePopover && <div className="price-popover" onPointerDown={(event) => event.stopPropagation()}><strong>{priceQuality === "good" ? "Хорошая цена" : priceQuality === "bad" ? "Цена выше ориентира" : "Сравнение недоступно"}</strong><span>{priceQuality === "unknown" ? "Для этой модели пока нет минимум двух сопоставимых объявлений в локальной выборке. Мы не подставляем догадку." : `После известных расходов: €${Math.round((displayedPrice ?? 0) + importAddons).toLocaleString("ru-RU")}. Ориентир рынка: €${Math.round(comparisonPrice ?? 0).toLocaleString("ru-RU")} · ${car.localMarketSampleSize ?? 0} локальных объявлений.`}</span></div>}
           <span className="vat">VAT deductible</span>
           <button
             className="arrow prev"

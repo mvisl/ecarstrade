@@ -51,6 +51,10 @@ jobs:
           ECARSTRADE_STATE_PATH: .cache/ecarstrade-session.json
           ECARSTRADE_FEED_PATH: public/feed.json
         run: node scripts/ecarstrade-session.mjs
+      - name: Compare with Montenegro local market
+        env:
+          ECARSTRADE_FEED_PATH: public/feed.json
+        run: node scripts/local-market.mjs
       - name: Publish refreshed feed
         run: |
           git config user.name "github-actions[bot]"
