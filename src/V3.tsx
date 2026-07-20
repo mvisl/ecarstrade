@@ -748,10 +748,11 @@ export default function V3({ onLock }: { onLock: () => void }) {
           <section className="pills">
             {specs.map(([key, label, Icon]) => {
               const state = feedback[key];
+              const secondary = ["engine", "color", "body", "visualAppeal"].includes(key);
               return (
                 <button
                   key={key}
-                  className={state || ""}
+                  className={`${state || ""} ${secondary ? "secondary-pill" : "primary-pill"}`.trim()}
                   onPointerDown={() => startLongPress(key)}
                   onPointerUp={stopLongPress}
                   onPointerCancel={() => { stopLongPress(); longPressedKey.current = null; }}

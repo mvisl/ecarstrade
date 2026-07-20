@@ -7,8 +7,10 @@
   .v3-nav > div { gap: 7px; }
   .lock-app { width: 32px; height: 32px; }
   .v3-card { border-radius: 0; border-left: 0; border-right: 0; }
-  .v3-gallery { height: min(52vh, 430px); min-height: 270px; }
-  .v3-gallery > img { object-fit: contain; }
+  /* Keep the photo as the dominant mobile element: at least half of the
+     visible viewport, without the desktop height cap. */
+  .v3-gallery { height: max(50svh, 360px); min-height: 360px; max-height: none; }
+  .v3-gallery > img { object-fit: cover; }
   .source { left: 14px; top: 14px; max-width: 55%; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .photo-price { right: 14px; top: 12px; padding: 8px 10px; font-size: 16px; }
   .vat { right: 14px; top: 53px; font-size: 9px; }
@@ -22,8 +24,18 @@
   .previews button { width: 36px; height: 27px; }
   .listing-action { padding: 10px 14px 8px; font-size: 13px; }
   .decision-zone { grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 12px 12px; }
-  .decision-zone .pills { gap: 7px; }
+  .decision-zone .pills {
+    gap: 7px;
+    /* Primary pills stay visible beside the actions; the rest are available
+       in this compact scroller instead of making the whole card enormous. */
+    max-height: min(30svh, 250px);
+    overflow-y: auto;
+    align-content: start;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
   .decision-zone .pills button { min-height: 48px; padding: 0 7px; font-size: 13px; }
+  .decision-zone .pills .secondary-pill { opacity: .78; }
   .edge-decision { min-height: 56px; font-size: 16px; }
   .edge-decision svg { width: 24px; height: 24px; }
   .import-cost { padding: 12px; gap: 8px; }
@@ -36,7 +48,7 @@
 }
 
 @media (max-width: 380px) {
-  .v3-gallery { height: 46vh; }
+  .v3-gallery { height: 50svh; min-height: 320px; }
   .decision-zone .pills button { font-size: 12px; }
   .previews button:nth-child(n+4) { display: none; }
 }
