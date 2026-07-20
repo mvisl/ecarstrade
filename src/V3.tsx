@@ -745,7 +745,7 @@ export default function V3({ onLock }: { onLock: () => void }) {
           )}
           <button className={`photo-price ${priceQuality}`} onClick={(event) => { event.stopPropagation(); setPricePopover(!pricePopover); }}>
             {car.price}
-            <span className="price-mini-meter" style={{ "--price-position": `${pricePosition}%` } as React.CSSProperties}><i /></span>
+            <span className={`price-mini-meter ${priceQuality}`} style={{ "--price-position": `${pricePosition}%` } as React.CSSProperties}><i /></span>
           </button>
           {pricePopover && <div className="price-popover" onPointerDown={(event) => event.stopPropagation()}><strong>{priceQuality === "good" ? "Хорошая цена" : priceQuality === "bad" ? "Цена выше ориентира" : "Сравнение недоступно"}</strong><span>{priceQuality === "unknown" ? "Локальная цена для сравнения пока не загружена." : `После известных расходов: €${Math.round((displayedPrice ?? 0) + importAddons).toLocaleString("ru-RU")}. Ориентир рынка: €${Math.round(comparisonPrice ?? 0).toLocaleString("ru-RU")}.`}</span></div>}
           <span className="vat">VAT deductible</span>
