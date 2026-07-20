@@ -30,6 +30,13 @@ const caps: Record<string, number> = {
 };
 const hash = (text: string) =>
   [...text].reduce((sum, char) => (sum * 31 + char.charCodeAt(0)) >>> 0, 7);
+const bodyKey = (value: unknown) => {
+  const text = String(value || "").toLowerCase();
+  if (/универсал|estate|station wagon|wagon|combi|break/.test(text)) return "wagon";
+  if (/suv|кроссовер|crossover/.test(text)) return "suv";
+  if (/пирож|фургон|van|commercial/.test(text)) return "van";
+  return text.trim();
+};
 
 const premiumMakes = new Set(["audi", "bmw", "mercedes", "mercedes-benz", "volvo", "lexus"]);
 export const priceSegment = (car: CarSnapshot) => {
@@ -154,7 +161,19 @@ export function rankAndDiversify(
   batchSize = Math.min(5, cars.length),
   decisions: UserDecision[] = [],
 ) {
-  const scored = cars
+  const bodySignals = new Map<string, "negative" | "positive">();
+  for (const decision of decisions) {
+    for (const item of decision.pillFeedback) {
+      if (item.key !== "body") continue;
+      const body = bodyKey(decision.carSnapshot.bodyType);
+      if (!body) continue;
+      if (item.sentiment === "strongNegative") bodySignals.set(body, "negative");
+      if (item.sentiment === "positive" || item.sentiment === "strongPositive") bodySignals.set(body, "positive");
+    }
+  }
+  const suppressedBodies = new Set([...bodySignals].filter(([, signal]) => signal === "negative").map(([body]) => body));
+  const eligible = cars.filter((car) => !suppressedBodies.has(bodyKey(car.bodyType)));
+  const scored = eligible
     .map((car) => ({ car, score: scoreCar(car, profile, decisions) }))
     .sort((a, b) => b.score.total - a.score.total);
   const chosen: typeof scored = [];
