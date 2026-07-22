@@ -602,7 +602,9 @@ export default function V3({ onLock }: { onLock: () => void }) {
         .map((item) => ({ ...item, photos: item.photos.map(fullSizePhoto) }))
         .filter(
           (item) =>
-            isEligibleListing(item) && !decidedIds.has(item.id),
+            isEligibleListing(item) &&
+            !decidedIds.has(item.id) &&
+            !priceTooHigh(rankableFromCar(item), decisions),
         );
       setCars(freshCars);
       const profile = buildProfiles(decisions).longTermProfile;
