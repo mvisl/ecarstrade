@@ -1,6 +1,51 @@
 {
-  "generatedAt": "2026-07-22T16:57:30.168Z",
+  "generatedAt": "2026-07-22T18:42:43.876Z",
   "cars": [
+    {
+      "id": "7326573",
+      "sourceUrl": "https://ecarstrade.com/cars/7326573",
+      "sourceListingId": "7326573",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "name": "Volkswagen Golf Variant VIII 1.0 eTSI 81kW DSG Life 5d",
+      "year": "2021",
+      "mileage": "146 624 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "1.0 · 110 л.с.",
+      "color": "Серый",
+      "body": "Универсал",
+      "price": "€9 100",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 250,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326573/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
     {
       "id": "7388249",
       "sourceUrl": "https://ecarstrade.com/cars/7388249",
@@ -783,51 +828,6 @@
       ]
     },
     {
-      "id": "7386662",
-      "sourceUrl": "https://ecarstrade.com/cars/7386662",
-      "sourceListingId": "7386662",
-      "make": "Renault",
-      "model": "Clio",
-      "name": "Clio V Evolution 1.0 SCe 65CV BVM5 E6d",
-      "year": "2023",
-      "mileage": "28 143 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "1.0 · 67 л.с.",
-      "color": "Белый",
-      "body": "Легковой",
-      "price": "€9 350",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 250,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386662/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7386663",
       "sourceUrl": "https://ecarstrade.com/cars/7386663",
       "sourceListingId": "7386663",
@@ -860,6 +860,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386663/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386663/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386663/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7386665",
+      "sourceUrl": "https://ecarstrade.com/cars/7386665",
+      "sourceListingId": "7386665",
+      "make": "Renault",
+      "model": "Clio",
+      "name": "Clio V Evolution 1.0 TCe 90CV BVA5 E6d",
+      "year": "2023",
+      "mileage": "14 235 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "1.0 · 91 л.с.",
+      "color": "Белый",
+      "body": "Легковой",
+      "price": "€12 700",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386665/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1188,6 +1233,51 @@
       ]
     },
     {
+      "id": "7386675",
+      "sourceUrl": "https://ecarstrade.com/cars/7386675",
+      "sourceListingId": "7386675",
+      "make": "Toyota",
+      "model": "C-HR",
+      "name": "TOYOTA C-HR / 2016 / 5P / SUV 2.0 Hybride 184 Dynamic Business Beyond",
+      "year": "2021",
+      "mileage": "89 651 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "2.0 · 184 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€15 400",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386675/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
       "id": "7386676",
       "sourceUrl": "https://ecarstrade.com/cars/7386676",
       "sourceListingId": "7386676",
@@ -1278,51 +1368,6 @@
       ]
     },
     {
-      "id": "7386678",
-      "sourceUrl": "https://ecarstrade.com/cars/7386678",
-      "sourceListingId": "7386678",
-      "make": "Volkswagen",
-      "model": "Polo",
-      "name": "Polo VI Lounge 1.0 80CV BVM5 E6d",
-      "year": "2021",
-      "mileage": "87 047 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "1.0 · 80 л.с.",
-      "color": "Серый",
-      "body": "Легковой",
-      "price": "€9 250",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 250,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386678/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7386679",
       "sourceUrl": "https://ecarstrade.com/cars/7386679",
       "sourceListingId": "7386679",
@@ -1400,6 +1445,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386681/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386681/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386681/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7386682",
+      "sourceUrl": "https://ecarstrade.com/cars/7386682",
+      "sourceListingId": "7386682",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "name": "VOLKSWAGEN Tiguan / 2020 / 5P / SUV 1.4 eHybrid 245 DSG6 R-Line",
+      "year": "2023",
+      "mileage": "54 153 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "1.4 · 245 л.с.",
+      "color": "Синий",
+      "body": "SUV",
+      "price": "€25 150",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 350,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386682/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -2087,38 +2177,38 @@
       "localMarketMatch": "make-year"
     },
     {
-      "id": "7386651",
-      "sourceUrl": "https://ecarstrade.com/cars/7386651",
-      "sourceListingId": "7386651",
+      "id": "7386650",
+      "sourceUrl": "https://ecarstrade.com/cars/7386650",
+      "sourceListingId": "7386650",
       "make": "Peugeot",
       "model": "3008",
-      "name": "3008 Allure Business 1.2 PureTech 130CV BVA8 E6d",
-      "year": "2020",
-      "mileage": "72 033 км",
+      "name": "3008 II Allure Pack 1.5 HDi 130CV BVA8 E6d",
+      "year": "2024",
+      "mileage": "86 969 км",
       "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "1.2 · 131 л.с.",
-      "color": "Чёрный",
+      "fuel": "Дизель",
+      "engine": "1.5 · 131 л.с.",
+      "color": "Серый",
       "body": "SUV",
-      "price": "€10 700",
+      "price": "€16 100",
       "origin": "Belgium · Fixed Price",
       "listingCountry": "Belgium",
       "priceMode": "net_export",
       "platformFee": 300,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386651/photo_012/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386650/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -2459,51 +2549,6 @@
       ]
     },
     {
-      "id": "7352072",
-      "sourceUrl": "https://ecarstrade.com/cars/7352072",
-      "sourceListingId": "7352072",
-      "make": "Peugeot",
-      "model": "5008",
-      "name": "Peugeot 5008 HYBRID 145CH E-DCS6 GT",
-      "year": "2025",
-      "mileage": "15 815 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "136 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€26 350",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 350,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7352072/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7380521",
       "sourceUrl": "https://ecarstrade.com/cars/7380521",
       "sourceListingId": "7380521",
@@ -2594,6 +2639,51 @@
       ]
     },
     {
+      "id": "7386620",
+      "sourceUrl": "https://ecarstrade.com/cars/7386620",
+      "sourceListingId": "7386620",
+      "make": "Mercedes",
+      "model": "A 200",
+      "name": "Mercedes-Benz Classe A Compact / 2018 / 5P / Berline A 200 d Business Line 8G-DCT",
+      "year": "2021",
+      "mileage": "57 363 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "1.9 · 150 л.с.",
+      "color": "Серый",
+      "body": "Легковой",
+      "price": "€16 800",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386620/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
       "id": "7386609",
       "sourceUrl": "https://ecarstrade.com/cars/7386609",
       "sourceListingId": "7386609",
@@ -2639,7 +2729,7 @@
       ],
       "localMarketPrice": 8700,
       "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
+      "localMarketSampleSize": 4,
       "localMarketMatch": "make-year"
     },
     {
@@ -2778,51 +2868,6 @@
       ]
     },
     {
-      "id": "7386624",
-      "sourceUrl": "https://ecarstrade.com/cars/7386624",
-      "sourceListingId": "7386624",
-      "make": "Mercedes",
-      "model": "GLC 300",
-      "name": "Mercedes-Benz GLC / 2019 / 5P / SUV GLC 300 d Avantgarde Line 4Matic",
-      "year": "2019",
-      "mileage": "50 926 км",
-      "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "1.9 · 245 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€26 450",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 350,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7386624/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7386625",
       "sourceUrl": "https://ecarstrade.com/cars/7386625",
       "sourceListingId": "7386625",
@@ -2915,7 +2960,7 @@
   ],
   "localMarket": {
     "source": "https://autodiler.me/en",
-    "collectedAt": "2026-07-22T16:57:31.218Z",
-    "listingCount": 34
+    "collectedAt": "2026-07-22T18:42:45.087Z",
+    "listingCount": 29
   }
 }
