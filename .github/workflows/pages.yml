@@ -30,7 +30,10 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm exec vite build
+      - name: Build site
+        env:
+          VITE_GEMINI_REVIEW_ENDPOINT: ${{ vars.GEMINI_REVIEW_ENDPOINT }}
+        run: pnpm exec vite build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
