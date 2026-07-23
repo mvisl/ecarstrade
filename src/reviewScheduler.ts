@@ -62,6 +62,24 @@ export function scheduleReviewAfterIdle(
     window.dispatchEvent(
       new CustomEvent("ecarstrade:llm-review-requested", { detail: input }),
     );
+    const endpoint = import.meta.env.VITE_GEMINI_REVIEW_ENDPOINT as string | undefined;
+    if (endpoint) {
+      const installationId = localStorage.getItem("ecarstrade:installation-id") || crypto.randomUUID();
+      localStorage.setItem("ecarstrade:installation-id", installationId);
+      fetch(endpoint, {
+        method: "POST",
+        headers: { "content-type": "application/json", "X-Installation-Id": installationId },
+        body: JSON.stringify(input),
+      }).then(async (response) => {
+        if (!response.ok) throw new Error(`review_${response.status}`);
+        const result = await response.json();
+        localStorage.setItem("ecarstrade:llm-review-result", JSON.stringify({ ...result, receivedAt: Date.now() }));
+        window.dispatchEvent(new CustomEvent("ecarstrade:llm-review-completed", { detail: result }));
+        markReviewCompleted(decisions.length);
+      }).catch(() => {
+        window.dispatchEvent(new CustomEvent("ecarstrade:llm-review-failed"));
+      });
+    }
   }, delayMs);
   return true;
 }

@@ -1,0 +1,7 @@
+name = "ecarstrade-gemini-review"
+main = "src/index.ts"
+compatibility_date = "2026-07-23"
+
+[vars]
+ALLOWED_ORIGIN = "https://mvisl.github.io"
+GEMINI_MODEL = "gemini-2.5-flash"
