@@ -4,4 +4,4 @@ compatibility_date = "2026-07-23"
 
 [vars]
 ALLOWED_ORIGIN = "https://mvisl.github.io"
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-flash-latest"
