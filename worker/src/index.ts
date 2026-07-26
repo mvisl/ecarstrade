@@ -67,6 +67,6 @@ export default { async fetch(request: Request, env: Env): Promise<Response> {
     const body: any = await response.json();
     const text = body?.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
     let parsed: any; try { parsed = JSON.parse(text); } catch { return json({ error: "invalid_gemini_json" }, 502, origin); }
-    return json(normalize(parsed), 200, origin);
+    return json({ ...normalize(parsed), requestId: payload.requestId, model }, 200, origin);
   } catch { return json({ error: "gemini_unavailable" }, 502, origin); }
 } };

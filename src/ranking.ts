@@ -4,6 +4,8 @@ export interface RankableCar extends CarSnapshot {
   id: string;
   damageStatus?: string;
 }
+const listingKeys = (car: { id?: string; sourceListingId?: string; sourceUrl?: string }) =>
+  [car.sourceListingId, car.sourceUrl, car.id].filter(Boolean).map(String);
 export interface ScoreBreakdown {
   objective: number;
   preferences: number;
@@ -120,6 +122,18 @@ export function scoreCar(
       caps[feature.key] ?? 0.1,
     );
   }
+  // Explicit pill feedback is an immediate session signal. It outranks the
+  // slower long-term profile and never gets reversed by the overall decision.
+  for (const decision of decisions) {
+    for (const pill of decision.pillFeedback) {
+      const feature = snapshotFeatures(decision.carSnapshot).find((item) => item.key === pill.key);
+      if (!feature) continue;
+      const current = snapshotFeatures(car).find((item) => item.key === pill.key);
+      if (!current || current.value !== feature.value) continue;
+      const strength = pill.sentiment.startsWith("strong") ? 0.22 : 0.11;
+      preferences += pill.sentiment.toLowerCase().includes("negative") ? -strength : strength;
+    }
+  }
   const objective =
     (car.vatDeductible ? 0.25 : 0) +
     (car.year && car.year >= 2020 ? 0.12 : 0) +
@@ -161,6 +175,12 @@ export function rankAndDiversify(
   batchSize = Math.min(5, cars.length),
   decisions: UserDecision[] = [],
 ) {
+  const decidedKeys = new Set(decisions.flatMap((decision) => listingKeys({
+    id: decision.carId,
+    sourceListingId: decision.carSnapshot.sourceListingId,
+    sourceUrl: decision.carSnapshot.sourceUrl,
+  })));
+  cars = cars.filter((car) => !listingKeys(car).some((key) => decidedKeys.has(key)));
   const bodySignals = new Map<string, "negative" | "positive">();
   for (const decision of decisions) {
     for (const item of decision.pillFeedback) {

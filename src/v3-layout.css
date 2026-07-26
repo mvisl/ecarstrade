@@ -15,6 +15,9 @@
   align-items: center;
   gap: 12px;
 }
+.series-progress {
+  display: none;
+}
 .lock-app {
   width: 36px;
   height: 36px;
@@ -138,6 +141,31 @@
   opacity: 0.65;
 }
 @media (max-width: 700px) {
+  .series-progress {
+    display: block;
+    position: relative;
+    z-index: 6;
+    padding: 7px 14px 8px;
+    background: var(--bg-card);
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: max(7px, env(safe-area-inset-top));
+  }
+  .series-progress-track {
+    height: 3px;
+    margin-top: 5px;
+    overflow: hidden;
+    border-radius: 99px;
+    background: #3a3e46;
+  }
+  .series-progress-track i {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--accent);
+    transition: width .2s ease;
+  }
   .v3-gallery {
     height: 42vh;
     min-height: 320px;

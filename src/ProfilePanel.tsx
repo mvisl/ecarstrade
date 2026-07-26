@@ -3,6 +3,7 @@ import { IconArrowLeft, IconLock } from "@tabler/icons-react";
 import { getUserDecisions, type UserDecision } from "./storage";
 import { buildProfiles, type PreferenceSignal } from "./learning";
 import { INITIAL_PREFERENCES_KEY } from "./initialPreferences";
+import { getReviewMeta, runReviewNow } from "./reviewScheduler";
 const labels: Record<string, string> = {
   make: "Марка",
   model: "Модель",
@@ -32,6 +33,9 @@ export default function ProfilePanel({
   );
   const [history, setHistory] = useState<UserDecision[]>([]);
   const [initialPreferences, setInitialPreferences] = useState("");
+  const [reviewMeta, setReviewMeta] = useState(getReviewMeta());
+  const [reviewResult, setReviewResult] = useState<any>(() => { try { return JSON.parse(localStorage.getItem("ecarstrade:llm-review-result") || "null"); } catch { return null; } });
+  const [reviewRunning, setReviewRunning] = useState(false);
   useEffect(() => {
     getUserDecisions().then((rows) => { setData(buildProfiles(rows)); setHistory(rows); });
     setInitialPreferences(localStorage.getItem(INITIAL_PREFERENCES_KEY) || "");
@@ -47,6 +51,10 @@ export default function ProfilePanel({
       .slice(0, 12) ?? [];
   const group = (items: PreferenceSignal[], positive: boolean) =>
     items.filter((x) => (positive ? x.score > 0 : x.score < 0));
+  const checkLlm = async () => {
+    setReviewRunning(true); setReviewMeta({ ...getReviewMeta(), status: "running" });
+    try { const result = await runReviewNow(history); setReviewResult(result); } catch {} finally { setReviewMeta(getReviewMeta()); setReviewRunning(false); }
+  };
   return (
     <main className="profile-page">
       <header className="profile-nav">
@@ -78,6 +86,15 @@ export default function ProfilePanel({
           <small>Жёсткие запреты применяются до выдачи. Мягкие предпочтения уточняются решениями.</small>
         </section>
       )}
+      <section className="profile-history llm-status">
+        <h2>LLM-review</h2>
+        <p><strong>Состояние:</strong> {reviewRunning ? "Выполняется" : reviewMeta.status === "ready" ? "Готово" : reviewMeta.status === "error" ? "Ошибка" : history.length < 8 ? "Не запускался" : "Ожидает"}</p>
+        <p><strong>Новых решений передано:</strong> {Math.max(0, history.length - reviewMeta.reviewedDecisionCount)} · <strong>HTTP:</strong> {reviewMeta.lastHttpStatus ?? "—"} · <strong>Инсайтов:</strong> {reviewMeta.lastInsightCount ?? 0}</p>
+        <p><strong>Request ID:</strong> {reviewMeta.lastRequestId ?? "—"}</p>
+        <p><strong>Причина:</strong> {reviewMeta.reason ?? (history.length < 8 ? `Нужно ещё ${8 - history.length} решений` : "Автоматический review ещё не запускался")}</p>
+        <div className="llm-actions"><button onClick={checkLlm} disabled={reviewRunning || history.length === 0}>Проверить LLM сейчас</button><button onClick={() => setReviewResult(reviewResult ? reviewResult : JSON.parse(localStorage.getItem("ecarstrade:llm-review-result") || "null"))}>Показать последний ответ</button></div>
+        {reviewResult && <pre>{JSON.stringify(reviewResult, null, 2)}</pre>}
+      </section>
       <section className="profile-history">
         <h2>История и список</h2>
         {history.slice(-20).reverse().map((row) => (

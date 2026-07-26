@@ -115,4 +115,16 @@ describe("ranking", () => {
       3,
     );
   });
+  it("never returns an already decided listing by stable source identity", () => {
+    const candidate = { ...car("local-1", "Peugeot", "208"), sourceListingId: "source-123", sourceUrl: "https://ecarstrade.com/car/123" };
+    const prior = { ...decision(9000, "208"), carId: "different-local-id", carSnapshot: { ...decision(9000, "208").carSnapshot, sourceListingId: "source-123", sourceUrl: "https://ecarstrade.com/car/123" } };
+    expect(rankAndDiversify([candidate], [], 1, [prior])).toHaveLength(0);
+  });
+  it("applies an explicit fuel negative immediately to the next ranking", () => {
+    const diesel = { ...car("d", "BMW", "320"), fuel: "Дизель" };
+    const petrol = { ...car("p", "BMW", "320i"), fuel: "Бензин" };
+    const prior = { ...decision(9000, "old"), carSnapshot: { ...decision(9000, "old").carSnapshot, fuel: "Дизель" }, pillFeedback: [{ key: "fuel", rawValue: "Дизель", sentiment: "negative" as const }] };
+    const ranked = rankAndDiversify([diesel, petrol], [], 2, [prior]);
+    expect(ranked[0].car.fuel).toBe("Бензин");
+  });
 });

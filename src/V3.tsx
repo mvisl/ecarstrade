@@ -275,6 +275,8 @@ const fullSizePhoto = (src: string) =>
   src.replace(/\/\d+x0__r(?=\.(?:jpe?g|webp))/i, "/780x0__r");
 const rankableFromCar = (item: Car) => ({
   id: item.id,
+  sourceListingId: item.sourceListingId,
+  sourceUrl: item.sourceUrl,
   make: item.make,
   model: item.model,
   year: Number(item.year),
@@ -288,6 +290,8 @@ const rankableFromCar = (item: Car) => ({
   vatDeductible: true,
   damageStatus: item.critical ?? "not-reported",
 });
+const listingIdentity = (item: { id?: string; sourceListingId?: string; sourceUrl?: string }) =>
+  [item.sourceListingId, item.sourceUrl, item.id].filter(Boolean).map(String);
 export default function V3({ onLock }: { onLock: () => void }) {
   const [cars, setCars] = useState<Car[]>([]);
   const [order, setOrder] = useState<number[]>([]);
@@ -489,10 +493,14 @@ export default function V3({ onLock }: { onLock: () => void }) {
         );
         setModelRejects(counts);
         setSuppressedModels(suppressed);
-        const decidedIds = new Set(decisions.map((item) => item.carId));
+        const decidedIds = new Set(decisions.flatMap((item) => listingIdentity({
+          id: item.carId,
+          sourceListingId: item.carSnapshot.sourceListingId,
+          sourceUrl: item.carSnapshot.sourceUrl,
+        })));
         const candidates = freshCars.filter(
           (candidate) =>
-            !decidedIds.has(candidate.id) &&
+            !listingIdentity(candidate).some((key) => decidedIds.has(key)) &&
             !suppressed.has(candidate.model) &&
             !priceTooHigh(rankableFromCar(candidate), decisions),
         );
@@ -597,13 +605,17 @@ export default function V3({ onLock }: { onLock: () => void }) {
       ]);
       setHistory(decisions);
       const feed = (await response.json()) as { cars: Car[] };
-      const decidedIds = new Set(decisions.map((item) => item.carId));
+      const decidedIds = new Set(decisions.flatMap((item) => listingIdentity({
+        id: item.carId,
+        sourceListingId: item.carSnapshot.sourceListingId,
+        sourceUrl: item.carSnapshot.sourceUrl,
+      })));
       const freshCars = feed.cars
         .map((item) => ({ ...item, photos: item.photos.map(fullSizePhoto) }))
         .filter(
           (item) =>
             isEligibleListing(item) &&
-            !decidedIds.has(item.id) &&
+            !listingIdentity(item).some((key) => decidedIds.has(key)) &&
             !priceTooHigh(rankableFromCar(item), decisions),
         );
       setCars(freshCars);
@@ -720,6 +732,10 @@ export default function V3({ onLock }: { onLock: () => void }) {
           </button>
         </div>
       </header>
+      <div className="series-progress" aria-label={`Позиция в серии: ${Math.min(index + 1, order.length)} из ${order.length}`}>
+        <span>{Math.min(index + 1, order.length)} из {order.length}</span>
+        <div className="series-progress-track"><i style={{ width: `${order.length ? Math.min(100, ((index + 1) / order.length) * 100) : 100}%` }} /></div>
+      </div>
       <article className={`v3-card ${leaving}`}>
         <button className="evidence-toggle evidence-toggle-left" onClick={() => setEvidencePanel(evidencePanel === "benefits" ? null : "benefits")} aria-label="Преимущества"><IconMenu2 /></button>
         <button className="evidence-toggle evidence-toggle-right" onClick={() => setEvidencePanel(evidencePanel === "pitfalls" ? null : "pitfalls")} aria-label="Риски и повреждения"><IconMenu2 /></button>
