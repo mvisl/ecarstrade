@@ -1,6 +1,366 @@
 {
-  "generatedAt": "2026-08-04T23:24:46.523Z",
+  "generatedAt": "2026-08-05T03:41:31.497Z",
   "cars": [
+    {
+      "id": "7221605",
+      "sourceUrl": "https://ecarstrade.com/cars/7221605",
+      "sourceListingId": "7221605",
+      "make": "Peugeot",
+      "model": "208",
+      "name": "Peugeot 208 Envy 1.2 Turbo 100 hp Man. 6   ",
+      "year": "2026",
+      "mileage": "Не указан",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 101 л.с.",
+      "color": "Серый",
+      "body": "Легковой",
+      "price": "€15 150",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221605/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7221602",
+      "sourceUrl": "https://ecarstrade.com/cars/7221602",
+      "sourceListingId": "7221602",
+      "make": "Peugeot",
+      "model": "5008",
+      "name": "Peugeot 5008 Allure Hybrid 145 e-DCS6",
+      "year": "2026",
+      "mileage": "Не указан",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "136 л.с.",
+      "color": "Серый",
+      "body": "SUV",
+      "price": "€25 700",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 350,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221602/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7417101",
+      "sourceUrl": "https://ecarstrade.com/cars/7417101",
+      "sourceListingId": "7417101",
+      "make": "Cupra",
+      "model": "Formentor",
+      "name": "Cupra Formentor 1.4 E-HYBRID 245 CH DSG6 VZ",
+      "year": "2024",
+      "mileage": "31 406 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "1.4 · 150 л.с.",
+      "color": "Серый",
+      "body": "SUV",
+      "price": "€24 650",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 350,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7410001-7420000/7417101/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7221604",
+      "sourceUrl": "https://ecarstrade.com/cars/7221604",
+      "sourceListingId": "7221604",
+      "make": "Peugeot",
+      "model": "208",
+      "name": "Peugeot 208 Envy 1.2 Turbo 100 hp Man. 6   ",
+      "year": "2026",
+      "mileage": "Не указан",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 101 л.с.",
+      "color": "Серый",
+      "body": "Легковой",
+      "price": "€15 150",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221604/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7221603",
+      "sourceUrl": "https://ecarstrade.com/cars/7221603",
+      "sourceListingId": "7221603",
+      "make": "Peugeot",
+      "model": "208",
+      "name": "Peugeot 208 Envy 1.2 Turbo 100 hp Man. 6   ",
+      "year": "2026",
+      "mileage": "Не указан",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 101 л.с.",
+      "color": "Серый",
+      "body": "Легковой",
+      "price": "€15 150",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7221603/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7429453",
+      "sourceUrl": "https://ecarstrade.com/cars/7429453",
+      "sourceListingId": "7429453",
+      "make": "Volvo",
+      "model": "XC60",
+      "name": "VOLVO XC60 2.0 B4 P MHEV MOMENTUM PRO AUTO",
+      "year": "2022",
+      "mileage": "158 231 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "2.0 · 197 л.с.",
+      "color": "Синий",
+      "body": "SUV",
+      "price": "€18 650",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429453/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7429450",
+      "sourceUrl": "https://ecarstrade.com/cars/7429450",
+      "sourceListingId": "7429450",
+      "make": "Volvo",
+      "model": "XC60",
+      "name": "VOLVO XC60 2.0 B4 D MHEV CORE AUTO",
+      "year": "2022",
+      "mileage": "112 174 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "2.0 · 197 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€22 100",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 350,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429450/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7429446",
+      "sourceUrl": "https://ecarstrade.com/cars/7429446",
+      "sourceListingId": "7429446",
+      "make": "Volvo",
+      "model": "XC40",
+      "name": "VOLVO XC40 2.0 B3 MHEV CORE LIMITED ED. DCT",
+      "year": "2025",
+      "mileage": "22 892 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "2.0 · 163 л.с.",
+      "color": "Чёрный",
+      "body": "Легковой",
+      "price": "€24 100",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 350,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429446/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
     {
       "id": "7429440",
       "sourceUrl": "https://ecarstrade.com/cars/7429440",
@@ -79,51 +439,6 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429438/photo_009/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429438/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429438/photo_011/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7429432",
-      "sourceUrl": "https://ecarstrade.com/cars/7429432",
-      "sourceListingId": "7429432",
-      "make": "Volvo",
-      "model": "XC40",
-      "name": "VOLVO XC40 1.5 T4 RECHARGE GEARTR. INSCRIPTION EXPR",
-      "year": "2021",
-      "mileage": "130 941 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "1.5 · 129 л.с.",
-      "color": "Чёрный",
-      "body": "Легковой",
-      "price": "€15 050",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429432/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -349,51 +664,6 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429418/photo_009/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429418/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429418/photo_011/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7429415",
-      "sourceUrl": "https://ecarstrade.com/cars/7429415",
-      "sourceListingId": "7429415",
-      "make": "Volvo",
-      "model": "XC40",
-      "name": "VOLVO XC40 1.5 T4 PHEV INSCRIPTION EXPR. DCT",
-      "year": "2022",
-      "mileage": "172 472 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "1.5 · 129 л.с.",
-      "color": "Красный",
-      "body": "Легковой",
-      "price": "€12 950",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429415/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -677,38 +947,38 @@
       ]
     },
     {
-      "id": "7260445",
-      "sourceUrl": "https://ecarstrade.com/cars/7260445",
-      "sourceListingId": "7260445",
-      "make": "Citroen",
-      "model": "C3",
-      "name": "Citroen C3 Max Turbo 100 ch Manuelle",
-      "year": "2025",
-      "mileage": "14 627 км",
+      "id": "7429393",
+      "sourceUrl": "https://ecarstrade.com/cars/7429393",
+      "sourceListingId": "7429393",
+      "make": "Volvo",
+      "model": "V60",
+      "name": "VOLVO V60 2.0 D3 MOMENTUM CORE",
+      "year": "2021",
+      "mileage": "188 514 км",
       "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "101 л.с.",
-      "color": "Серый",
-      "body": "Легковой",
-      "price": "€13 500",
+      "fuel": "Дизель",
+      "engine": "2.0 · 150 л.с.",
+      "color": "Чёрный",
+      "body": "Универсал",
+      "price": "€9 600",
       "origin": "Belgium · Fixed Price",
       "listingCountry": "Belgium",
       "priceMode": "net_export",
-      "platformFee": 300,
+      "platformFee": 250,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7260001-7270000/7260445/photo_012/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429393/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -992,38 +1262,38 @@
       ]
     },
     {
-      "id": "7429360",
-      "sourceUrl": "https://ecarstrade.com/cars/7429360",
-      "sourceListingId": "7429360",
+      "id": "7429362",
+      "sourceUrl": "https://ecarstrade.com/cars/7429362",
+      "sourceListingId": "7429362",
       "make": "Volkswagen",
       "model": "T-Roc",
-      "name": "VOLKSWAGEN T-ROC 1.0 TSI ACTIVE",
+      "name": "VOLKSWAGEN T-ROC 1.0 TSI STYLE",
       "year": "2021",
-      "mileage": "115 186 км",
+      "mileage": "116 759 км",
       "gearbox": "Механика",
       "fuel": "Бензин",
       "engine": "1.0 · 110 л.с.",
-      "color": "Серый",
+      "color": "Чёрный",
       "body": "SUV",
-      "price": "€12 650",
+      "price": "€10 650",
       "origin": "Belgium · Fixed Price",
       "listingCountry": "Belgium",
       "priceMode": "net_export",
       "platformFee": 300,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429360/photo_011/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429362/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1397,51 +1667,6 @@
       ]
     },
     {
-      "id": "7429325",
-      "sourceUrl": "https://ecarstrade.com/cars/7429325",
-      "sourceListingId": "7429325",
-      "make": "Volkswagen",
-      "model": "Passat",
-      "name": "VOLKSWAGEN Passat 2.0 TDI 90KW MSQ VARIANT STYLE BUSINESS",
-      "year": "2022",
-      "mileage": "197 042 км",
-      "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "2.0 · 122 л.с.",
-      "color": "Серый",
-      "body": "Универсал",
-      "price": "€10 850",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429325/photo_011/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7429322",
       "sourceUrl": "https://ecarstrade.com/cars/7429322",
       "sourceListingId": "7429322",
@@ -1564,6 +1789,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429317/photo_009/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429317/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429317/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7429315",
+      "sourceUrl": "https://ecarstrade.com/cars/7429315",
+      "sourceListingId": "7429315",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "name": "VOLKSWAGEN GOLF VIII 1.0 TSI 81KW LIFE",
+      "year": "2023",
+      "mileage": "72 067 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.0 · 110 л.с.",
+      "color": "Серый",
+      "body": "Универсал",
+      "price": "€13 750",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429315/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1757,38 +2027,38 @@
       ]
     },
     {
-      "id": "7429297",
-      "sourceUrl": "https://ecarstrade.com/cars/7429297",
-      "sourceListingId": "7429297",
-      "make": "Volkswagen",
-      "model": "Arteon",
-      "name": "VOLKSWAGEN ARTEON 1.4 PHEV DSG ELEGANCE BUSINESS PREM",
+      "id": "7429295",
+      "sourceUrl": "https://ecarstrade.com/cars/7429295",
+      "sourceListingId": "7429295",
+      "make": "Tesla",
+      "model": "Model Y",
+      "name": "TESLA MODEL Y BEV LONG RANGE AUTO 4WD",
       "year": "2022",
-      "mileage": "81 441 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "1.4 · 156 л.с.",
-      "color": "Красный",
-      "body": "Универсал",
-      "price": "€18 150",
+      "mileage": "124 862 км",
+      "gearbox": "Механика",
+      "fuel": "Электро",
+      "engine": "514 л.с.",
+      "color": "Белый",
+      "body": "SUV",
+      "price": "€24 400",
       "origin": "Belgium · Fixed Price",
       "listingCountry": "Belgium",
       "priceMode": "net_export",
-      "platformFee": 300,
+      "platformFee": 350,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429297/photo_011/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429295/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -2385,11 +2655,146 @@
           "text": "VAT deductible"
         }
       ]
+    },
+    {
+      "id": "7429257",
+      "sourceUrl": "https://ecarstrade.com/cars/7429257",
+      "sourceListingId": "7429257",
+      "make": "Seat",
+      "model": "Tarraco",
+      "name": "SEAT TARRACO 1.4 TSI PHEV XCELLENCE DCT",
+      "year": "2021",
+      "mileage": "162 362 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "1.4 · 150 л.с.",
+      "color": "Белый",
+      "body": "SUV",
+      "price": "€14 950",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429257/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7429255",
+      "sourceUrl": "https://ecarstrade.com/cars/7429255",
+      "sourceListingId": "7429255",
+      "make": "Seat",
+      "model": "Leon",
+      "name": "SEAT LEON ST - 2017 1.5 TGI CNG Move! Ultimate DSG",
+      "year": "2020",
+      "mileage": "102 974 км",
+      "gearbox": "Автомат",
+      "fuel": "Не указано",
+      "engine": "1.5 · 130 л.с.",
+      "color": "Коричневый",
+      "body": "Легковой",
+      "price": "€8 900",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 250,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429255/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7429251",
+      "sourceUrl": "https://ecarstrade.com/cars/7429251",
+      "sourceListingId": "7429251",
+      "make": "Seat",
+      "model": "Leon",
+      "name": "SEAT LEON ST 1.5 TSI 130 MOVE!",
+      "year": "2022",
+      "mileage": "70 596 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.5 · 130 л.с.",
+      "color": "Чёрный",
+      "body": "Легковой",
+      "price": "€11 750",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429251/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
     }
   ],
   "localMarket": {
     "source": "https://autodiler.me/en",
-    "collectedAt": "2026-08-04T23:24:48.358Z",
+    "collectedAt": "2026-08-05T03:41:33.225Z",
     "listingCount": 28
   }
 }
