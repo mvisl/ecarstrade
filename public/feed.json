@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T11:49:09.995Z",
+  "generatedAt": "2026-08-08T13:20:28.025Z",
   "cars": [
     {
       "id": "7442261",
@@ -45,9 +45,9 @@
           "text": "VAT deductible"
         }
       ],
-      "localMarketPrice": 32500,
+      "localMarketPrice": 23000,
       "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
+      "localMarketSampleSize": 5,
       "localMarketMatch": "make-year"
     },
     {
@@ -218,51 +218,6 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7355000/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7355000/photo_001/780x0__r__wm_red-3.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7355000/photo_001/780x0__r.jpg?hash=1783954815"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7388567",
-      "sourceUrl": "https://ecarstrade.com/cars/7388567",
-      "sourceListingId": "7388567",
-      "make": "Peugeot",
-      "model": "208",
-      "name": "Peugeot 208 Allure 100 S&S BVM6",
-      "year": "2025",
-      "mileage": "11 502 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "101 л.с.",
-      "color": "Чёрный",
-      "body": "Легковой",
-      "price": "€13 200",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7380001-7390000/7388567/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -717,7 +672,7 @@
           "text": "VAT deductible"
         }
       ],
-      "localMarketPrice": 30900,
+      "localMarketPrice": 17500,
       "localMarketSource": "https://autodiler.me/en",
       "localMarketSampleSize": 3,
       "localMarketMatch": "make-year"
@@ -800,50 +755,6 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442181/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442181/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442181/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7442182",
-      "sourceUrl": "https://ecarstrade.com/cars/7442182",
-      "sourceListingId": "7442182",
-      "make": "BMW",
-      "model": "320",
-      "name": "Baureihe 3 Touring 320 d xDrive Advantage 2.0 140KW AT8 E6d",
-      "year": "2022",
-      "mileage": "83 140 км",
-      "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "2.0 · 190 л.с.",
-      "color": "Чёрный",
-      "body": "Универсал",
-      "price": "€19 800",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442182/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442182/photo_001/780x0__r__wm_red-3.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442182/photo_001/780x0__r.jpg?hash=1786176098",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7437110/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7439459/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7430902/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441702/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7436376/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7439684/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7435546/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7432185/photo_001/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1105,50 +1016,6 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442196/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442196/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442196/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7442201",
-      "sourceUrl": "https://ecarstrade.com/cars/7442201",
-      "sourceListingId": "7442201",
-      "make": "Opel",
-      "model": "Insignia",
-      "name": "Insignia B Sports Tourer Ultimate 2.0 CDTI 128KW AT8 E6d",
-      "year": "2022",
-      "mileage": "118 658 км",
-      "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "2.0 · 174 л.с.",
-      "color": "Чёрный",
-      "body": "Универсал",
-      "price": "€12 900",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442201/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442201/photo_001/780x0__r__wm_red-3.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442201/photo_001/780x0__r.jpg?hash=1786176119",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7437639/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7436079/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7435821/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7435822/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7431148/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7430001-7440000/7439914/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7428209/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441090/photo_000/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1519,11 +1386,7 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ],
-      "localMarketPrice": 32500,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
-      "localMarketMatch": "make-year"
+      ]
     },
     {
       "id": "7442153",
@@ -1571,51 +1434,6 @@
       ]
     },
     {
-      "id": "7429906",
-      "sourceUrl": "https://ecarstrade.com/cars/7429906",
-      "sourceListingId": "7429906",
-      "make": "Peugeot",
-      "model": "2008",
-      "name": "Peugeot 2008 GT PureTech 130 S&S EAT8",
-      "year": "2024",
-      "mileage": "46 690 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "131 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€14 800",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7429906/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7442150",
       "sourceUrl": "https://ecarstrade.com/cars/7442150",
       "sourceListingId": "7442150",
@@ -1648,51 +1466,6 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442150/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442150/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7442150/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7302548",
-      "sourceUrl": "https://ecarstrade.com/cars/7302548",
-      "sourceListingId": "7302548",
-      "make": "Peugeot",
-      "model": "508",
-      "name": "Peugeot 508 Allure Hybrid 180 e-EAT8",
-      "year": "2025",
-      "mileage": "10 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "150 л.с.",
-      "color": "Синий",
-      "body": "Легковой",
-      "price": "€24 850",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 350,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7302548/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1976,51 +1749,6 @@
       ]
     },
     {
-      "id": "7441781",
-      "sourceUrl": "https://ecarstrade.com/cars/7441781",
-      "sourceListingId": "7441781",
-      "make": "Peugeot",
-      "model": "208",
-      "name": "Peugeot 208 Allure 1.2 Hybrid 110ch e-DCS6",
-      "year": "2026",
-      "mileage": "10 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "1.2 · 101 л.с.",
-      "color": "Красный",
-      "body": "Легковой",
-      "price": "€17 800",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441781/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7441782",
       "sourceUrl": "https://ecarstrade.com/cars/7441782",
       "sourceListingId": "7441782",
@@ -2244,55 +1972,10 @@
           "text": "VAT deductible"
         }
       ],
-      "localMarketPrice": 30900,
+      "localMarketPrice": 17500,
       "localMarketSource": "https://autodiler.me/en",
       "localMarketSampleSize": 3,
       "localMarketMatch": "make-year"
-    },
-    {
-      "id": "7441332",
-      "sourceUrl": "https://ecarstrade.com/cars/7441332",
-      "sourceListingId": "7441332",
-      "make": "MG",
-      "model": "ZS",
-      "name": "MG ZS Luxury 1.5 Hybrid+ 197ch",
-      "year": "2026",
-      "mileage": "12 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "1.5 · 102 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€20 350",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 350,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441332/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
     },
     {
       "id": "7441330",
@@ -2428,7 +2111,7 @@
           "text": "VAT deductible"
         }
       ],
-      "localMarketPrice": 32500,
+      "localMarketPrice": 23000,
       "localMarketSource": "https://autodiler.me/en",
       "localMarketSampleSize": 3,
       "localMarketMatch": "make-year"
@@ -2511,6 +2194,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441219/photo_009/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441219/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441219/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7441217",
+      "sourceUrl": "https://ecarstrade.com/cars/7441217",
+      "sourceListingId": "7441217",
+      "make": "Peugeot",
+      "model": "508",
+      "name": "PEUGEOT 508 1.5 BLUEHDI S/S ALLURE EAT8 ",
+      "year": "2021",
+      "mileage": "64 252 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "1.5 · 131 л.с.",
+      "color": "Чёрный",
+      "body": "Легковой",
+      "price": "€12 300",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441217/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -2839,51 +2567,6 @@
       ]
     },
     {
-      "id": "7441203",
-      "sourceUrl": "https://ecarstrade.com/cars/7441203",
-      "sourceListingId": "7441203",
-      "make": "Land Rover",
-      "model": "Discovery Sport",
-      "name": "LAND ROVER DISCOVERY SPORT 1.5 P300E PHEV S 4WD ",
-      "year": "2020",
-      "mileage": "80 813 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "1.5 · 200 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€18 900",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441203/photo_011/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7441202",
       "sourceUrl": "https://ecarstrade.com/cars/7441202",
       "sourceListingId": "7441202",
@@ -2961,6 +2644,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441201/photo_009/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441201/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441201/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7441200",
+      "sourceUrl": "https://ecarstrade.com/cars/7441200",
+      "sourceListingId": "7441200",
+      "make": "BMW",
+      "model": "X1",
+      "name": "BMW X1  BUSINESS PACK PLUS",
+      "year": "2022",
+      "mileage": "73 459 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "125 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€19 900",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441200/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -3197,11 +2925,56 @@
           "text": "VAT deductible"
         }
       ]
+    },
+    {
+      "id": "7441191",
+      "sourceUrl": "https://ecarstrade.com/cars/7441191",
+      "sourceListingId": "7441191",
+      "make": "Peugeot",
+      "model": "3008",
+      "name": "PEUGEOT 3008 1.5 BLUEHDI S&S ACTIVE PACK CONNECT",
+      "year": "2021",
+      "mileage": "74 598 км",
+      "gearbox": "Механика",
+      "fuel": "Дизель",
+      "engine": "1.5 · 131 л.с.",
+      "color": "Серый",
+      "body": "SUV",
+      "price": "€12 400",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7440001-7450000/7441191/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
     }
   ],
   "localMarket": {
     "source": "https://autodiler.me/en",
-    "collectedAt": "2026-08-08T11:49:11.448Z",
-    "listingCount": 28
+    "collectedAt": "2026-08-08T13:20:29.933Z",
+    "listingCount": 30
   }
 }
