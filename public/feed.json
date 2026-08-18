@@ -1,6 +1,55 @@
 {
-  "generatedAt": "2026-08-18T10:55:58.765Z",
+  "generatedAt": "2026-08-18T11:49:53.685Z",
   "cars": [
+    {
+      "id": "7469191",
+      "sourceUrl": "https://ecarstrade.com/cars/7469191",
+      "sourceListingId": "7469191",
+      "make": "Volkswagen",
+      "model": "T-Cross",
+      "name": "Volkswagen T-cross 1.0 tsi opf t-cross dsg 5d 81kw",
+      "year": "2023",
+      "mileage": "52 724 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "1.0 · 110 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€14 132",
+      "origin": "Belgium · Buy Now",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469191/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ],
+      "localMarketPrice": 31490,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
+    },
     {
       "id": "7469134",
       "sourceUrl": "https://ecarstrade.com/cars/7469134",
@@ -182,51 +231,6 @@
       ]
     },
     {
-      "id": "7425594",
-      "sourceUrl": "https://ecarstrade.com/cars/7425594",
-      "sourceListingId": "7425594",
-      "make": "Skoda",
-      "model": "Scala",
-      "name": "SKODA Scala / 2019 / 5P / berlina con portón SCALA 1.0 TSI 70 KW (95 CV) Emotion",
-      "year": "2022",
-      "mileage": "89 928 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "1.0 · 95 л.с.",
-      "color": "Белый",
-      "body": "Легковой",
-      "price": "€10 700",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7425594/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7434139",
       "sourceUrl": "https://ecarstrade.com/cars/7434139",
       "sourceListingId": "7434139",
@@ -317,51 +321,6 @@
       ]
     },
     {
-      "id": "7469126",
-      "sourceUrl": "https://ecarstrade.com/cars/7469126",
-      "sourceListingId": "7469126",
-      "make": "Citroen",
-      "model": "C3",
-      "name": "CITROEN C3 / 2020 / 5P / berlina con portón PureTech 81KW (110CV) S&S Feel Pack (AC2)",
-      "year": "2021",
-      "mileage": "67 444 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "1.2 · 110 л.с.",
-      "color": "Белый",
-      "body": "Легковой",
-      "price": "€7 450",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 250,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7469129",
       "sourceUrl": "https://ecarstrade.com/cars/7469129",
       "sourceListingId": "7469129",
@@ -394,51 +353,6 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469129/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469129/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469129/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7469130",
-      "sourceUrl": "https://ecarstrade.com/cars/7469130",
-      "sourceListingId": "7469130",
-      "make": "Peugeot",
-      "model": "3008",
-      "name": "PEUGEOT 3008 / 2020 / 5P / todoterreno 1.5 BlueHDi 96kW Active Pack EAT8",
-      "year": "2023",
-      "mileage": "136 387 км",
-      "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "1.5 · 131 л.с.",
-      "color": "Белый",
-      "body": "SUV",
-      "price": "€11 500",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469130/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -587,6 +501,51 @@
       ]
     },
     {
+      "id": "7469139",
+      "sourceUrl": "https://ecarstrade.com/cars/7469139",
+      "sourceListingId": "7469139",
+      "make": "Audi",
+      "model": "Q3",
+      "name": "AUDI Q3 Sportback / 2019 / 5P / todoterreno Advanced 35 TDI 110kW (150CV) S tronic",
+      "year": "2023",
+      "mileage": "90 533 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "2.0 · 150 л.с.",
+      "color": "Не указан",
+      "body": "Легковой",
+      "price": "€22 950",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 350,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469139/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
       "id": "7469140",
       "sourceUrl": "https://ecarstrade.com/cars/7469140",
       "sourceListingId": "7469140",
@@ -722,51 +681,6 @@
       ]
     },
     {
-      "id": "7469144",
-      "sourceUrl": "https://ecarstrade.com/cars/7469144",
-      "sourceListingId": "7469144",
-      "make": "Skoda",
-      "model": "Kamiq",
-      "name": "SKODA Kamiq 1.0 TSI 81kW (110CV) DSG Ambition (CX)",
-      "year": "2021",
-      "mileage": "53 552 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "1.0 · 110 л.с.",
-      "color": "Белый",
-      "body": "SUV",
-      "price": "€13 200",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469144/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7469145",
       "sourceUrl": "https://ecarstrade.com/cars/7469145",
       "sourceListingId": "7469145",
@@ -857,6 +771,51 @@
       ]
     },
     {
+      "id": "7469126",
+      "sourceUrl": "https://ecarstrade.com/cars/7469126",
+      "sourceListingId": "7469126",
+      "make": "Citroen",
+      "model": "C3",
+      "name": "CITROEN C3 / 2020 / 5P / berlina con portón PureTech 81KW (110CV) S&S Feel Pack (AC2)",
+      "year": "2021",
+      "mileage": "67 444 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 110 л.с.",
+      "color": "Белый",
+      "body": "Легковой",
+      "price": "€7 450",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 250,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469126/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
       "id": "7469137",
       "sourceUrl": "https://ecarstrade.com/cars/7469137",
       "sourceListingId": "7469137",
@@ -889,6 +848,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469137/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469137/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469137/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7469117",
+      "sourceUrl": "https://ecarstrade.com/cars/7469117",
+      "sourceListingId": "7469117",
+      "make": "Opel",
+      "model": "Corsa",
+      "name": "OPEL Corsa / 2019 / 5P / berlina con portón 1.2 XEL 55kW (75CV) Edition",
+      "year": "2020",
+      "mileage": "70 305 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 75 л.с.",
+      "color": "Белый",
+      "body": "Легковой",
+      "price": "€6 150",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 250,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469117/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1079,7 +1083,11 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ]
+      ],
+      "localMarketPrice": 14950,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
     },
     {
       "id": "7469069",
@@ -1169,7 +1177,11 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ]
+      ],
+      "localMarketPrice": 14950,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
     },
     {
       "id": "7469071",
@@ -1249,6 +1261,55 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469067/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469067/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469067/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ],
+      "localMarketPrice": 14950,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
+    },
+    {
+      "id": "7469068",
+      "sourceUrl": "https://ecarstrade.com/cars/7469068",
+      "sourceListingId": "7469068",
+      "make": "Audi",
+      "model": "A3",
+      "name": "Audi, A3 Berline '20, A3 Ber.30 TDi 85kW A.B.Ed.Str.",
+      "year": "2022",
+      "mileage": "77 888 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "2.0 · 116 л.с.",
+      "color": "Серый",
+      "body": "Легковой",
+      "price": "€16 450",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469068/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1397,51 +1458,6 @@
       ]
     },
     {
-      "id": "7469061",
-      "sourceUrl": "https://ecarstrade.com/cars/7469061",
-      "sourceListingId": "7469061",
-      "make": "Skoda",
-      "model": "Superb",
-      "name": "Skoda, Superb Combi FL'19, Skoda Superb Combi 1.5 TSI ACT 110kW DSG7 Clever+",
-      "year": "2021",
-      "mileage": "105 828 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "1.5 · 150 л.с.",
-      "color": "Синий",
-      "body": "Универсал",
-      "price": "€14 650",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469061/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7469058",
       "sourceUrl": "https://ecarstrade.com/cars/7469058",
       "sourceListingId": "7469058",
@@ -1474,6 +1490,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469058/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469058/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469058/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7469059",
+      "sourceUrl": "https://ecarstrade.com/cars/7469059",
+      "sourceListingId": "7469059",
+      "make": "Seat",
+      "model": "Leon",
+      "name": "Seat, Leon '20, SEAT Leon 1.5 TSI 130 Move! 5d",
+      "year": "2021",
+      "mileage": "46 462 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.5 · 131 л.с.",
+      "color": "Чёрный",
+      "body": "Легковой",
+      "price": "€10 750",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469059/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1529,11 +1590,7 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ],
-      "localMarketPrice": 35000,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
-      "localMarketMatch": "make-year"
+      ]
     },
     {
       "id": "7469057",
@@ -1671,42 +1728,42 @@
       ],
       "localMarketPrice": 17490,
       "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 4,
+      "localMarketSampleSize": 5,
       "localMarketMatch": "make-year"
     },
     {
-      "id": "7469056",
-      "sourceUrl": "https://ecarstrade.com/cars/7469056",
-      "sourceListingId": "7469056",
+      "id": "7469051",
+      "sourceUrl": "https://ecarstrade.com/cars/7469051",
+      "sourceListingId": "7469051",
       "make": "BMW",
-      "model": "318",
-      "name": "BMW, 3-serie T FL'22, BMW 3 Reeks Touring 318d (100 kW) 5d",
-      "year": "2022",
-      "mileage": "87 854 км",
+      "model": "X5",
+      "name": "BMW, X5 '18, BMW X5 xDrive45e (155kW) 5d",
+      "year": "2020",
+      "mileage": "149 306 км",
       "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "2.0 · 136 л.с.",
+      "fuel": "Гибрид",
+      "engine": "3.0 · 211 л.с.",
       "color": "Серый",
-      "body": "Универсал",
-      "price": "€21 400",
+      "body": "SUV",
+      "price": "€28 100",
       "origin": "Belgium · Fixed Price",
       "listingCountry": "Belgium",
       "priceMode": "net_export",
       "platformFee": 350,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469056/photo_012/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469051/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1853,9 +1910,9 @@
           "text": "VAT deductible"
         }
       ],
-      "localMarketPrice": 17490,
+      "localMarketPrice": 19000,
       "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
+      "localMarketSampleSize": 4,
       "localMarketMatch": "make-year"
     },
     {
@@ -1901,7 +1958,11 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ]
+      ],
+      "localMarketPrice": 14950,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
     },
     {
       "id": "7469049",
@@ -2036,7 +2097,11 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ]
+      ],
+      "localMarketPrice": 14950,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
     },
     {
       "id": "7469045",
@@ -2071,6 +2136,55 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469045/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469045/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469045/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ],
+      "localMarketPrice": 14950,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
+    },
+    {
+      "id": "7469041",
+      "sourceUrl": "https://ecarstrade.com/cars/7469041",
+      "sourceListingId": "7469041",
+      "make": "Hyundai",
+      "model": "Tucson",
+      "name": "Hyundai Tucson 1.6 CRDi 48V Feel 5d",
+      "year": "2022",
+      "mileage": "148 528 км",
+      "gearbox": "Механика",
+      "fuel": "Дизель",
+      "engine": "1.6 · 136 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€14 450",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469041/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -2129,7 +2243,7 @@
       ],
       "localMarketPrice": 35000,
       "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
+      "localMarketSampleSize": 4,
       "localMarketMatch": "make-year"
     },
     {
@@ -2176,55 +2290,6 @@
           "text": "VAT deductible"
         }
       ]
-    },
-    {
-      "id": "7469038",
-      "sourceUrl": "https://ecarstrade.com/cars/7469038",
-      "sourceListingId": "7469038",
-      "make": "Volkswagen",
-      "model": "Golf",
-      "name": "VW, Golf VII FL'16, Golf 2.0TDi 150 Highline 5d",
-      "year": "2017",
-      "mileage": "178 117 км",
-      "gearbox": "Механика",
-      "fuel": "Дизель",
-      "engine": "2.0 · 1 л.с.",
-      "color": "Белый",
-      "body": "Легковой",
-      "price": "€9 900",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 250,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469038/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ],
-      "localMarketPrice": 12700,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 5,
-      "localMarketMatch": "make-year"
     },
     {
       "id": "7469039",
@@ -2315,9 +2380,9 @@
           "text": "VAT deductible"
         }
       ],
-      "localMarketPrice": 17490,
+      "localMarketPrice": 19000,
       "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
+      "localMarketSampleSize": 4,
       "localMarketMatch": "make-year"
     },
     {
@@ -2456,38 +2521,38 @@
       ]
     },
     {
-      "id": "7469031",
-      "sourceUrl": "https://ecarstrade.com/cars/7469031",
-      "sourceListingId": "7469031",
-      "make": "Skoda",
-      "model": "Superb",
-      "name": "Skoda, Superb Combi FL'19, Sup.Comb.TSI 150 Amb.DSG",
+      "id": "7469035",
+      "sourceUrl": "https://ecarstrade.com/cars/7469035",
+      "sourceListingId": "7469035",
+      "make": "Peugeot",
+      "model": "2008",
+      "name": "Peugeot, 2008 '19, 2008 1.5BlueHDi 96kW All.Pa.A",
       "year": "2021",
-      "mileage": "122 683 км",
+      "mileage": "80 610 км",
       "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "1.5 · 1 л.с.",
-      "color": "Синий",
-      "body": "Универсал",
-      "price": "€13 950",
+      "fuel": "Дизель",
+      "engine": "1.5 · 1305 л.с.",
+      "color": "Серый",
+      "body": "SUV",
+      "price": "€11 450",
       "origin": "Belgium · Fixed Price",
       "listingCountry": "Belgium",
       "priceMode": "net_export",
       "platformFee": 300,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469031/photo_012/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7460001-7470000/7469035/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -2543,11 +2608,7 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ],
-      "localMarketPrice": 35000,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
-      "localMarketMatch": "make-year"
+      ]
     },
     {
       "id": "7469029",
@@ -2637,7 +2698,11 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ]
+      ],
+      "localMarketPrice": 14950,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
     },
     {
       "id": "7469027",
@@ -2772,12 +2837,16 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ]
+      ],
+      "localMarketPrice": 14950,
+      "localMarketSource": "https://autodiler.me/en",
+      "localMarketSampleSize": 4,
+      "localMarketMatch": "make-year"
     }
   ],
   "localMarket": {
     "source": "https://autodiler.me/en",
-    "collectedAt": "2026-08-18T10:56:00.689Z",
-    "listingCount": 28
+    "collectedAt": "2026-08-18T11:49:55.811Z",
+    "listingCount": 29
   }
 }
