@@ -1,6 +1,411 @@
 {
-  "generatedAt": "2026-08-20T07:15:58.567Z",
+  "generatedAt": "2026-08-20T08:04:41.872Z",
   "cars": [
+    {
+      "id": "7350931",
+      "sourceUrl": "https://ecarstrade.com/cars/7350931",
+      "sourceListingId": "7350931",
+      "make": "Peugeot",
+      "model": "2008",
+      "name": "Peugeot 2008 Style 1.2 100 S&S BVM6",
+      "year": "2025",
+      "mileage": "7 564 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 102 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€14 700",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7350001-7360000/7350931/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7376423",
+      "sourceUrl": "https://ecarstrade.com/cars/7376423",
+      "sourceListingId": "7376423",
+      "make": "Peugeot",
+      "model": "2008",
+      "name": "Peugeot 2008 Style 1.2 S&S 75kW BVM6",
+      "year": "2025",
+      "mileage": "10 542 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 102 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€14 600",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7376423/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7420931",
+      "sourceUrl": "https://ecarstrade.com/cars/7420931",
+      "sourceListingId": "7420931",
+      "make": "Peugeot",
+      "model": "2008",
+      "name": "Peugeot 2008 Style 1.2 S&S 75kW BVM6",
+      "year": "2025",
+      "mileage": "10 430 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 102 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€14 600",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420931/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7348146",
+      "sourceUrl": "https://ecarstrade.com/cars/7348146",
+      "sourceListingId": "7348146",
+      "make": "Peugeot",
+      "model": "3008",
+      "name": "Peugeot 3008 Allure Hybrid 145 e-DCS6",
+      "year": "2025",
+      "mileage": "24 227 км",
+      "gearbox": "Автомат",
+      "fuel": "Бензин",
+      "engine": "136 л.с.",
+      "color": "Серый",
+      "body": "SUV",
+      "price": "€22 150",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 350,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7348146/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7378447",
+      "sourceUrl": "https://ecarstrade.com/cars/7378447",
+      "sourceListingId": "7378447",
+      "make": "Peugeot",
+      "model": "2008",
+      "name": "Peugeot 2008 Style 1.2 75 kW S&S BVM6",
+      "year": "2025",
+      "mileage": "9 165 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 102 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€14 600",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7370001-7380000/7378447/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7453100",
+      "sourceUrl": "https://ecarstrade.com/cars/7453100",
+      "sourceListingId": "7453100",
+      "make": "Peugeot",
+      "model": "2008",
+      "name": "Peugeot 2008 Style 1.2 S&S 75kW BVM6",
+      "year": "2025",
+      "mileage": "5 827 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 102 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€14 800",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7450001-7460000/7453100/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7420927",
+      "sourceUrl": "https://ecarstrade.com/cars/7420927",
+      "sourceListingId": "7420927",
+      "make": "Peugeot",
+      "model": "2008",
+      "name": "Peugeot 2008 Style 1.2 75kW S&S BVM6",
+      "year": "2025",
+      "mileage": "7 078 км",
+      "gearbox": "Механика",
+      "fuel": "Бензин",
+      "engine": "1.2 · 102 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€15 000",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7420001-7430000/7420927/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7474608",
+      "sourceUrl": "https://ecarstrade.com/cars/7474608",
+      "sourceListingId": "7474608",
+      "make": "Polestar",
+      "model": "4",
+      "name": "Polestar 4 Prime Long Range Single Motor",
+      "year": "2026",
+      "mileage": "1 198 км",
+      "gearbox": "Автомат",
+      "fuel": "Электро",
+      "engine": "272 л.с.",
+      "color": "Серебристый",
+      "body": "SUV",
+      "price": "€40 800",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 450,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474608/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7474611",
+      "sourceUrl": "https://ecarstrade.com/cars/7474611",
+      "sourceListingId": "7474611",
+      "make": "Polestar",
+      "model": "4",
+      "name": "Polestar 4 Prime Long Range Single Motor",
+      "year": "2026",
+      "mileage": "12 428 км",
+      "gearbox": "Автомат",
+      "fuel": "Электро",
+      "engine": "272 л.с.",
+      "color": "Серый",
+      "body": "SUV",
+      "price": "€40 700",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 450,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474611/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
     {
       "id": "7475355",
       "sourceUrl": "https://ecarstrade.com/cars/7475355",
@@ -34,51 +439,6 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475355/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475355/photo_011/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475355/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7325907",
-      "sourceUrl": "https://ecarstrade.com/cars/7325907",
-      "sourceListingId": "7325907",
-      "make": "Renault",
-      "model": "Clio",
-      "name": "Clio V Intens 1.0 TCe 100CV BVM5 E6dT",
-      "year": "2020",
-      "mileage": "50 128 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "1.0 · 101 л.с.",
-      "color": "Серый",
-      "body": "Легковой",
-      "price": "€9 450",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 250,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325907/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -276,38 +636,38 @@
       ]
     },
     {
-      "id": "7475359",
-      "sourceUrl": "https://ecarstrade.com/cars/7475359",
-      "sourceListingId": "7475359",
-      "make": "Tesla",
-      "model": "Model 3",
-      "name": "TESLA Model 3 / 2018 / 4P / Berline Propulsion",
-      "year": "2022",
-      "mileage": "64 018 км",
+      "id": "7475360",
+      "sourceUrl": "https://ecarstrade.com/cars/7475360",
+      "sourceListingId": "7475360",
+      "make": "Renault",
+      "model": "Clio",
+      "name": "Clio V Business 1.6 E-TECH Hybrid 140CV BVA6 E6d",
+      "year": "2021",
+      "mileage": "35 115 км",
       "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "306 л.с.",
+      "fuel": "Гибрид",
+      "engine": "1.6 · 140 л.с.",
       "color": "Белый",
       "body": "Легковой",
-      "price": "€20 650",
+      "price": "€10 600",
       "origin": "Belgium · Fixed Price",
       "listingCountry": "Belgium",
       "priceMode": "net_export",
-      "platformFee": 350,
+      "platformFee": 300,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475359/photo_012/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475360/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -411,51 +771,6 @@
       ]
     },
     {
-      "id": "7475363",
-      "sourceUrl": "https://ecarstrade.com/cars/7475363",
-      "sourceListingId": "7475363",
-      "make": "Citroen",
-      "model": "C3",
-      "name": "C3 Shine 1.2 PureTech 110CV BVA6 6E",
-      "year": "2023",
-      "mileage": "20 556 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "1.2 · 110 л.с.",
-      "color": "Серый",
-      "body": "Легковой",
-      "price": "€10 250",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7475363/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7475364",
       "sourceUrl": "https://ecarstrade.com/cars/7475364",
       "sourceListingId": "7475364",
@@ -467,7 +782,7 @@
       "gearbox": "Автомат",
       "fuel": "Гибрид",
       "engine": "1.6 · 94 л.с.",
-      "color": "Не указан",
+      "color": "Серебристый",
       "body": "SUV",
       "price": "€14 400",
       "origin": "Belgium · Fixed Price",
@@ -1266,14 +1581,14 @@
       ]
     },
     {
-      "id": "7474614",
-      "sourceUrl": "https://ecarstrade.com/cars/7474614",
-      "sourceListingId": "7474614",
+      "id": "7474625",
+      "sourceUrl": "https://ecarstrade.com/cars/7474625",
+      "sourceListingId": "7474625",
       "make": "Other",
       "model": "Tunland",
       "name": "Foton Tunland G7 2.0L 163 CH",
       "year": "—",
-      "mileage": "10 км",
+      "mileage": "13 км",
       "gearbox": "Автомат",
       "fuel": "Бензин",
       "engine": "164 л.с.",
@@ -1286,18 +1601,18 @@
       "platformFee": 400,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474614/photo_012/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7474625/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1536,38 +1851,38 @@
       ]
     },
     {
-      "id": "7367158",
-      "sourceUrl": "https://ecarstrade.com/cars/7367158",
-      "sourceListingId": "7367158",
+      "id": "7392322",
+      "sourceUrl": "https://ecarstrade.com/cars/7392322",
+      "sourceListingId": "7392322",
       "make": "Peugeot",
       "model": "3008",
-      "name": "Peugeot 3008 GT Hybrid 145 e-DCS6",
+      "name": "Peugeot 3008 Allure Hybrid 145 e-DCS6",
       "year": "2025",
-      "mileage": "16 729 км",
+      "mileage": "14 547 км",
       "gearbox": "Автомат",
       "fuel": "Бензин",
       "engine": "136 л.с.",
       "color": "Серый",
       "body": "SUV",
-      "price": "€24 650",
+      "price": "€22 950",
       "origin": "Belgium · Fixed Price",
       "listingCountry": "Belgium",
       "priceMode": "net_export",
       "platformFee": 350,
       "exportDeclarationFee": 50,
       "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7367158/photo_012/780x0__r.jpg"
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7392322/photo_012/780x0__r.jpg"
       ],
       "report": [
         {
@@ -1759,1091 +2074,11 @@
           "text": "VAT deductible"
         }
       ]
-    },
-    {
-      "id": "7369241",
-      "sourceUrl": "https://ecarstrade.com/cars/7369241",
-      "sourceListingId": "7369241",
-      "make": "Peugeot",
-      "model": "408",
-      "name": "Peugeot 408 Allure Hybrid 145 e-DCS6",
-      "year": "2025",
-      "mileage": "23 708 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "136 л.с.",
-      "color": "Синий",
-      "body": "Легковой",
-      "price": "€19 100",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7360001-7370000/7369241/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7472205",
-      "sourceUrl": "https://ecarstrade.com/cars/7472205",
-      "sourceListingId": "7472205",
-      "make": "Citroen",
-      "model": "DS3",
-      "name": "DS DS 3 Crossback Grand Chic E-TENSE Electric 100 kW",
-      "year": "2021",
-      "mileage": "14 234 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "136 л.с.",
-      "color": "Синий",
-      "body": "SUV",
-      "price": "€14 800",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472205/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7305681",
-      "sourceUrl": "https://ecarstrade.com/cars/7305681",
-      "sourceListingId": "7305681",
-      "make": "Peugeot",
-      "model": "2008",
-      "name": "Peugeot 2008 Allure 1.2 75kW S&S BVM6",
-      "year": "2025",
-      "mileage": "7 177 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "1.2 · 102 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€16 000",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7300001-7310000/7305681/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7390455",
-      "sourceUrl": "https://ecarstrade.com/cars/7390455",
-      "sourceListingId": "7390455",
-      "make": "Peugeot",
-      "model": "2008",
-      "name": "Peugeot 2008 Allure 1.2 100 S&S BVM6",
-      "year": "2025",
-      "mileage": "7 680 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "1.2 · 102 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€16 000",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7390001-7400000/7390455/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7407379",
-      "sourceUrl": "https://ecarstrade.com/cars/7407379",
-      "sourceListingId": "7407379",
-      "make": "Peugeot",
-      "model": "2008",
-      "name": "Peugeot 2008 Allure 100 S&S BVM6",
-      "year": "2025",
-      "mileage": "7 783 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "102 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€16 000",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7400001-7410000/7407379/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7472065",
-      "sourceUrl": "https://ecarstrade.com/cars/7472065",
-      "sourceListingId": "7472065",
-      "make": "Other",
-      "model": "Tunland",
-      "name": "Foton Tunland G7 2.0L 163 CH",
-      "year": "—",
-      "mileage": "10 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "164 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€39 400",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 400,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472065/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7472064",
-      "sourceUrl": "https://ecarstrade.com/cars/7472064",
-      "sourceListingId": "7472064",
-      "make": "Other",
-      "model": "Tunland",
-      "name": "Foton Tunland G7 2.0L 163 CH",
-      "year": "—",
-      "mileage": "10 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "164 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€39 400",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 400,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7472064/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7349772",
-      "sourceUrl": "https://ecarstrade.com/cars/7349772",
-      "sourceListingId": "7349772",
-      "make": "Opel",
-      "model": "Frontera",
-      "name": "Opel Frontera GS Electric 113 ch Batterie 44 kWh",
-      "year": "2025",
-      "mileage": "3 685 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "113 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€18 500",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349772/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7349773",
-      "sourceUrl": "https://ecarstrade.com/cars/7349773",
-      "sourceListingId": "7349773",
-      "make": "Opel",
-      "model": "Frontera",
-      "name": "Opel Frontera GS Electric 113 ch Batterie 44 kWh",
-      "year": "2025",
-      "mileage": "2 800 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "113 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€18 500",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349773/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7128850",
-      "sourceUrl": "https://ecarstrade.com/cars/7128850",
-      "sourceListingId": "7128850",
-      "make": "Nissan",
-      "model": "Juke",
-      "name": "Nissan Juke N-Connecta HYBRID 143",
-      "year": "2025",
-      "mileage": "37 543 км",
-      "gearbox": "Автомат",
-      "fuel": "Бензин",
-      "engine": "94 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€19 400",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7120001-7130000/7128850/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7349775",
-      "sourceUrl": "https://ecarstrade.com/cars/7349775",
-      "sourceListingId": "7349775",
-      "make": "Opel",
-      "model": "Frontera",
-      "name": "Opel Frontera GS Electric 113 ch Batterie 44 kWh",
-      "year": "2025",
-      "mileage": "3 332 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "113 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€18 500",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349775/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7349774",
-      "sourceUrl": "https://ecarstrade.com/cars/7349774",
-      "sourceListingId": "7349774",
-      "make": "Opel",
-      "model": "Frontera",
-      "name": "Opel Frontera GS Electric 113 ch Batterie 44 kWh",
-      "year": "2025",
-      "mileage": "4 525 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "113 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€17 900",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349774/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7349771",
-      "sourceUrl": "https://ecarstrade.com/cars/7349771",
-      "sourceListingId": "7349771",
-      "make": "Opel",
-      "model": "Frontera",
-      "name": "Opel Frontera GS Electric 113 ch Batterie 44 kWh",
-      "year": "2025",
-      "mileage": "2 869 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "113 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€18 500",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349771/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7326546",
-      "sourceUrl": "https://ecarstrade.com/cars/7326546",
-      "sourceListingId": "7326546",
-      "make": "Mazda",
-      "model": "2",
-      "name": "Mazda 2 Homura 2.5L e-SKYACTIV-G M Hybrid 140 ch BVM6",
-      "year": "2025",
-      "mileage": "34 264 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "141 л.с.",
-      "color": "Серый",
-      "body": "Легковой",
-      "price": "€19 200",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326546/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7326547",
-      "sourceUrl": "https://ecarstrade.com/cars/7326547",
-      "sourceListingId": "7326547",
-      "make": "Mazda",
-      "model": "2",
-      "name": "Mazda 2 Homura 2.5L e-SKYACTIV-G M Hybrid 140 ch BVM6",
-      "year": "2025",
-      "mileage": "29 214 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "141 л.с.",
-      "color": "Бежевый",
-      "body": "Легковой",
-      "price": "€19 400",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7326547/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7349767",
-      "sourceUrl": "https://ecarstrade.com/cars/7349767",
-      "sourceListingId": "7349767",
-      "make": "Opel",
-      "model": "Frontera",
-      "name": "Opel Frontera GS Electric 113 ch Batterie 44 kWh",
-      "year": "2025",
-      "mileage": "4 997 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "113 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€17 900",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349767/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7325649",
-      "sourceUrl": "https://ecarstrade.com/cars/7325649",
-      "sourceListingId": "7325649",
-      "make": "Opel",
-      "model": "Mokka",
-      "name": "Opel Mokka GS Electrique 156 ch Batterie 54 kWh",
-      "year": "2025",
-      "mileage": "10 647 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "157 л.с.",
-      "color": "Синий",
-      "body": "SUV",
-      "price": "€20 000",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7320001-7330000/7325649/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7349766",
-      "sourceUrl": "https://ecarstrade.com/cars/7349766",
-      "sourceListingId": "7349766",
-      "make": "Opel",
-      "model": "Frontera",
-      "name": "Opel Frontera GS Electric 113 ch Batterie 44 kWh",
-      "year": "2025",
-      "mileage": "2 096 км",
-      "gearbox": "Автомат",
-      "fuel": "Электро",
-      "engine": "113 л.с.",
-      "color": "Чёрный",
-      "body": "SUV",
-      "price": "€18 500",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7340001-7350000/7349766/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7201603",
-      "sourceUrl": "https://ecarstrade.com/cars/7201603",
-      "sourceListingId": "7201603",
-      "make": "Dacia",
-      "model": "Sandero",
-      "name": "Dacia Sandero Journey TCe 90 GSR2",
-      "year": "2025",
-      "mileage": "27 375 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "92 л.с.",
-      "color": "Чёрный",
-      "body": "Легковой",
-      "price": "€12 500",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7200001-7210000/7201603/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7256561",
-      "sourceUrl": "https://ecarstrade.com/cars/7256561",
-      "sourceListingId": "7256561",
-      "make": "Dacia",
-      "model": "Duster",
-      "name": "Dacia Duster Extreme Mild Hybrid 130",
-      "year": "2025",
-      "mileage": "23 024 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "131 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€19 400",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7250001-7260000/7256561/photo_001/780x0__r__wm_red-3.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7237338",
-      "sourceUrl": "https://ecarstrade.com/cars/7237338",
-      "sourceListingId": "7237338",
-      "make": "Dacia",
-      "model": "Duster",
-      "name": "Dacia Duster Extreme Mild Hybrid 130",
-      "year": "2025",
-      "mileage": "22 368 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "131 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€19 400",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237338/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7228764",
-      "sourceUrl": "https://ecarstrade.com/cars/7228764",
-      "sourceListingId": "7228764",
-      "make": "Dacia",
-      "model": "Duster",
-      "name": "Dacia Duster Extreme Mild Hybrid 130",
-      "year": "2025",
-      "mileage": "16 849 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "131 л.с.",
-      "color": "Белый",
-      "body": "SUV",
-      "price": "€19 500",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7220001-7230000/7228764/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7237339",
-      "sourceUrl": "https://ecarstrade.com/cars/7237339",
-      "sourceListingId": "7237339",
-      "make": "Dacia",
-      "model": "Sandero",
-      "name": "Dacia Sandero Stepway Stepway Expression TCe 90 GSR2",
-      "year": "2025",
-      "mileage": "19 878 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "92 л.с.",
-      "color": "Белый",
-      "body": "Легковой",
-      "price": "€13 000",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_011/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7230001-7240000/7237339/photo_012/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
-      "id": "7471270",
-      "sourceUrl": "https://ecarstrade.com/cars/7471270",
-      "sourceListingId": "7471270",
-      "make": "Dacia",
-      "model": "Sandero",
-      "name": "Dacia Sandero Journey TCe 90 GSR2",
-      "year": "2025",
-      "mileage": "49 436 км",
-      "gearbox": "Механика",
-      "fuel": "Бензин",
-      "engine": "92 л.с.",
-      "color": "Зелёный",
-      "body": "Легковой",
-      "price": "€11 600",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_001/780x0__r__wm_red-3.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_001/780x0__r.jpg?hash=1787065216",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_002/780x0__r.jpg?hash=1787065215",
-        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7471270/photo_003/780x0__r.jpg?hash=1787065215"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
     }
   ],
   "localMarket": {
     "source": "https://autodiler.me/en",
-    "collectedAt": "2026-08-20T07:16:00.193Z",
-    "listingCount": 27
+    "collectedAt": "2026-08-20T08:04:43.880Z",
+    "listingCount": 29
   }
 }
