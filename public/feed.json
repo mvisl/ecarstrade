@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T10:48:26.206Z",
+  "generatedAt": "2026-08-22T11:41:11.959Z",
   "cars": [
     {
       "id": "7484463",
@@ -177,11 +177,7 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ],
-      "localMarketPrice": 17900,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
-      "localMarketMatch": "make-year"
+      ]
     },
     {
       "id": "7484399",
@@ -270,11 +266,44 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
+      ]
+    },
+    {
+      "id": "7484377",
+      "sourceUrl": "https://ecarstrade.com/cars/7484377",
+      "sourceListingId": "7484377",
+      "make": "Audi",
+      "model": "A7",
+      "name": "A7 Sportback 45 TDI quattro 3.0 TDI 180KW AT7 6E",
+      "year": "2024",
+      "mileage": "54 529 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "3.0 · 245 л.с.",
+      "color": "Серый",
+      "body": "Легковой",
+      "price": "€40 750",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 450,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7484377/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7484377/photo_001/780x0__r__wm_red-3.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7484377/photo_001/780x0__r.jpg?hash=1787385738",
+        "https://ecarstrade.com/thumbnails/carsphotos/7470001-7480000/7478713/photo_000/780x0__r.jpg"
       ],
-      "localMarketPrice": 17900,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 5,
-      "localMarketMatch": "make-year"
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
     },
     {
       "id": "7484380",
@@ -318,11 +347,7 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ],
-      "localMarketPrice": 28500,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 3,
-      "localMarketMatch": "make-year"
+      ]
     },
     {
       "id": "7484381",
@@ -976,11 +1001,7 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ],
-      "localMarketPrice": 17900,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 5,
-      "localMarketMatch": "make-year"
+      ]
     },
     {
       "id": "7484360",
@@ -1748,6 +1769,51 @@
       ]
     },
     {
+      "id": "7483548",
+      "sourceUrl": "https://ecarstrade.com/cars/7483548",
+      "sourceListingId": "7483548",
+      "make": "Alfa Romeo",
+      "model": "Tonale",
+      "name": "Alfa Romeo Tonale Tributo Italiano 1.6 VGT-D 130HP TCT",
+      "year": "2025",
+      "mileage": "Не указан",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "1.6 · 131 л.с.",
+      "color": "Зелёный",
+      "body": "SUV",
+      "price": "€28 650",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 350,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_011/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483548/photo_012/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
       "id": "7483547",
       "sourceUrl": "https://ecarstrade.com/cars/7483547",
       "sourceListingId": "7483547",
@@ -2105,11 +2171,7 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ],
-      "localMarketPrice": 17900,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 5,
-      "localMarketMatch": "make-year"
+      ]
     },
     {
       "id": "7483448",
@@ -2144,6 +2206,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483448/photo_009/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483448/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483448/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7483447",
+      "sourceUrl": "https://ecarstrade.com/cars/7483447",
+      "sourceListingId": "7483447",
+      "make": "BMW",
+      "model": "330",
+      "name": "BMW 330E 2.0 330E ",
+      "year": "2022",
+      "mileage": "135 025 км",
+      "gearbox": "Автомат",
+      "fuel": "Гибрид",
+      "engine": "2.0 · 184 л.с.",
+      "color": "Синий",
+      "body": "Легковой",
+      "price": "€17 050",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483447/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -2247,51 +2354,6 @@
       ]
     },
     {
-      "id": "7483444",
-      "sourceUrl": "https://ecarstrade.com/cars/7483444",
-      "sourceListingId": "7483444",
-      "make": "Opel",
-      "model": "Grandland X",
-      "name": "OPEL GRANDLAND X 1.6 TURBO HYBRID ULTIMATE E-AT ",
-      "year": "2021",
-      "mileage": "95 445 км",
-      "gearbox": "Автомат",
-      "fuel": "Гибрид",
-      "engine": "1.6 · 181 л.с.",
-      "color": "Серый",
-      "body": "SUV",
-      "price": "€13 550",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 300,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483444/photo_011/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7483443",
       "sourceUrl": "https://ecarstrade.com/cars/7483443",
       "sourceListingId": "7483443",
@@ -2369,6 +2431,51 @@
         "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483442/photo_009/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483442/photo_010/780x0__r.jpg",
         "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483442/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
+      "id": "7483441",
+      "sourceUrl": "https://ecarstrade.com/cars/7483441",
+      "sourceListingId": "7483441",
+      "make": "BMW",
+      "model": "X1",
+      "name": "BMW X1 SDRIVE16DA 1.5 ADVANTAGE BUSINESS",
+      "year": "2022",
+      "mileage": "104 062 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "1.5 · 116 л.с.",
+      "color": "Чёрный",
+      "body": "SUV",
+      "price": "€14 050",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 300,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483441/photo_011/780x0__r.jpg"
       ],
       "report": [
         {
@@ -2607,51 +2714,6 @@
       ]
     },
     {
-      "id": "7483435",
-      "sourceUrl": "https://ecarstrade.com/cars/7483435",
-      "sourceListingId": "7483435",
-      "make": "Opel",
-      "model": "Astra",
-      "name": "OPEL ASTRA SPORTS TOURER 1.5 TURBO D START/STOP EDITION ",
-      "year": "2021",
-      "mileage": "92 592 км",
-      "gearbox": "Автомат",
-      "fuel": "Дизель",
-      "engine": "1.5 · 122 л.с.",
-      "color": "Белый",
-      "body": "Универсал",
-      "price": "€8 900",
-      "origin": "Belgium · Fixed Price",
-      "listingCountry": "Belgium",
-      "priceMode": "net_export",
-      "platformFee": 250,
-      "exportDeclarationFee": 50,
-      "photos": [
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_000/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_001/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_002/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_003/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_004/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_005/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_006/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_007/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_008/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_009/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_010/780x0__r.jpg",
-        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483435/photo_011/780x0__r.jpg"
-      ],
-      "report": [
-        {
-          "kind": "ok",
-          "text": "Актуальная фиксированная цена"
-        },
-        {
-          "kind": "ok",
-          "text": "VAT deductible"
-        }
-      ]
-    },
-    {
       "id": "7483434",
       "sourceUrl": "https://ecarstrade.com/cars/7483434",
       "sourceListingId": "7483434",
@@ -2694,11 +2756,7 @@
           "kind": "ok",
           "text": "VAT deductible"
         }
-      ],
-      "localMarketPrice": 17900,
-      "localMarketSource": "https://autodiler.me/en",
-      "localMarketSampleSize": 5,
-      "localMarketMatch": "make-year"
+      ]
     },
     {
       "id": "7483433",
@@ -3016,6 +3074,51 @@
       ]
     },
     {
+      "id": "7483425",
+      "sourceUrl": "https://ecarstrade.com/cars/7483425",
+      "sourceListingId": "7483425",
+      "make": "Opel",
+      "model": "Astra",
+      "name": "OPEL ASTRA SPORTS TOURER 1.5 TURBO D START/STOP EDITION ",
+      "year": "2021",
+      "mileage": "108 438 км",
+      "gearbox": "Автомат",
+      "fuel": "Дизель",
+      "engine": "1.5 · 122 л.с.",
+      "color": "Белый",
+      "body": "Универсал",
+      "price": "€8 300",
+      "origin": "Belgium · Fixed Price",
+      "listingCountry": "Belgium",
+      "priceMode": "net_export",
+      "platformFee": 250,
+      "exportDeclarationFee": 50,
+      "photos": [
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_000/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_001/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_002/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_003/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_004/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_005/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_006/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_007/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_008/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_009/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_010/780x0__r.jpg",
+        "https://ecarstrade.com/thumbnails/carsphotos/7480001-7490000/7483425/photo_011/780x0__r.jpg"
+      ],
+      "report": [
+        {
+          "kind": "ok",
+          "text": "Актуальная фиксированная цена"
+        },
+        {
+          "kind": "ok",
+          "text": "VAT deductible"
+        }
+      ]
+    },
+    {
       "id": "7483423",
       "sourceUrl": "https://ecarstrade.com/cars/7483423",
       "sourceListingId": "7483423",
@@ -3063,7 +3166,7 @@
   ],
   "localMarket": {
     "source": "https://autodiler.me/en",
-    "collectedAt": "2026-08-22T10:48:27.967Z",
-    "listingCount": 33
+    "collectedAt": "2026-08-22T11:41:14.473Z",
+    "listingCount": 30
   }
 }
